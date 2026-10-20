@@ -1,0 +1,46 @@
+{
+ "src": "chr_batch3/chr_healer_man_reference.png",
+ "joints": {
+  "center": [510.5, 640],
+  "hip": [450, 640], "loin": [450, 950],
+  "neck": [600, 330], "crown": [650, 140],
+  "shoulder": [550, 440], "elbow": [577, 580], "wrist": [730, 640], "finger": [840, 715],
+  "hip_b": [365, 935], "knee_b": [310, 1080], "ankle_b": [235, 1285], "toe_b": [395, 1355],
+  "hip_f": [520, 860], "knee_f": [600, 1005], "ankle_f": [645, 1300], "toe_f": [830, 1340]
+ },
+ "bones": [
+  ["pelvis", "", "hip", "loin", 60, 2],
+  ["torso", "pelvis", "hip", "neck", 170, 3],
+  ["head", "torso", "neck", "crown", 130, 4],
+  ["upper_arm", "torso", "shoulder", "elbow", 40, 5],
+  ["forearm", "upper_arm", "elbow", "wrist", 35, 5],
+  ["hand", "forearm", "wrist", "finger", 45, 6],
+  ["thigh_b", "pelvis", "hip_b", "knee_b", 60, 0],
+  ["shin_b", "thigh_b", "knee_b", "ankle_b", 45, 0],
+  ["foot_b", "shin_b", "ankle_b", "toe_b", 50, 0],
+  ["thigh_f", "pelvis", "hip_f", "knee_f", 60, 1],
+  ["shin_f", "thigh_f", "knee_f", "ankle_f", 45, 1],
+  ["foot_f", "shin_f", "ankle_f", "toe_f", 50, 1],
+  ["upper_arm_l", "torso", "shoulder_l", "elbow_l", 0, -1],
+  ["forearm_l", "upper_arm_l", "elbow_l", "wrist_l", 0, -1],
+  ["hand_l", "forearm_l", "wrist_l", "finger_l", 0, -1]
+ ],
+ "far": [
+  ["upper_arm_l", "upper_arm_l", "upper_arm", -1, [0, 0]],
+  ["forearm_l", "forearm_l", "forearm", -1, [0, 0]],
+  ["hand_l", "hand_l", "hand", -1, [0, 0]]
+ ],
+ "polys": {
+  "hand": [[730, 580], [880, 580], [880, 780], [730, 780]],
+  "forearm": [[580, 555], [730, 600], [730, 670], [700, 665], [600, 630], [565, 615]],
+  "upper_arm": [[525, 440], [572, 440], [575, 520], [590, 560], [575, 580], [553, 582], [540, 520]],
+  "pelvis": [[290, 600], [600, 600], [640, 862], [602, 872], [604, 1002], [490, 1010], [478, 955], [400, 948], [317, 945], [290, 940]]
+ },
+ "overlap": {
+  "pelvis": [[300, 935], [480, 945], [500, 1030], [300, 1030]],
+  "thigh_f": [[555, 980], [660, 980], [665, 1075], [560, 1075]]
+ },
+ "cap": 40,
+ "caps": {"knee_b": 70, "knee_f": 70, "ankle_b": 60, "ankle_f": 60},
+ "origin": {"x_joint": "center", "sole_parts": ["foot_b", "foot_f"]}
+}

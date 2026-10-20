@@ -1,0 +1,44 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {"loop": true, "length": 0.3333, "frames": [
+   {"t": 0.0, "bones": {"wing_up": -12, "wing_low": 10, "crest": -6}, "root": [0.0, 0.0]},
+   {"t": 0.0833, "bones": {}, "root": [0.0, -1.0]},
+   {"t": 0.1667, "bones": {"wing_up": 12, "wing_low": -10, "crest": 6}, "root": [0.0, -2.0]},
+   {"t": 0.25, "bones": {}, "root": [0.0, -1.0]}
+  ]},
+  "telegraph": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"wing_up": 7.5, "wing_low": -6.0, "crest": 4.0, "body": 3.0}, "root": [1.5, 0.0]},
+   {"t": 0.0833, "bones": {"wing_up": 15, "wing_low": -12, "crest": 8, "body": 6}, "root": [3.0, 0.0]},
+   {"t": 0.1667, "bones": {"wing_up": 15, "wing_low": -12, "crest": 8, "body": 6}, "root": [3.0, 0.0]},
+   {"t": 0.25, "bones": {"wing_up": 13, "wing_low": -12, "crest": 8, "body": 6}, "root": [4.0, 0.0]},
+   {"t": 0.3333, "bones": {"wing_up": 15, "wing_low": -12, "crest": 8, "body": 6}, "root": [3.0, 0.0]},
+   {"t": 0.4167, "bones": {"wing_up": 13, "wing_low": -12, "crest": 8, "body": 6}, "root": [4.0, 0.0]},
+   {"t": 0.5, "bones": {"wing_up": 15, "wing_low": -12, "crest": 8, "body": 6}, "root": [3.0, 0.0]},
+   {"t": 0.5833, "bones": {"wing_up": 13, "wing_low": -12, "crest": 8, "body": 6}, "root": [4.0, 0.0]},
+   {"t": 0.6667, "bones": {"wing_up": 15, "wing_low": -12, "crest": 8, "body": 6}, "root": [3.0, 0.0]}
+  ]},
+  "attack": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"wing_up": 15, "wing_low": -15, "crest": 12, "body": -10}, "root": [-2.0, 0.0]},
+   {"t": 0.0833, "bones": {"wing_up": 15, "wing_low": -15, "crest": 12, "body": -20}, "root": [-3.0, 0.0]}
+  ]},
+  "recover": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"wing_up": 6, "wing_low": -6, "crest": 6, "body": -8}, "root": [-2.0, 0.0]},
+   {"t": 0.0833, "bones": {"wing_up": -15, "wing_low": 12, "crest": -8}, "root": [0.0, 0.0]},
+   {"t": 0.25, "bones": {"wing_up": -8, "wing_low": 6, "crest": -4}, "root": [0.0, 0.0]},
+   {"t": 0.4167, "bones": {"wing_up": 4, "wing_low": -3, "crest": 2}, "root": [0.0, 0.0]},
+   {"t": 0.5833, "bones": {}, "root": [0.0, 0.0]}
+  ]},
+  "stagger": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"body": 12.0, "wing_up": 13.0, "wing_low": 8.0, "crest": 8.0}, "root": [1.0, 0.0]},
+   {"t": 0.0833, "bones": {"body": 12.0, "wing_up": 7.0, "wing_low": 12.0, "crest": 4.0}, "root": [-1.0, 0.0]},
+   {"t": 0.1667, "bones": {"body": 12.0, "wing_up": 13.0, "wing_low": 8.0, "crest": 8.0}, "root": [1.0, 0.0]},
+   {"t": 0.25, "bones": {"body": 12.0, "wing_up": 7.0, "wing_low": 12.0, "crest": 4.0}, "root": [-1.0, 0.0]},
+   {"t": 0.3333, "bones": {"body": 12.0, "wing_up": 13.0, "wing_low": 8.0, "crest": 8.0}, "root": [1.0, 0.0]},
+   {"t": 0.4167, "bones": {"body": 12.0, "wing_up": 7.0, "wing_low": 12.0, "crest": 4.0}, "root": [-1.0, 0.0]},
+   {"t": 0.5, "bones": {"body": 12.0, "wing_up": 13.0, "wing_low": 8.0, "crest": 8.0}, "root": [1.0, 0.0]},
+   {"t": 0.5833, "bones": {"body": 7.2, "wing_up": 4.2, "wing_low": 7.2, "crest": 2.4}, "root": [0.0, 0.0]},
+   {"t": 0.6667, "bones": {"body": 7.2, "wing_up": 7.8, "wing_low": 4.8, "crest": 4.8}, "root": [0.0, 0.0]}
+  ]}
+ }
+}

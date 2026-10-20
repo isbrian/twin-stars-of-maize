@@ -1,0 +1,8 @@
+{
+ "wpn_axe": {"tex": "res://art/chr/parts/wpn_axe.png", "bone": "hand_r", "at": 0.5, "pivot": [20, 41], "tip": [64, 11], "angle_deg": -90, "z": 4},
+ "wpn_digging_stick": {"tex": "res://art/chr/parts/wpn_digging_stick.png", "bone": "hand_r", "at": 0.5, "pivot": [22, 10], "tip": [128, 10], "angle_deg": -90, "z": 4},
+ "wpn_blowgun": {"tex": "res://art/chr/parts/wpn_blowgun.png", "bone": "hand_l", "at": 0.5, "pivot": [25, 3], "tip": [108, 3], "angle_deg": 0, "z": 4},
+ "wpn_ballgear_yoke": {"tex": "res://art/chr/parts/wpn_ballgear_yoke.png", "bone": "pelvis", "at": 0.0, "pivot": [30, 18], "tip": [59, 18], "angle_deg": -90, "z": 2},
+ "wpn_ballgear_armguard": {"tex": "res://art/chr/parts/wpn_ballgear_armguard.png", "bone": "forearm_r", "at": 0.5, "pivot": [20, 9], "tip": [39, 9], "angle_deg": 0, "z": 4},
+ "prop_soup_bowl": {"tex": "res://art/chr/parts/prop_soup_bowl.png", "bone": "hand_l", "at": 0.5, "pivot": [14, 31], "tip": [14, 0], "angle_deg": -90, "z": 6}
+}

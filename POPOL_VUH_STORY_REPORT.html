@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《波波爾·烏》故事綜合報告</title>
+  <style>
+    :root {
+      --bg: #f5f0e6;
+      --paper: #fffdf8;
+      --ink: #2b241c;
+      --muted: #736655;
+      --accent: #8d3f2d;
+      --accent-2: #a7742c;
+      --line: #dfd2bd;
+      --deep: #34261f;
+      --soft: #efe5d5;
+      --shadow: 0 16px 45px rgba(70,45,20,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(167,116,44,.10), transparent 34%),
+        linear-gradient(180deg, #efe5d5 0, var(--bg) 280px, var(--bg) 100%);
+      line-height: 1.9;
+    }
+    a { color: var(--accent); }
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      place-items: center;
+      padding: 72px 24px 56px;
+      background:
+        linear-gradient(rgba(28,20,15,.54), rgba(28,20,15,.68)),
+        radial-gradient(circle at 20% 18%, #9a5d3a 0, #5a392a 30%, #211815 80%);
+      color: #fff9ed;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+    }
+    .hero::before { left: -210px; top: -160px; }
+    .hero::after { right: -240px; bottom: -220px; }
+    .hero-inner { max-width: 980px; position: relative; z-index: 1; }
+    .eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: .84rem; opacity: .76; margin-bottom: 16px; }
+    h1 { font-size: clamp(2.5rem, 6vw, 5.4rem); line-height: 1.08; margin: 0 0 22px; font-weight: 700; }
+    .hero p { max-width: 760px; margin: 0 auto; font-size: clamp(1rem, 2vw, 1.2rem); color: #f4e8d3; }
+    .hero-meta { margin-top: 34px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .tag { padding: 8px 13px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(255,255,255,.08); font-size: .86rem; }
+    .layout { display: grid; grid-template-columns: 280px minmax(0,1fr); gap: 36px; max-width: 1320px; margin: 0 auto; padding: 42px 24px 80px; }
+    .toc { position: sticky; top: 20px; align-self: start; max-height: calc(100vh - 40px); overflow: auto; background: rgba(255,253,248,.92); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: var(--shadow); backdrop-filter: blur(8px); }
+    .toc h2 { margin: 0 0 14px; font-size: 1rem; color: var(--accent); }
+    .toc ol { margin: 0; padding-left: 20px; font-size: .9rem; }
+    .toc li { margin: 5px 0; }
+    .toc a { color: var(--muted); text-decoration: none; }
+    .toc a:hover { color: var(--accent); }
+    main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); padding: clamp(24px,5vw,64px); }
+    .lead { font-size: 1.08rem; color: #44382d; background: linear-gradient(135deg,#f6efe3,#fffaf0); border-left: 5px solid var(--accent-2); padding: 22px 24px; border-radius: 12px; margin-bottom: 36px; }
+    section { padding: 18px 0 34px; border-bottom: 1px solid #eadfce; }
+    section:last-child { border-bottom: 0; }
+    h2 { font-size: clamp(1.55rem,3vw,2.2rem); line-height: 1.35; margin: 0 0 18px; color: var(--deep); }
+    h3 { font-size: 1.2rem; color: var(--accent); margin-top: 28px; }
+    p { margin: 0 0 1em; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin: .35em 0; }
+    .cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin: 22px 0; }
+    .card { background: var(--soft); border: 1px solid var(--line); border-radius: 15px; padding: 18px; }
+    .card strong { display: block; color: var(--accent); font-size: 1.06rem; margin-bottom: 5px; }
+    .quote { margin: 28px 0; padding: 26px 28px; background: #2d211c; color: #f9edda; border-radius: 18px; font-size: 1.18rem; line-height: 1.8; }
+    .timeline { display: grid; gap: 14px; margin: 24px 0; }
+    .timeline-item { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+    .num { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; font-family: system-ui,sans-serif; }
+    .timeline-item div:last-child { padding: 4px 0 14px 2px; border-bottom: 1px dashed var(--line); }
+    table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: .95rem; }
+    th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; text-align: left; }
+    th { background: #efe2d0; color: var(--deep); }
+    .chapter-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+    .chapter { border: 1px solid var(--line); border-radius: 16px; padding: 18px; background: #fffaf3; }
+    .chapter h3 { margin-top: 0; }
+    .source-list a { overflow-wrap: anywhere; }
+    .note { background: #f2eadf; border: 1px solid #dfd0ba; padding: 18px 20px; border-radius: 14px; color: #554638; }
+    footer { text-align: center; color: var(--muted); padding: 36px 20px 64px; font-size: .9rem; }
+    @media (max-width: 980px) { .layout { grid-template-columns: 1fr; } .toc { position: static; max-height: none; } .cards { grid-template-columns: 1fr; } }
+    @media (max-width: 680px) { .chapter-grid { grid-template-columns: 1fr; } main { border-radius: 16px; padding: 24px 18px; } .layout { padding-left: 12px; padding-right: 12px; } .hero { min-height: 58vh; } table { font-size: .86rem; } th,td { padding: 9px; } }
+    @media print { body { background:#fff; } .hero { min-height:auto; padding:40px 20px; } .layout { display:block; padding:0; } .toc { display:none; } main { box-shadow:none; border:0; border-radius:0; } section { break-inside:avoid; } a { color:inherit; text-decoration:none; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">K'iche' Maya Creation · Heroic Cycle · Ancestral History</div>
+      <h1>《波波爾·烏》<br>故事綜合報告</h1>
+      <p>從創世、人類創造的失敗、偽太陽、英雄雙胞胎與冥界 Xibalba，到玉米人類、基切人的祖先與王統，重新整理成一條完整而容易理解的故事主線。</p>
+      <div class="hero-meta">
+        <span class="tag">創世神話</span>
+        <span class="tag">英雄雙胞胎</span>
+        <span class="tag">Xibalba 冥界</span>
+        <span class="tag">玉米人類</span>
+        <span class="tag">遊戲企劃資料</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="toc">
+      <h2>目錄</h2>
+      <ol>
+        <li><a href="#overview">概要</a></li>
+        <li><a href="#creation">世界的創造</a></li>
+        <li><a href="#failed-humans">失敗的人類</a></li>
+        <li><a href="#seven-macaw">Seven Macaw 一族</a></li>
+        <li><a href="#first-generation">第一代球賽者</a></li>
+        <li><a href="#blood-woman">Blood Woman 與雙胞胎誕生</a></li>
+        <li><a href="#xibalba">第二次深入 Xibalba</a></li>
+        <li><a href="#trials">試煉之屋</a></li>
+        <li><a href="#death-rebirth">死亡與重生</a></li>
+        <li><a href="#maize">玉米人類</a></li>
+        <li><a href="#dawn">祖先、火與黎明</a></li>
+        <li><a href="#timeline">完整時間線</a></li>
+        <li><a href="#characters">主要人物</a></li>
+        <li><a href="#themes">核心主題</a></li>
+        <li><a href="#game">遊戲化章節</a></li>
+        <li><a href="#sources">參考資料</a></li>
+      </ol>
+    </aside>
+
+    <main>
+      <section id="overview">
+        <h2>概要</h2>
+        <div class="lead">《波波爾·烏（Popol Vuh / Popol Wuj）》是瓜地馬拉高地基切馬雅人的重要文獻，內容結合創世神話、英雄傳說、祖先史與王統史。它不是單一英雄的冒險故事，而是一部從世界誕生一路連接到人類、氏族與王權形成的「宇宙史」。</div>
+        <div class="cards">
+          <div class="card"><strong>第一層</strong>世界、大地、動物與人類的創造。</div>
+          <div class="card"><strong>第二層</strong>Hunahpu 與 Xbalanque 的英雄神話。</div>
+          <div class="card"><strong>第三層</strong>從玉米人類延伸到基切人的祖先史。</div>
+        </div>
+      </section>
+
+      <section id="creation">
+        <h2>1. 世界還什麼都沒有的時代</h2>
+        <p>故事開始時，世界上還沒有人類、動物，也沒有大地。存在的只有黑暗、寂靜、水與天空。</p>
+        <p>Heart of Sky、Huracan、Feathered Serpent 等創造神彼此商議，以「言語」塑造世界。大地從水中出現，接著有山谷、森林、植物，之後再創造動物。</p>
+        <p>然而神明想要的不只是能活動的生命，而是能認識祂們、呼喚祂們的名字、記得祂們並表達感謝的存在。</p>
+      </section>
+
+      <section id="failed-humans">
+        <h2>2. 失敗的人類創造</h2>
+        <h3>泥人</h3>
+        <p>最初的人類由泥土塑成，但身體脆弱、無法維持形體，也難以行動與繁衍，語言能力也不完整，因此沒有成為神明想要的人類。</p>
+        <h3>木人</h3>
+        <p>第二次創造的人類由木頭製成。他們能走、能說話，也能繁衍，但缺乏真正的「心」。他們不記得創造自己的神，也不感謝、不祈禱。</p>
+        <p>因此神明再次判定創造失敗。洪水與災難降臨，傳說中連他們使用的器具與飼養的動物都反過來攻擊他們，木人的時代就此結束。</p>
+      </section>
+
+      <section id="seven-macaw">
+        <h2>3. 沒有真正太陽的世界與 Seven Macaw</h2>
+        <p>木人滅亡之後，世界仍未完成，真正的太陽尚未升起。此時出現 Seven Macaw（Vucub Caquix / Wuqub' Kaqix）。</p>
+        <p>他有如寶石般閃耀的牙齒與華麗裝飾，宣稱自己就是太陽與月亮。然而他的光並不是真正照亮世界的光，而是由財富、裝飾與虛榮構成的「假光」。</p>
+        <p>Seven Macaw 有兩個兒子：Zipacna 與 Cabrakan。他們同樣擁有能撼動山岳與大地的驚人力量，也以此自傲。</p>
+
+        <h3>英雄雙胞胎介入</h3>
+        <p>Hunahpu 與 Xbalanque 不允許 Seven Macaw 冒充真正的太陽，因此用吹箭攻擊他。Seven Macaw 反擊並奪走 Hunahpu 的手臂，於是雙胞胎改用計謀，不再正面硬碰。</p>
+        <p>他們請一對老人假扮治療者接近 Seven Macaw，以治療之名拔除他引以為傲的閃亮牙齒與裝飾。失去外在光彩之後，他也失去威勢，最後被擊敗。</p>
+
+        <h3>Zipacna 與 Cabrakan</h3>
+        <p>Zipacna 擁有驚人怪力，甚至反過來害死想設陷阱對付他的四百名年輕人。雙胞胎最後製造出巨蟹般的誘餌，將他引入陷阱，以智慧而不是力量擊敗他。</p>
+        <p>Cabrakan 則以能摧毀山岳自豪。雙胞胎利用他的傲慢，在食物上動手腳削弱他的力量，最終將他擊敗。</p>
+        <div class="quote">Seven Macaw 一家的敗亡象徵：力量強大、外表耀眼，並不等於真正具有神聖性與正當性。</div>
+      </section>
+
+      <section id="first-generation">
+        <h2>4. 第一代球賽者與 Xibalba</h2>
+        <p>故事在此倒回上一代。英雄雙胞胎的父親 Hun Hunahpu / One Hunahpu 與叔父 Vucub Hunahpu / Seven Hunahpu 都是優秀的球賽者。</p>
+        <p>兩人打球的聲音傳到地下世界 Xibalba，引起 One Death、Seven Death 等冥界統治者的不滿。</p>
+        <p>Xibalba 最可怕的武器不是純粹暴力，而是「欺騙」。假國王、灼熱座椅、危險道路與夜間試煉，都是用來讓對手犯錯的陷阱。</p>
+        <p>第一代兩人沒有識破假國王，坐上滾燙的座椅，又在火把與雪茄的任務中失敗，因此被處死。</p>
+        <p>Hun Hunahpu 的頭被砍下，掛在葫蘆樹上。樹上很快長滿果實，他的頭顱混在其中，再也難以分辨。</p>
+      </section>
+
+      <section id="blood-woman">
+        <h2>5. Blood Woman 與「從死亡誕生的生命」</h2>
+        <p>住在 Xibalba 的 Blood Woman / Blood Moon / Xquic 對那棵禁忌的葫蘆樹產生好奇。當她靠近時，Hun Hunahpu 的頭顱開口說話，並將唾液吐在她掌心。</p>
+        <p>就在那一刻，Blood Woman 懷孕了。這個場景清楚表現出全書的重要主題：肉體即使死亡，生命仍能藉由下一代延續。</p>
+        <p>懷孕被發現後，Xibalba 的王命令處死她。然而負責執行命令的貓頭鷹使者被她說服，改用紅色樹液製作假心臟，讓她逃回地面世界。</p>
+        <p>她來到 Hun Hunahpu 母親的家中，生下 Hunahpu 與 Xbalanque。</p>
+      </section>
+
+      <section>
+        <h2>6. 英雄雙胞胎成長與父親留下的球具</h2>
+        <p>雙胞胎成長過程中受到年長兄弟／親族嫉妒，但他們以計謀反轉局勢，把對方引到樹上，最後使其變成猴子。</p>
+        <p>長大後，兩人找到父親留下的球與球賽用具，開始在球場打球。聲音再次傳入 Xibalba。</p>
+        <p>就像上一代一樣，Xibalba 的王再次發出邀請。這時故事形成清楚的鏡像結構：兒子必須重新走過父親失敗的道路。</p>
+      </section>
+
+      <section id="xibalba">
+        <h2>7. 第二次深入 Xibalba</h2>
+        <p>Hunahpu 與 Xbalanque 前往父輩曾經進入的地下世界。不同的是，他們已經理解 Xibalba 是一個靠欺騙取勝的地方。</p>
+        <p>兩人識破假國王、調查真正王者的姓名並避開陷阱。第一代因不懂規則而失敗，第二代則看懂規則，甚至反過來利用規則。</p>
+      </section>
+
+      <section id="trials">
+        <h2>8. Xibalba 的試煉之屋</h2>
+        <p>不同翻譯的名稱與順序略有差異，但常見的試煉包括：</p>
+        <div class="cards">
+          <div class="card"><strong>Dark House</strong>完全黑暗的屋子，以及與光源有關的任務。</div>
+          <div class="card"><strong>Cold House</strong>充滿刺骨嚴寒的屋子。</div>
+          <div class="card"><strong>Jaguar House</strong>關著飢餓美洲豹的屋子。</div>
+          <div class="card"><strong>Razor House</strong>刀刃與剃刀四處活動的屋子。</div>
+          <div class="card"><strong>Fire / Hot House</strong>充滿火焰與高溫的屋子。</div>
+          <div class="card"><strong>Bat House</strong>棲息危險蝙蝠的屋子。</div>
+        </div>
+        <p>在 Bat House，Hunahpu 被 Camazotz 砍下頭顱，而他的頭甚至被拿去當球。Xbalanque 在植物與動物的協助下扭轉局勢，讓 Hunahpu 恢復。</p>
+      </section>
+
+      <section>
+        <h2>9. 球賽其實是「與死亡規則作戰」</h2>
+        <p>Xibalba 的球賽不只是運動，而是一場賭上生命、權力、祭祀與死亡秩序的對決。</p>
+        <p>冥界之王操縱規則、設下陷阱；雙胞胎也不只想靠公平競技取勝，而是先看懂對方的機制，再用更高明的方法反制。</p>
+        <p>因此英雄雙胞胎真正的力量，不是「比所有人都強」，而是「理解死亡世界的機制，並重新改寫規則」。</p>
+      </section>
+
+      <section id="death-rebirth">
+        <h2>10. 主動選擇死亡，最後反過來欺騙死亡</h2>
+        <p>到最後，Hunahpu 與 Xbalanque 甚至把「自己被殺」納入計畫。兩人被處死、焚燒，骨灰被丟入水中。</p>
+        <p>Xibalba 的王以為自己終於獲勝，但雙胞胎之後又從水中重新出現。</p>
+        <p>他們沒有立刻表明身分，而是化身貧窮的流浪藝人回到 Xibalba，表演摧毀建築再恢復、殺死生物再復活、彼此殺死後又重生等奇術。</p>
+        <p>冥界諸王被表演迷住，要求雙胞胎也對自己施展同樣的把戲。雙胞胎照做，卻在殺死冥界之王後不再讓他們復活。</p>
+        <p>原本自以為能支配死亡的人，最後反而無法逃離自己的死亡。</p>
+        <div class="quote">第一代是「敗給死亡」；第二代則不是逃避死亡，而是親自穿越死亡，最後把死亡的規則倒轉過來。</div>
+      </section>
+
+      <section>
+        <h2>11. Xibalba 敗北與英雄升天</h2>
+        <p>雙胞胎最後揭露自己的真正身分，告訴冥界諸王：他們正是當年被 Xibalba 殺死的 Hun Hunahpu 之子。</p>
+        <p>Xibalba 的權威因而受到限制，死亡、疾病與恐懼無法再無限支配整個世界。雙胞胎並不是消滅死亡，而是建立一種「死亡也有界線」的新秩序。</p>
+        <p>之後兩人升上天空。在常見的摘要版本中，他們被描述為與太陽、月亮等天體存在相連。</p>
+      </section>
+
+      <section id="maize">
+        <h2>12. 真正的人類——由玉米創造的人</h2>
+        <p>宇宙秩序逐漸恢復之後，神明再次嘗試創造人類。這次使用的是黃色與白色玉米。</p>
+        <p>最初的四位男性，在常見英譯中稱為 Balam Quitze、Balam Acab、Mahucutah、Iqui Balam。</p>
+        <p>他們能說、能聽、能走、能工作，也能理解神明。但新的問題出現了：他們實在太完美，能看見非常遙遠的地方，幾乎理解天地間的一切。</p>
+        <p>神明擔心人類因此變得與神無法區分，於是模糊他們的視力與認知，使人類不再能完全看透世界。</p>
+        <p>這呈現出《波波爾·烏》的人性觀：人若過於無知，就不是理想的人；但若與神一樣全知，也不再是人。真正的人類同時擁有理解能力與自身限制。</p>
+      </section>
+
+      <section id="dawn">
+        <h2>13. 祖先、火、遷徙與第一次黎明</h2>
+        <p>從這裡開始，故事逐漸從純粹神話轉向基切人的祖先史。人們形成氏族，各自擁有神明與象徵。</p>
+        <p>重要神祇之一 Tohil 與火、祭祀、共同體守護等概念密切相關。</p>
+        <p>祖先在黑暗與寒冷中尋找火，也不斷遷徙、尋找新的居住地。在這個過程裡，各氏族與神明、土地之間的關係逐漸確立。</p>
+        <p>漫長黑夜之後，真正的太陽終於升起。這不只是自然現象，而是從故事開端就一直等待的「正確宇宙秩序完成」。</p>
+        <p>《波波爾·烏》後半接著描述氏族、戰爭、婚姻、土地、神祇侍奉、王位繼承與王族系譜，讓創世神話一路連接到基切人的歷史。</p>
+      </section>
+
+      <section id="timeline">
+        <h2>14. 故事完整時間線</h2>
+        <div class="timeline">
+          <div class="timeline-item"><span class="num">1</span><div>只有寂靜與黑暗的原初世界。</div></div>
+          <div class="timeline-item"><span class="num">2</span><div>創造大地、山岳、植物與動物。</div></div>
+          <div class="timeline-item"><span class="num">3</span><div>泥人與木人的創造失敗，木人世界毀滅。</div></div>
+          <div class="timeline-item"><span class="num">4</span><div>Seven Macaw 自稱偽太陽。</div></div>
+          <div class="timeline-item"><span class="num">5</span><div>Hunahpu 與 Xbalanque 擊敗 Seven Macaw 一族。</div></div>
+          <div class="timeline-item"><span class="num">6</span><div>第一代 Hun Hunahpu / Seven Hunahpu 在 Xibalba 敗北並死亡。</div></div>
+          <div class="timeline-item"><span class="num">7</span><div>Hun Hunahpu 的頭顱與 Blood Woman 相遇。</div></div>
+          <div class="timeline-item"><span class="num">8</span><div>Hunahpu 與 Xbalanque 誕生。</div></div>
+          <div class="timeline-item"><span class="num">9</span><div>找到父親的球具，再次受到 Xibalba 邀請。</div></div>
+          <div class="timeline-item"><span class="num">10</span><div>經歷試煉之屋與球賽，Hunahpu 被斬首。</div></div>
+          <div class="timeline-item"><span class="num">11</span><div>雙胞胎主動走向死亡，之後重生。</div></div>
+          <div class="timeline-item"><span class="num">12</span><div>以死亡與復活的表演擊敗 Xibalba 諸王。</div></div>
+          <div class="timeline-item"><span class="num">13</span><div>神明以玉米創造真正的人類。</div></div>
+          <div class="timeline-item"><span class="num">14</span><div>祖先遷徙、取得火、迎來第一次黎明，進入基切氏族與王統史。</div></div>
+        </div>
+      </section>
+
+      <section id="characters">
+        <h2>15. 主要人物與存在</h2>
+        <table>
+          <thead><tr><th>名稱</th><th>角色</th><th>象徵／意義</th></tr></thead>
+          <tbody>
+            <tr><td>Heart of Sky</td><td>創造神群核心</td><td>宇宙秩序、創造</td></tr>
+            <tr><td>Feathered Serpent</td><td>參與創造的神祇</td><td>形成、生命</td></tr>
+            <tr><td>Seven Macaw</td><td>偽太陽</td><td>虛榮、虛假神性</td></tr>
+            <tr><td>Zipacna</td><td>Seven Macaw 之子</td><td>暴烈的大地力量</td></tr>
+            <tr><td>Cabrakan</td><td>Seven Macaw 之子</td><td>破壞力、傲慢</td></tr>
+            <tr><td>Hun Hunahpu</td><td>第一代球賽者</td><td>父親、死亡、傳承</td></tr>
+            <tr><td>Seven Hunahpu</td><td>第一代球賽者</td><td>第一代的失敗</td></tr>
+            <tr><td>Blood Woman</td><td>英雄雙胞胎之母</td><td>從死亡誕生的生命</td></tr>
+            <tr><td>Hunahpu</td><td>英雄雙胞胎之一</td><td>智慧、重生、秩序恢復</td></tr>
+            <tr><td>Xbalanque</td><td>英雄雙胞胎之一</td><td>策略、重生、秩序恢復</td></tr>
+            <tr><td>One Death / Seven Death</td><td>Xibalba 主要統治者</td><td>死亡、欺騙、恐懼</td></tr>
+            <tr><td>Camazotz</td><td>Bat House 的蝙蝠怪物</td><td>斬首、黑夜、死亡</td></tr>
+            <tr><td>Tohil</td><td>與基切祖先相關的神</td><td>火、契約、共同體</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="themes">
+        <h2>16. 貫穿全書的核心主題</h2>
+        <div class="chapter-grid">
+          <div class="chapter"><h3>創造不會一次完成</h3><p>從泥、木頭到玉米，神明也要經過一次次嘗試與修正。</p></div>
+          <div class="chapter"><h3>記憶是人性的核心</h3><p>木人最大的失敗，就是忘記創造者與自身來源。</p></div>
+          <div class="chapter"><h3>智慧比力量更重要</h3><p>英雄雙胞胎經常利用對手的傲慢、慾望與規則來取得勝利。</p></div>
+          <div class="chapter"><h3>死亡不是終點</h3><p>死者能留下下一代，英雄被斬首後能恢復，雙胞胎甚至死後再生。</p></div>
+          <div class="chapter"><h3>人類由玉米構成</h3><p>玉米不只是食物，而直接與人的身體、祖先與生命來源相連。</p></div>
+          <div class="chapter"><h3>假光與真光</h3><p>Seven Macaw 的寶石光芒與最後真正到來的黎明形成鮮明對照。</p></div>
+        </div>
+
+        <h3>兩個世代的對照</h3>
+        <table>
+          <thead><tr><th>要素</th><th>第一代</th><th>第二代</th></tr></thead>
+          <tbody>
+            <tr><td>球賽者</td><td>Hun Hunahpu / Seven Hunahpu</td><td>Hunahpu / Xbalanque</td></tr>
+            <tr><td>Xibalba 的邀請</td><td>接受</td><td>接受</td></tr>
+            <tr><td>假國王</td><td>沒有識破</td><td>成功識破</td></tr>
+            <tr><td>試煉</td><td>失敗</td><td>突破</td></tr>
+            <tr><td>死亡</td><td>敗北造成的死亡</td><td>被納入計畫的死亡</td></tr>
+            <tr><td>結果</td><td>被 Xibalba 殺死</td><td>擊敗 Xibalba 諸王</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="game">
+        <h2>17. 適合遊戲化的章節結構</h2>
+        <div class="chapter-grid">
+          <div class="chapter"><h3>序章：尚未有太陽的世界</h3><ul><li>玩家以「世界之息／記憶視點」進入尚未完成的原初世界</li><li>親自走過大地、山岳、森林與動物的創造</li><li>泥人站起、嘗試說話，最後在雨中崩解</li><li>木人建立村落，但「聆聽」時沒有任何內在聲音</li><li>器物與動物開始反抗，洪水摧毀木人世界</li><li>遠方第一次出現暖色光芒，玩家以為真正太陽升起</li><li>Seven Macaw 在樹冠現身，自稱太陽與月亮</li><li>鏡頭最後切到 Hunahpu 的吹箭，銜接第一章〈偽太陽〉</li></ul><p><strong>核心玩法：</strong>移動、觀察、聆聽、共鳴；序章暫不教授正式戰鬥。預估時長 15～20 分鐘。</p></div>
+          <div class="chapter"><h3>第一章：偽太陽</h3><ul><li>承接序章，玩家正式取得 Hunahpu 的角色控制權</li><li>與 Xbalanque 追蹤 Seven Macaw，學習攀爬、隱蔽與吹箭</li><li>利用「聆聽」辨認偽太陽強光背後真正的弱點</li><li>Hunahpu 射中 Seven Macaw，卻在反擊中失去手臂</li><li>兄弟敗退，第一次理解不能靠正面力量取勝</li><li>尋找老人與老婆婆，改以治療者身分設局</li><li>逐步拔除 Seven Macaw 的牙齒、飾物與虛假光芒</li><li>Hunahpu 取回手臂，Seven Macaw 隕落，但真正太陽依然沒有升起</li><li>遠方山岳開始異常震動，帶出 Zipacna 與 Cabrakan</li></ul><p><strong>核心玩法：</strong>吹箭、攀爬、弱點觀察、雙胞胎協作與非正面擊殺式 Boss 解法。</p></div>
+          <div class="chapter"><h3>第二章：撼動山岳者</h3><ul><li>雙胞胎沿著地震與崩塌痕跡前往高地</li><li>遇見四百名年輕人與能獨力搬動巨木的 Zipacna</li><li>四百人因恐懼設下陷阱，Zipacna 察覺後假死</li><li>慶祝之夜，Zipacna 從地底反擊並摧毀整個聚落</li><li>雙胞胎從災後痕跡追蹤能鑽地的 Zipacna</li><li>發現其食慾弱點，製作巨大螃蟹誘餌與山谷陷阱</li><li>以地形崩塌而非單純削血方式擊敗 Zipacna</li><li>接著追查自稱能粉碎山岳的 Cabrakan</li><li>玩家正面交手即被震退，迫使兄弟再次改用計謀</li><li>利用食物與環境削弱 Cabrakan，終結 Seven Macaw 一族</li><li>勝利後遠方傳來球落地的聲音，故事切進父輩時代</li></ul><p><strong>核心玩法：</strong>地形解謎、巨型敵人閃避、誘餌與陷阱、雙胞胎分工。</p></div>
+          <div class="chapter"><h3>第三章：父輩的敗北</h3><ul><li>時間倒回，玩家第一次控制 Hun Hunahpu 與 Seven Hunahpu</li><li>在地面球場學習第一代版本的球賽玩法</li><li>球聲傳入 Xibalba，冥界諸王派出貓頭鷹使者邀賽</li><li>兩位父輩接受邀請，沿陡坡深入地下世界</li><li>穿越危險河流與會誤導訪客的交叉道路</li><li>抵達宮殿後誤認假國王，又被灼熱石凳羞辱</li><li>第一夜無法保存火炬與雪茄，正式落入 Xibalba 的規則</li><li>被迫進行不公平球賽，規則持續被諸王操弄</li><li>最終 Hun Hunahpu 與 Seven Hunahpu 被處刑</li><li>Hun Hunahpu 的頭被掛在葫蘆樹，樹因此成為禁地</li><li>地面留下未完成的球賽與被藏起的球具</li></ul><p><strong>核心玩法：</strong>第一代球賽、冥界探索、欺騙陷阱與「注定失敗」的鏡像敘事。</p></div>
+          <div class="chapter"><h3>第四章：死者之子</h3><ul><li>玩家改操作 Ixquic / Blood Woman，從 Xibalba 的禁樹傳聞開始</li><li>潛入禁地並發現葫蘆樹上的 Hun Hunahpu 頭顱</li><li>神祕接觸使新的生命在她體內開始</li><li>懷孕被發現後，她受到 Xibalba 諸王審問</li><li>諸王下令貓頭鷹使者處死她並帶回心臟</li><li>Ixquic 說服使者協助，以樹液與植物材料製作假心臟</li><li>玩家反向穿越父輩曾走過的地下道路，逃離 Xibalba</li><li>回到地面後遭祖母懷疑，必須證明自己與家族的連結</li><li>最終被家族接納，Hunahpu 與 Xbalanque 出生</li><li>鏡頭回到被藏起的球具，暗示父輩命運仍在等待下一代</li></ul><p><strong>核心玩法：</strong>禁地探索、潛行、對話說服、假心臟製作與逃亡。</p></div>
+          <div class="chapter"><h3>第五章：英雄成長</h3><ul><li>多年後，玩家操作成長中的 Hunahpu，Xbalanque 成為固定協作夥伴</li><li>透過狩獵與日常任務建立兩人的性格與默契</li><li>與年長兄弟 Hunbatz / Hunchouen 的嫉妒與家庭衝突逐步升高</li><li>雙胞胎設局讓兄長爬上異常生長的樹，最終變成猴子</li><li>家庭結構因此改變，雙胞胎開始承擔更多責任</li><li>田地被清理後隔日卻神祕復原，兄弟決定守夜調查</li><li>追逐並抓住老鼠，從牠口中得知父親球具的秘密</li><li>進入封閉儲藏空間，找回父輩留下的球與護具</li><li>雙胞胎第一次在舊球場正式打球</li><li>球聲再次傳入 Xibalba，與父輩故事形成完全相同的開端</li><li>貓頭鷹使者再次抵達，而這次雙胞胎知道邀請意味著什麼</li></ul><p><strong>核心玩法：</strong>狩獵、雙角色協作、環境解謎、惡作劇式對抗與進階球賽。</p></div>
+          <div class="chapter"><h3>第六章：通往冥界之路</h3><ul><li>雙胞胎告別家人，主動接下父輩未完成的命運</li><li>沿相同陡坡下降，途中看見父輩留下的記憶殘影</li><li>依序穿越刺河、血河與其他危險水域</li><li>再次面對會欺騙訪客的多色交叉道路</li><li>利用偵察生物先行進入宮殿，記住真正諸王的名字與位置</li><li>面對假國王時不再受騙，並逐一正確稱呼 Xibalba 諸王</li><li>看穿父輩曾坐上的灼熱石凳，拒絕同一個陷阱</li><li>被要求保存火炬與雪茄，兄弟以假火光破解規則</li><li>清晨驗收成功，Xibalba 第一次真正失去主導權</li><li>更深處的試煉之屋因此開啟</li></ul><p><strong>核心玩法：</strong>危險地形、情報蒐集、聆聽辨識陷阱、偵察與父輩記憶鏡像。</p></div>
+          <div class="chapter"><h3>第七章：試煉之屋</h3><ul><li>Dark House 奪走一般視覺，只能靠聆聽與兄弟聲音辨路</li><li>Cold House 讓體溫持續下降，必須共享熱源與保持移動</li><li>Jaguar House 無法正面硬打，只能以誘餌與路線智取</li><li>Razor House 充滿活動刀刃，玩家先觀察規律再以共鳴干預</li><li>兄弟還必須設法偷取受守衛看管的花，持續破解附加要求</li><li>Fire / Hot House 把整個環境變成敵人，逼迫兩人輪流開路</li><li>Bat House 中 Camazotz 只以高速剪影與翅膀聲製造恐怖感</li><li>兄弟躲入吹箭筒般的保護空間，等待安全時機</li><li>Hunahpu 為確認天亮探頭，瞬間被 Camazotz 斬首</li><li>Xbalanque 獨自醒來，而 Hunahpu 的頭被帶往球場</li></ul><p><strong>核心玩法：</strong>規則型關卡、環境生存、資源管理、雙胞胎協作與恐怖氛圍。</p></div>
+          <div class="chapter"><h3>第八章：死亡球賽</h3><ul><li>Xbalanque 進入球場，看見 Hunahpu 的頭被當成比賽道具</li><li>他理解不能照 Xibalba 的規則正常比賽</li><li>玩家在場邊尋找可偽裝成頭顱的葫蘆／替代物</li><li>聯絡兔子等動物盟友，準備在球賽中製造混亂</li><li>球賽開始時只能單獨控制 Xbalanque</li><li>必須刻意把比賽節奏帶到預定位置，而不是只追求得分</li><li>動物突然誘走對手注意力，Xbalanque 趁機交換真假頭顱</li><li>奪回 Hunahpu 的頭並以神話方式重新接合</li><li>雙胞胎協作玩法重新回歸，進入真正的逆轉球賽</li><li>Xibalba 再次改規則，兄弟以先前經驗逐一反制</li><li>即使球賽獲勝，兄弟仍發現死亡本身才是 Xibalba 真正的權力來源</li><li>兩人暗中開始準備自己的死亡與重生計畫</li></ul><p><strong>核心玩法：</strong>高壓球賽、場外解謎、頭顱替換計畫，以及單人到雙人玩法的回歸。</p></div>
+          <div class="chapter"><h3>第九章：死亡成為勝利條件</h3><ul><li>雙胞胎預見 Xibalba 將以死亡作為最後陷阱</li><li>他們先向可信任者交代骨灰的正確處理方式</li><li>Xibalba 命令兩人接受致命火刑／處刑</li><li>這次玩家的正確目標不是逃跑，而是主動走向死亡</li><li>雙胞胎被殺並火葬，畫面只留下火焰、灰燼與聲音</li><li>依照預先計畫，骨灰最後被投入水中</li><li>玩家在抽象的水下空間重新取得微弱控制，呼應序章的世界之息</li><li>灰、骨、水與生命粒子重新聚成人形</li><li>雙胞胎再次呼吸，證明死亡不再完全屬於 Xibalba</li><li>重生後沒有直接復仇，而是隱藏身份成為流浪藝人</li></ul><p><strong>核心玩法：</strong>儀式型互動、主動接受死亡、死亡後視角轉換與重生。</p></div>
+          <div class="chapter"><h3>最終章：欺騙死亡的人</h3><ul><li>雙胞胎以無名流浪藝人的身分在各地進行奇蹟表演</li><li>從燒毀再恢復、殺死動物再復活，逐步建立「支配死亡」的名聲</li><li>兩人更進一步示範彼此殺死再復活</li><li>消息傳進 Xibalba，One Death / Seven Death 因好奇與貪婪召見他們</li><li>雙胞胎再次走入害死父輩的宮殿，卻刻意維持低姿態</li><li>宮廷表演不斷升級，讓諸王主動要求看死亡與復活</li><li>One Death / Seven Death 最終要求自己成為表演對象</li><li>雙胞胎依序殺死兩位核心統治者，卻不再執行復活</li><li>Xibalba 眾人等待片刻後才理解諸王真的死了</li><li>雙胞胎公開自己是 Hun Hunahpu 的兒子，完成父子世代閉環</li><li>Xibalba 的權力被限制，而不是把整個死亡世界摧毀</li><li>兄弟最後一次離開冥界，地表天空開始出現真正黎明前的色彩</li></ul><p><strong>核心玩法：</strong>表演型互動、身分隱藏、心理誘導與不依賴傳統血條 Boss 的最終決戰。</p></div>
+          <div class="chapter"><h3>尾聲：第一次黎明</h3><ul><li>Hunahpu / Xbalanque 的人間旅程結束，進入天體與世界秩序</li><li>玩家短暫回到序章般的「世界記憶」視角</li><li>創造者再次尋找能製作真正人類的材料</li><li>黃色與白色玉米被找到、磨碎並塑造成生命</li><li>第一批玉米人誕生，能說話、記憶、理解與感謝</li><li>他們最初能看得太遠，神祇因此限制其感知</li><li>最初祖先開始遷徙，但世界仍然沒有太陽</li><li>寒冷與長夜使「火」成為生存、信仰與族群關係的核心</li><li>祖先穿越山地與森林，在高地等待真正黎明</li><li>地平線第一次出現不屬於 Seven Macaw 的溫和光芒</li><li>真正太陽升起，序章所有沒有光源的世界景象終於得到答案</li><li>玩家重新看見有影子、有方向、有天空色彩的完整世界</li><li>泥人、木人、父輩、Ixquic 與雙胞胎的記憶短暫重現</li><li>最後視角交給一名普通玉米人，走向陽光照到的高地</li></ul><p><strong>核心玩法：</strong>低壓探索、世界狀態轉變、神話視角切換與無戰鬥的最終步行段落。</p></div>
+        </div>
+        <div class="quote">父親曾經敗給死亡的道路，由兒子重新走一次，最後把相同命運改寫成完全不同的結局。</div>
+        <p>如果以這個結構為核心，Xibalba 就不只是一般的地獄，而會成為「父輩失敗仍殘留其中的地方」；球場也不只是競技設施，而是「跨越世代重新上演命運的場所」。</p>
+      </section>
+
+      <section>
+        <h2>18. 名稱與翻譯注意事項</h2>
+        <p>《波波爾·烏》存在多種譯本，因此專有名詞的拼法與翻譯差異很大，例如：</p>
+        <ul>
+          <li>Popol Vuh / Popol Wuj</li>
+          <li>Xibalba / Xib'alb'a</li>
+          <li>Vucub Caquix / Wuqub' Kaqix / Seven Macaw</li>
+          <li>Hun Hunahpu / One Hunahpu</li>
+          <li>Vucub Hunahpu / Seven Hunahpu</li>
+          <li>Blood Woman / Blood Moon / Xquic</li>
+          <li>Balam Quitze / Jaguar Quitze</li>
+        </ul>
+        <p>進入遊戲製作階段後，建議把「遊戲內正式名稱」、「繁體中文顯示名稱」與「原文／研究用拼法」分開管理。</p>
+      </section>
+
+      <section>
+        <h2>結論</h2>
+        <p>《波波爾·烏》既是一則講述世界起源的創世神話，也是一個關於記憶與生命如何從父輩傳向下一代、並在穿越死亡之後重新改寫命運的宏大世代傳承故事。</p>
+        <p>世界從黑暗開始，經歷失敗的創造、偽太陽、第一代的敗亡、第二代的復仇與重生，最後才誕生由玉米製成的真正人類，迎來真正的黎明。</p>
+      </section>
+
+      <section id="sources">
+        <h2>參考資料</h2>
+        <ul class="source-list">
+          <li><a href="https:&#47;&#47;zh.wikipedia.org&#47;zh-tw&#47;%E6%B3%A2%E6%B3%A2%E7%88%BE%C2%B7%E7%83%8F" target="_blank" rel="noopener">波波爾·烏－中文 Wikipedia</a></li>
+          <li><a href="https:&#47;&#47;maya.nmai.si.edu&#47;the-maya&#47;creation-story-maya" target="_blank" rel="noopener">Creation Story of the Maya－Smithsonian National Museum of the American Indian</a></li>
+          <li><a href="https:&#47;&#47;www.mesoweb.com&#47;features&#47;twins&#47;twins_text.html" target="_blank" rel="noopener">The Hero Twins－Mesoweb</a></li>
+          <li><a href="https:&#47;&#47;www.mesoweb.com&#47;publications&#47;Christenson&#47;PopolVuh.pdf" target="_blank" rel="noopener">Popol Vuh: Sacred Book of the Quiché Maya People－Allen J. Christenson / Mesoweb</a></li>
+          <li><a href="https:&#47;&#47;www.mesoweb.com&#47;publications&#47;Christenson&#47;PV-Original.pdf" target="_blank" rel="noopener">Popol Vuh Original Text Transcription－Mesoweb</a></li>
+        </ul>
+        <div class="note">
+          <strong>研究注意事項：</strong>
+          Wikipedia 用於確認全書整體結構與文獻史概況；Smithsonian NMAI 用於核對玉米人類、英雄雙胞胎、Xibalba 與天體化等創世敘事摘要；英雄雙胞胎段落的細節主要參考 Mesoweb 與 Christenson 譯本。Britannica 在研究時因 HTTP 403 無法讀取，因此未列入已驗證依據。試煉之屋的順序、專有名詞譯法，以及英雄雙胞胎與天體的對應方式，在不同譯本與研究中存在差異，正式遊戲設定仍應選定基準譯本再做一次統一。
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    《波波爾·烏》故事綜合報告 · Game-Popol-Vuh Project
+  </footer>
+</body>
+</html>

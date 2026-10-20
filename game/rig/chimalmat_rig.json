@@ -1,0 +1,281 @@
+{
+ "scale": 0.38636363636363635,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": -1,
+ "anims": "res://rig/chimalmat_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "foot_n",
+   "foot_f"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "tail_root"
+  ],
+  [
+   "tail",
+   "pelvis",
+   "tail_root",
+   "tail_tip"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "torso",
+   "neck",
+   "beak"
+  ],
+  [
+   "wing",
+   "torso",
+   "shoulder",
+   "wing_tip"
+  ],
+  [
+   "leg_f",
+   "pelvis",
+   "hip_f",
+   "ankle_f"
+  ],
+  [
+   "foot_f",
+   "leg_f",
+   "ankle_f",
+   "toe_f"
+  ],
+  [
+   "leg_n",
+   "pelvis",
+   "hip_n",
+   "ankle_n"
+  ],
+  [
+   "foot_n",
+   "leg_n",
+   "ankle_n",
+   "toe_n"
+  ]
+ ],
+ "reference": {
+  "size": [
+   593.4545,
+   395.6364
+  ],
+  "joints": {
+   "center": [
+    340.5795,
+    270.4545
+   ],
+   "hip": [
+    239.5455,
+    270.4545
+   ],
+   "tail_root": [
+    293.6364,
+    285.9091
+   ],
+   "tail_tip": [
+    575.6818,
+    355.4545
+   ],
+   "neck": [
+    185.4545,
+    127.5
+   ],
+   "beak": [
+    112.0455,
+    77.2727
+   ],
+   "shoulder": [
+    255.0,
+    139.0909
+   ],
+   "wing_tip": [
+    386.3636,
+    247.2727
+   ],
+   "hip_n": [
+    193.1818,
+    285.9091
+   ],
+   "ankle_n": [
+    181.5909,
+    332.2727
+   ],
+   "toe_n": [
+    127.5,
+    340.0
+   ],
+   "hip_f": [
+    251.1364,
+    293.6364
+   ],
+   "ankle_f": [
+    251.1364,
+    336.1364
+   ],
+   "toe_f": [
+    204.7727,
+    347.7273
+   ]
+  }
+ },
+ "parts": {
+  "chr_chimalmat_pelvis": {
+   "size": [
+    91.9545,
+    62.9773
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    15.0682,
+    15.0682
+   ],
+   "tip": [
+    69.1591,
+    30.5227
+   ],
+   "z": 2
+  },
+  "chr_chimalmat_tail": {
+   "size": [
+    297.8864,
+    106.25
+   ],
+   "bone": "tail",
+   "pivot": [
+    12.75,
+    25.5
+   ],
+   "tip": [
+    294.7955,
+    95.0455
+   ],
+   "z": 0
+  },
+  "chr_chimalmat_torso": {
+   "size": [
+    177.7273,
+    241.4773
+   ],
+   "bone": "torso",
+   "pivot": [
+    102.0,
+    158.0227
+   ],
+   "tip": [
+    47.9091,
+    15.0682
+   ],
+   "z": 3
+  },
+  "chr_chimalmat_head": {
+   "size": [
+    159.1818,
+    116.2955
+   ],
+   "bone": "head",
+   "pivot": [
+    82.6818,
+    100.8409
+   ],
+   "tip": [
+    9.2727,
+    50.6136
+   ],
+   "z": 5
+  },
+  "chr_chimalmat_wing": {
+   "size": [
+    158.7955,
+    179.6591
+   ],
+   "bone": "wing",
+   "pivot": [
+    15.8409,
+    32.4545
+   ],
+   "tip": [
+    147.2045,
+    140.6364
+   ],
+   "z": 4
+  },
+  "chr_chimalmat_leg_f": {
+   "size": [
+    30.5227,
+    19.3182
+   ],
+   "bone": "leg_f",
+   "pivot": [
+    15.0682,
+    -37.0909
+   ],
+   "tip": [
+    15.0682,
+    5.4091
+   ],
+   "z": 1
+  },
+  "chr_chimalmat_foot_f": {
+   "size": [
+    86.5455,
+    34.7727
+   ],
+   "bone": "foot_f",
+   "pivot": [
+    57.5682,
+    5.4091
+   ],
+   "tip": [
+    11.2045,
+    17.0
+   ],
+   "z": 1
+  },
+  "chr_chimalmat_leg_n": {
+   "size": [
+    30.5227,
+    35.5455
+   ],
+   "bone": "leg_n",
+   "pivot": [
+    26.6591,
+    -22.0227
+   ],
+   "tip": [
+    15.0682,
+    24.3409
+   ],
+   "z": 6
+  },
+  "chr_chimalmat_foot_n": {
+   "size": [
+    75.3409,
+    38.6364
+   ],
+   "bone": "foot_n",
+   "pivot": [
+    57.9545,
+    15.0682
+   ],
+   "tip": [
+    3.8636,
+    22.7955
+   ],
+   "z": 6
+  }
+ },
+ "points": {}
+}

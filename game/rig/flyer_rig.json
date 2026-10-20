@@ -1,0 +1,153 @@
+{
+ "scale": 0.061601642710472276,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": -1,
+ "anims": "res://rig/flyer_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "body",
+   "crest",
+   "wing_up",
+   "wing_low"
+  ]
+ },
+ "bones": [
+  [
+   "body",
+   "",
+   "tail",
+   "nose"
+  ],
+  [
+   "crest",
+   "body",
+   "crest_root",
+   "crest_tip"
+  ],
+  [
+   "wing_up",
+   "body",
+   "shoulder_up",
+   "tip_up"
+  ],
+  [
+   "wing_low",
+   "body",
+   "shoulder_low",
+   "tip_low"
+  ]
+ ],
+ "reference": {
+  "size": [
+   77.2485,
+   77.2485
+  ],
+  "joints": {
+   "center": [
+    39.8563,
+    36.961
+   ],
+   "tail": [
+    33.5729,
+    46.8172
+   ],
+   "nose": [
+    6.037,
+    46.5092
+   ],
+   "crest_root": [
+    28.9528,
+    37.577
+   ],
+   "crest_tip": [
+    32.0329,
+    25.8727
+   ],
+   "shoulder_up": [
+    25.9343,
+    38.6858
+   ],
+   "tip_up": [
+    73.614,
+    7.5154
+   ],
+   "shoulder_low": [
+    31.1088,
+    50.2053
+   ],
+   "tip_low": [
+    62.8337,
+    62.5257
+   ]
+  }
+ },
+ "parts": {
+  "chr_flyer_body": {
+   "size": [
+    28.2752,
+    19.7125
+   ],
+   "bone": "body",
+   "pivot": [
+    27.8439,
+    10.1643
+   ],
+   "tip": [
+    0.308,
+    9.8563
+   ],
+   "z": 0
+  },
+  "chr_flyer_crest": {
+   "size": [
+    12.8131,
+    12.2587
+   ],
+   "bone": "crest",
+   "pivot": [
+    7.0842,
+    12.4435
+   ],
+   "tip": [
+    10.1643,
+    0.7392
+   ],
+   "z": -1
+  },
+  "chr_flyer_wing_up": {
+   "size": [
+    50.5749,
+    41.7659
+   ],
+   "bone": "wing_up",
+   "pivot": [
+    2.5257,
+    31.9097
+   ],
+   "tip": [
+    50.2053,
+    0.7392
+   ],
+   "z": 1
+  },
+  "chr_flyer_wing_low": {
+   "size": [
+    32.4641,
+    19.7741
+   ],
+   "bone": "wing_low",
+   "pivot": [
+    0.5544,
+    3.2033
+   ],
+   "tip": [
+    32.2793,
+    15.5236
+   ],
+   "z": 1
+  }
+ },
+ "points": {}
+}

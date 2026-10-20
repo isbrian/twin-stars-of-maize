@@ -1,0 +1,9 @@
+# AI 生成的測試素材：MV-LEGAL-001 確認條款前不進版控
+assets-test/
+
+# 原典譯本等外部參考資料：著作權不屬於本專案，不進版控
+sources/
+.superpowers/
+
+# 匯出產物（MV-RELEASE-001 tools/release.py build）
+build/

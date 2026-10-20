@@ -1,0 +1,278 @@
+{
+ "reference": {
+  "size": [
+   1536,
+   1024
+  ],
+  "joints": {
+   "center": [
+    881.5,
+    700.0
+   ],
+   "hip": [
+    620.0,
+    700.0
+   ],
+   "tail_root": [
+    760.0,
+    740.0
+   ],
+   "tail_tip": [
+    1490.0,
+    920.0
+   ],
+   "neck": [
+    480.0,
+    330.0
+   ],
+   "beak": [
+    290.0,
+    200.0
+   ],
+   "shoulder": [
+    660.0,
+    360.0
+   ],
+   "wing_tip": [
+    1000.0,
+    640.0
+   ],
+   "hip_n": [
+    500.0,
+    740.0
+   ],
+   "ankle_n": [
+    470.0,
+    860.0
+   ],
+   "toe_n": [
+    330.0,
+    880.0
+   ],
+   "hip_f": [
+    650.0,
+    760.0
+   ],
+   "ankle_f": [
+    650.0,
+    870.0
+   ],
+   "toe_f": [
+    530.0,
+    900.0
+   ]
+  },
+  "content_height": 880
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "tail_root"
+  ],
+  [
+   "tail",
+   "pelvis",
+   "tail_root",
+   "tail_tip"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "torso",
+   "neck",
+   "beak"
+  ],
+  [
+   "wing",
+   "torso",
+   "shoulder",
+   "wing_tip"
+  ],
+  [
+   "leg_f",
+   "pelvis",
+   "hip_f",
+   "ankle_f"
+  ],
+  [
+   "foot_f",
+   "leg_f",
+   "ankle_f",
+   "toe_f"
+  ],
+  [
+   "leg_n",
+   "pelvis",
+   "hip_n",
+   "ankle_n"
+  ],
+  [
+   "foot_n",
+   "leg_n",
+   "ankle_n",
+   "toe_n"
+  ]
+ ],
+ "root_length": 0.0,
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "foot_n",
+   "foot_f"
+  ]
+ },
+ "parts": {
+  "chr_chimalmat_pelvis": {
+   "size": [
+    238,
+    163
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    39.0,
+    39.0
+   ],
+   "tip": [
+    179.0,
+    79.0
+   ],
+   "z": 2
+  },
+  "chr_chimalmat_tail": {
+   "size": [
+    771,
+    275
+   ],
+   "bone": "tail",
+   "pivot": [
+    33.0,
+    66.0
+   ],
+   "tip": [
+    763.0,
+    246.0
+   ],
+   "z": 0
+  },
+  "chr_chimalmat_torso": {
+   "size": [
+    460,
+    625
+   ],
+   "bone": "torso",
+   "pivot": [
+    264.0,
+    409.0
+   ],
+   "tip": [
+    124.0,
+    39.0
+   ],
+   "z": 3
+  },
+  "chr_chimalmat_head": {
+   "size": [
+    412,
+    301
+   ],
+   "bone": "head",
+   "pivot": [
+    214.0,
+    261.0
+   ],
+   "tip": [
+    24.0,
+    131.0
+   ],
+   "z": 5
+  },
+  "chr_chimalmat_wing": {
+   "size": [
+    411,
+    465
+   ],
+   "bone": "wing",
+   "pivot": [
+    41.0,
+    84.0
+   ],
+   "tip": [
+    381.0,
+    364.0
+   ],
+   "z": 4
+  },
+  "chr_chimalmat_leg_f": {
+   "size": [
+    79,
+    50
+   ],
+   "bone": "leg_f",
+   "pivot": [
+    39.0,
+    -96.0
+   ],
+   "tip": [
+    39.0,
+    14.0
+   ],
+   "z": 1
+  },
+  "chr_chimalmat_foot_f": {
+   "size": [
+    224,
+    90
+   ],
+   "bone": "foot_f",
+   "pivot": [
+    149.0,
+    14.0
+   ],
+   "tip": [
+    29.0,
+    44.0
+   ],
+   "z": 1
+  },
+  "chr_chimalmat_leg_n": {
+   "size": [
+    79,
+    92
+   ],
+   "bone": "leg_n",
+   "pivot": [
+    69.0,
+    -57.0
+   ],
+   "tip": [
+    39.0,
+    63.0
+   ],
+   "z": 6
+  },
+  "chr_chimalmat_foot_n": {
+   "size": [
+    195,
+    100
+   ],
+   "bone": "foot_n",
+   "pivot": [
+    150.0,
+    39.0
+   ],
+   "tip": [
+    10.0,
+    59.0
+   ],
+   "z": 6
+  }
+ },
+ "points": {}
+}

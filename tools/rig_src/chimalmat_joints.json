@@ -1,0 +1,27 @@
+{
+ "src": "batch2/chr/chr_chimalmat_reference.png",
+ "joints": {
+  "center": [881.5, 700],
+  "hip": [620, 700], "tail_root": [760, 740], "tail_tip": [1490, 920],
+  "neck": [480, 330], "beak": [290, 200],
+  "shoulder": [660, 360], "wing_tip": [1000, 640],
+  "hip_n": [500, 740], "ankle_n": [470, 860], "toe_n": [330, 880],
+  "hip_f": [650, 760], "ankle_f": [650, 870], "toe_f": [530, 900]
+ },
+ "bones": [
+  ["pelvis", "", "hip", "tail_root", 90, 2],
+  ["tail", "pelvis", "tail_root", "tail_tip", 80, 0],
+  ["torso", "pelvis", "hip", "neck", 200, 3],
+  ["head", "torso", "neck", "beak", 150, 5],
+  ["wing", "torso", "shoulder", "wing_tip", 120, 4],
+  ["leg_f", "pelvis", "hip_f", "ankle_f", 35, 1],
+  ["foot_f", "leg_f", "ankle_f", "toe_f", 55, 1],
+  ["leg_n", "pelvis", "hip_n", "ankle_n", 35, 6],
+  ["foot_n", "leg_n", "ankle_n", "toe_n", 55, 6]
+ ],
+ "polys": {
+  "head": [[255, 55], [720, 55], [700, 260], [600, 330], [520, 342], [440, 332], [255, 322]]
+ },
+ "cap": 40,
+ "origin": {"x_joint": "center", "sole_parts": ["foot_n", "foot_f"]}
+}

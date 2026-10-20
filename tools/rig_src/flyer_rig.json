@@ -1,0 +1,150 @@
+{
+ "reference": {
+  "size": [
+   1254,
+   1254
+  ],
+  "joints": {
+   "center": [
+    647.0,
+    600.0
+   ],
+   "tail": [
+    545.0,
+    760.0
+   ],
+   "nose": [
+    98.0,
+    755.0
+   ],
+   "crest_root": [
+    470.0,
+    610.0
+   ],
+   "crest_tip": [
+    520.0,
+    420.0
+   ],
+   "shoulder_up": [
+    421.0,
+    628.0
+   ],
+   "tip_up": [
+    1195.0,
+    122.0
+   ],
+   "shoulder_low": [
+    505.0,
+    815.0
+   ],
+   "tip_low": [
+    1020.0,
+    1015.0
+   ]
+  },
+  "content_height": 974
+ },
+ "bones": [
+  [
+   "body",
+   "",
+   "tail",
+   "nose"
+  ],
+  [
+   "crest",
+   "body",
+   "crest_root",
+   "crest_tip"
+  ],
+  [
+   "wing_up",
+   "body",
+   "shoulder_up",
+   "tip_up"
+  ],
+  [
+   "wing_low",
+   "body",
+   "shoulder_low",
+   "tip_low"
+  ]
+ ],
+ "root_length": 0.0,
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "body",
+   "crest",
+   "wing_up",
+   "wing_low"
+  ]
+ },
+ "parts": {
+  "chr_flyer_body": {
+   "size": [
+    459,
+    320
+   ],
+   "bone": "body",
+   "pivot": [
+    452.0,
+    165.0
+   ],
+   "tip": [
+    5.0,
+    160.0
+   ],
+   "z": 0
+  },
+  "chr_flyer_crest": {
+   "size": [
+    208,
+    199
+   ],
+   "bone": "crest",
+   "pivot": [
+    115.0,
+    202.0
+   ],
+   "tip": [
+    165.0,
+    12.0
+   ],
+   "z": -1
+  },
+  "chr_flyer_wing_up": {
+   "size": [
+    821,
+    678
+   ],
+   "bone": "wing_up",
+   "pivot": [
+    41.0,
+    518.0
+   ],
+   "tip": [
+    815.0,
+    12.0
+   ],
+   "z": 1
+  },
+  "chr_flyer_wing_low": {
+   "size": [
+    527,
+    321
+   ],
+   "bone": "wing_low",
+   "pivot": [
+    9.0,
+    52.0
+   ],
+   "tip": [
+    524.0,
+    252.0
+   ],
+   "z": 1
+  }
+ },
+ "points": {}
+}

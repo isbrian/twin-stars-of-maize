@@ -1,0 +1,391 @@
+{
+ "reference": {
+  "size": [
+   1024,
+   1536
+  ],
+  "joints": {
+   "hip": [
+    548,
+    640
+   ],
+   "neck": [
+    566,
+    275
+   ],
+   "crown": [
+    590,
+    32
+   ],
+   "waist": [
+    590,
+    605
+   ],
+   "loin_tip": [
+    553,
+    895
+   ],
+   "shoulder_r": [
+    440,
+    395
+   ],
+   "elbow_r": [
+    342,
+    585
+   ],
+   "wrist_r": [
+    305,
+    705
+   ],
+   "hand_tip_r": [
+    300,
+    840
+   ],
+   "shoulder_l": [
+    545,
+    378
+   ],
+   "elbow_l": [
+    585,
+    525
+   ],
+   "wrist_l": [
+    700,
+    525
+   ],
+   "hand_tip_l": [
+    805,
+    522
+   ],
+   "hip_r": [
+    548,
+    700
+   ],
+   "knee_r": [
+    677,
+    950
+   ],
+   "ankle_r": [
+    673,
+    1195
+   ],
+   "toe_r": [
+    845,
+    1308
+   ],
+   "hip_l": [
+    538,
+    700
+   ],
+   "knee_l": [
+    395,
+    1000
+   ],
+   "ankle_l": [
+    285,
+    1190
+   ],
+   "toe_l": [
+    405,
+    1318
+   ]
+  }
+ },
+ "parts": {
+  "chr_hunahpu_head": {
+   "size": [
+    350,
+    350
+   ],
+   "bone": "head",
+   "pivot": [
+    178,
+    280
+   ],
+   "tip": [
+    222,
+    28
+   ],
+   "z": 1
+  },
+  "chr_hunahpu_torso": {
+   "size": [
+    360,
+    420
+   ],
+   "bone": "spine",
+   "pivot": [
+    240,
+    378
+   ],
+   "tip": [
+    215,
+    20
+   ],
+   "z": 0
+  },
+  "chr_hunahpu_loincloth_flap": {
+   "size": [
+    240,
+    250
+   ],
+   "bone": "loincloth",
+   "pivot": [
+    120,
+    40
+   ],
+   "tip": [
+    105,
+    215
+   ],
+   "z": 1
+  },
+  "chr_hunahpu_upperarm_r": {
+   "size": [
+    170,
+    365
+   ],
+   "bone": "upperarm_r",
+   "pivot": [
+    100,
+    75
+   ],
+   "tip": [
+    107,
+    325
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_forearm_r": {
+   "size": [
+    170,
+    300
+   ],
+   "bone": "forearm_r",
+   "pivot": [
+    72,
+    42
+   ],
+   "tip": [
+    118,
+    265
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_hand_open_r": {
+   "size": [
+    165,
+    285
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    51,
+    58
+   ],
+   "tip": [
+    108,
+    256
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_hand_grip_r": {
+   "size": [
+    170,
+    230
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    47,
+    39
+   ],
+   "tip": [
+    99,
+    179
+   ],
+   "z": 2,
+   "visible": false,
+   "scale_from": "chr_hunahpu_forearm_r"
+  },
+  "chr_hunahpu_upperarm_l": {
+   "size": [
+    220,
+    240
+   ],
+   "bone": "upperarm_l",
+   "pivot": [
+    65,
+    195
+   ],
+   "tip": [
+    172,
+    30
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_forearm_l": {
+   "size": [
+    230,
+    220
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    42,
+    40
+   ],
+   "tip": [
+    180,
+    180
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_hand_open_l": {
+   "size": [
+    180,
+    230
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    57,
+    31
+   ],
+   "tip": [
+    125,
+    200
+   ],
+   "z": -2,
+   "visible": false,
+   "scale_from": "chr_hunahpu_forearm_l"
+  },
+  "chr_hunahpu_hand_grip_l": {
+   "size": [
+    180,
+    220
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    42,
+    39
+   ],
+   "tip": [
+    99,
+    186
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_thigh_r": {
+   "size": [
+    185,
+    365
+   ],
+   "bone": "thigh_r",
+   "pivot": [
+    112,
+    33
+   ],
+   "tip": [
+    102,
+    336
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_shin_r": {
+   "size": [
+    165,
+    340
+   ],
+   "bone": "shin_r",
+   "pivot": [
+    80,
+    27
+   ],
+   "tip": [
+    74,
+    279
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_foot_r": {
+   "size": [
+    235,
+    170
+   ],
+   "bone": "foot_r",
+   "pivot": [
+    57,
+    28
+   ],
+   "tip": [
+    192,
+    121
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_thigh_l": {
+   "size": [
+    175,
+    365
+   ],
+   "bone": "thigh_l",
+   "pivot": [
+    88,
+    32
+   ],
+   "tip": [
+    107,
+    330
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_shin_l": {
+   "size": [
+    155,
+    340
+   ],
+   "bone": "shin_l",
+   "pivot": [
+    69,
+    30
+   ],
+   "tip": [
+    79,
+    273
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_foot_l": {
+   "size": [
+    250,
+    170
+   ],
+   "bone": "foot_l",
+   "pivot": [
+    62,
+    38
+   ],
+   "tip": [
+    209,
+    132
+   ],
+   "z": -2
+  },
+  "wpn_axe": {
+   "size": [
+    1536,
+    1024
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    433.5,
+    770.6
+   ],
+   "tip": [
+    1365.3,
+    396.8
+   ],
+   "z": 3,
+   "visible": false,
+   "attach_t": 0.5,
+   "angle_deg": -90
+  }
+ }
+}

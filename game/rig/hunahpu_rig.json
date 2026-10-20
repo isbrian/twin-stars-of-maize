@@ -1,0 +1,464 @@
+{
+ "scale": 0.13740458015267176,
+ "root_length": 8.244274809160306,
+ "humanoid": true,
+ "anims": "res://rig/twin_anims.json",
+ "origin": {
+  "x_joint": "hip",
+  "sole_parts": [
+   "foot_r",
+   "foot_l"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   ""
+  ],
+  [
+   "spine",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "spine",
+   "neck",
+   "crown"
+  ],
+  [
+   "upperarm_l",
+   "spine",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "forearm_l",
+   "upperarm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "hand_l",
+   "forearm_l",
+   "wrist_l",
+   "hand_tip_l"
+  ],
+  [
+   "thigh_l",
+   "pelvis",
+   "hip_l",
+   "knee_l"
+  ],
+  [
+   "shin_l",
+   "thigh_l",
+   "knee_l",
+   "ankle_l"
+  ],
+  [
+   "foot_l",
+   "shin_l",
+   "ankle_l",
+   "toe_l"
+  ],
+  [
+   "loincloth",
+   "pelvis",
+   "waist",
+   "loin_tip"
+  ],
+  [
+   "thigh_r",
+   "pelvis",
+   "hip_r",
+   "knee_r"
+  ],
+  [
+   "shin_r",
+   "thigh_r",
+   "knee_r",
+   "ankle_r"
+  ],
+  [
+   "foot_r",
+   "shin_r",
+   "ankle_r",
+   "toe_r"
+  ],
+  [
+   "upperarm_r",
+   "spine",
+   "shoulder_r",
+   "elbow_r"
+  ],
+  [
+   "forearm_r",
+   "upperarm_r",
+   "elbow_r",
+   "wrist_r"
+  ],
+  [
+   "hand_r",
+   "forearm_r",
+   "wrist_r",
+   "hand_tip_r"
+  ]
+ ],
+ "reference": {
+  "size": [
+   140.7023,
+   211.0534
+  ],
+  "joints": {
+   "crown": [
+    83.8168,
+    8.2443
+   ],
+   "neck": [
+    82.4427,
+    39.8473
+   ],
+   "hip": [
+    79.6947,
+    98.2443
+   ],
+   "waist": [
+    77.6336,
+    83.8168
+   ],
+   "shoulder_r": [
+    59.084,
+    63.2061
+   ],
+   "elbow_r": [
+    46.3053,
+    89.313
+   ],
+   "wrist_r": [
+    43.6947,
+    104.7023
+   ],
+   "hand_tip_r": [
+    43.2824,
+    122.2901
+   ],
+   "hip_r": [
+    81.8931,
+    98.9313
+   ],
+   "knee_r": [
+    93.4351,
+    137.4046
+   ],
+   "ankle_r": [
+    94.5344,
+    177.2519
+   ],
+   "toe_r": [
+    114.0458,
+    184.8092
+   ],
+   "hip_l": [
+    76.9466,
+    100.3053
+   ],
+   "knee_l": [
+    50.8397,
+    141.5267
+   ],
+   "ankle_l": [
+    37.374,
+    176.5649
+   ],
+   "toe_l": [
+    56.3359,
+    188.2443
+   ],
+   "shoulder_l": [
+    55.2366,
+    62.1069
+   ],
+   "elbow_l": [
+    42.458,
+    88.2137
+   ],
+   "wrist_l": [
+    39.8473,
+    103.6031
+   ],
+   "hand_tip_l": [
+    39.4351,
+    121.1908
+   ],
+   "loin_tip": [
+    79.6947,
+    114.7328
+   ]
+  }
+ },
+ "parts": {
+  "chr_hunahpu_torso": {
+   "size": [
+    54.687,
+    95.084
+   ],
+   "bone": "spine",
+   "pivot": [
+    39.8473,
+    63.0687
+   ],
+   "tip": [
+    42.5954,
+    4.6718
+   ],
+   "z": 0
+  },
+  "chr_hunahpu_head": {
+   "size": [
+    55.2366,
+    48.916
+   ],
+   "bone": "head",
+   "pivot": [
+    36.2748,
+    32.2901
+   ],
+   "tip": [
+    37.6489,
+    0.687
+   ],
+   "z": 1
+  },
+  "chr_hunahpu_upperarm_r": {
+   "size": [
+    23.4962,
+    35.8626
+   ],
+   "bone": "upperarm_r",
+   "pivot": [
+    15.8015,
+    3.9847
+   ],
+   "tip": [
+    3.0229,
+    30.0916
+   ],
+   "z": 3
+  },
+  "chr_hunahpu_forearm_r": {
+   "size": [
+    21.5725,
+    25.2824
+   ],
+   "bone": "forearm_r",
+   "pivot": [
+    9.0687,
+    4.5344
+   ],
+   "tip": [
+    6.458,
+    19.9237
+   ],
+   "z": 4
+  },
+  "chr_hunahpu_hand_open_r": {
+   "size": [
+    18.0,
+    21.9847
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    7.0076,
+    4.5344
+   ],
+   "tip": [
+    6.5954,
+    22.1221
+   ],
+   "z": 5
+  },
+  "chr_hunahpu_thigh_r": {
+   "size": [
+    25.4198,
+    35.8626
+   ],
+   "bone": "thigh_r",
+   "pivot": [
+    6.0458,
+    -10.1679
+   ],
+   "tip": [
+    17.5878,
+    28.3053
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_shin_r": {
+   "size": [
+    19.0992,
+    55.6489
+   ],
+   "bone": "shin_r",
+   "pivot": [
+    10.3053,
+    4.5344
+   ],
+   "tip": [
+    11.4046,
+    44.3817
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_foot_r": {
+   "size": [
+    27.6183,
+    16.9008
+   ],
+   "bone": "foot_r",
+   "pivot": [
+    4.5344,
+    5.2214
+   ],
+   "tip": [
+    24.0458,
+    12.7786
+   ],
+   "z": 2
+  },
+  "chr_hunahpu_thigh_l": {
+   "size": [
+    34.0763,
+    46.4427
+   ],
+   "bone": "thigh_l",
+   "pivot": [
+    34.7634,
+    -4.6718
+   ],
+   "tip": [
+    8.6565,
+    36.5496
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_shin_l": {
+   "size": [
+    32.1527,
+    53.0382
+   ],
+   "bone": "shin_l",
+   "pivot": [
+    22.5344,
+    4.5344
+   ],
+   "tip": [
+    9.0687,
+    39.5725
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_foot_l": {
+   "size": [
+    24.1832,
+    19.6489
+   ],
+   "bone": "foot_l",
+   "pivot": [
+    4.5344,
+    4.5344
+   ],
+   "tip": [
+    23.4962,
+    16.2137
+   ],
+   "z": -2
+  },
+  "chr_hunahpu_hand_grip_r": {
+   "size": [
+    17.5878,
+    12.7786
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    0.0,
+    6.3893
+   ],
+   "tip": [
+    17.5878,
+    6.3893
+   ],
+   "z": 5,
+   "visible": false
+  },
+  "chr_hunahpu_upperarm_l": {
+   "size": [
+    23.4962,
+    36.5496
+   ],
+   "bone": "upperarm_l",
+   "pivot": [
+    15.8015,
+    4.6718
+   ],
+   "tip": [
+    3.0229,
+    30.7786
+   ],
+   "z": -3
+  },
+  "chr_hunahpu_forearm_l": {
+   "size": [
+    21.5725,
+    25.2824
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    9.0687,
+    4.5344
+   ],
+   "tip": [
+    6.458,
+    19.9237
+   ],
+   "z": -3
+  },
+  "chr_hunahpu_hand_open_l": {
+   "size": [
+    18.0,
+    21.9847
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    7.0076,
+    4.5344
+   ],
+   "tip": [
+    6.5954,
+    22.1221
+   ],
+   "z": -3,
+   "visible": false
+  },
+  "chr_hunahpu_hand_grip_l": {
+   "size": [
+    17.5878,
+    12.7786
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    0.0,
+    6.3893
+   ],
+   "tip": [
+    17.5878,
+    6.3893
+   ],
+   "z": -3,
+   "visible": false
+  }
+ }
+}

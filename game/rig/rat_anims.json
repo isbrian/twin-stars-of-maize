@@ -1,0 +1,39 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {"loop": true, "length": 1.0, "frames": [
+   {"t": 0.0, "bones": {"head": 0.0, "body": 0.0, "tail": 0.0, "tail_tip": -4.3}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"head": 2.6, "body": 0.4, "tail": 2.0, "tail_tip": -1.64}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"head": 2.6, "body": 0.69, "tail": 3.46, "tail_tip": 1.47}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"head": 0.0, "body": 0.8, "tail": 4.0, "tail_tip": 4.18}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"head": -2.6, "body": 0.69, "tail": 3.46, "tail_tip": 5.77}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"head": -2.6, "body": 0.4, "tail": 2.0, "tail_tip": 5.82}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"head": 0.0, "body": 0.0, "tail": 0.0, "tail_tip": 4.3}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"head": 2.6, "body": -0.4, "tail": -2.0, "tail_tip": 1.64}, "root": [0, 0]},
+   {"t": 0.6667, "bones": {"head": 2.6, "body": -0.69, "tail": -3.46, "tail_tip": -1.47}, "root": [0, 0]},
+   {"t": 0.75, "bones": {"head": 0.0, "body": -0.8, "tail": -4.0, "tail_tip": -4.18}, "root": [0, 0]},
+   {"t": 0.8333, "bones": {"head": -2.6, "body": -0.69, "tail": -3.46, "tail_tip": -5.77}, "root": [0, 0]},
+   {"t": 0.9167, "bones": {"head": -2.6, "body": -0.4, "tail": -2.0, "tail_tip": -5.82}, "root": [0, 0]}
+  ]},
+  "run": {"loop": true, "length": 0.3333, "frames": [
+   {"t": 0.0, "bones": {"hind_near": -14.0, "front_far": -14.0, "hind_far": 14.0, "front_near": 14.0, "body": 0, "head": -2, "tail": 5, "tail_tip": 8}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"hind_near": 0.0, "front_far": 0.0, "hind_far": 0.0, "front_near": 0.0, "body": -2, "head": 1, "tail": 0, "tail_tip": 0}, "root": [0, -1]},
+   {"t": 0.1667, "bones": {"hind_near": 14.0, "front_far": 14.0, "hind_far": -14.0, "front_near": -14.0, "body": 0, "head": 2, "tail": -5, "tail_tip": -8}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"hind_near": 0.0, "front_far": 0.0, "hind_far": 0.0, "front_near": 0.0, "body": 2, "head": -1, "tail": 0, "tail_tip": 0}, "root": [0, -1]}
+  ]},
+  "climb": {"loop": true, "length": 0.5, "frames": [
+   {"t": 0, "bones": {"body": -80.0, "head": 4.0, "tail": 15.0, "tail_tip": 10.0, "hind_near": -20.0, "front_far": -20.0, "hind_far": 20.0, "front_near": 20.0}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"body": -82.0, "head": -4.0, "tail": 5.0, "tail_tip": 0.0, "hind_near": 20.0, "front_far": 20.0, "hind_far": -20.0, "front_near": -20.0}, "root": [0, -3]}
+  ]},
+  "gnaw": {"loop": true, "length": 0.3333, "frames": [
+   {"t": 0, "bones": {"body": -80.0, "head": 0.0, "tail": 10.0, "tail_tip": 6.0, "hind_near": 0.0, "front_far": -10.0, "hind_far": 0.0, "front_near": -10.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"body": -80.0, "head": 16.0, "tail": 12.0, "tail_tip": 8.0, "hind_near": 0.0, "front_far": -14.0, "hind_far": 0.0, "front_near": -14.0}, "root": [0, 0]}
+  ]},
+  "talk": {"loop": true, "length": 0.6667, "frames": [
+   {"t": 0, "bones": {"body": -35.0, "head": 8.0, "tail": 10.0, "tail_tip": 5.0, "hind_near": 30.0, "hind_far": 30.0, "front_near": -30.0, "front_far": -10.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"body": -38.0, "head": -6.0, "tail": 6.0, "tail_tip": 2.0, "hind_near": 30.0, "hind_far": 30.0, "front_near": 10.0, "front_far": -35.0}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"body": -35.0, "head": 10.0, "tail": 10.0, "tail_tip": 5.0, "hind_near": 30.0, "hind_far": 30.0, "front_near": -35.0, "front_far": 5.0}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"body": -37.0, "head": -4.0, "tail": 8.0, "tail_tip": 3.0, "hind_near": 30.0, "hind_far": 30.0, "front_near": 5.0, "front_far": -30.0}, "root": [0, 0]}
+  ]}
+ }
+}

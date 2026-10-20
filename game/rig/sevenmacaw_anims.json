@@ -1,0 +1,189 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle_perch": {"loop": true, "length": 1.0, "frames": [
+   {"t": 0.0, "bones": {"head": 1.5, "tail": 2.0, "wing_arm": -1.0, "wing_fore": 1.0, "wing_arm_l": -1.5}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": 0.75, "neck": -0.5, "head": 1.3, "tail": 1.73, "wing_arm": 1.0, "wing_fore": 1.5, "wing_arm_l": -3.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": 1.3, "neck": -0.87, "head": 0.75, "tail": 1.0, "wing_arm": 2.46, "wing_fore": 1.87, "wing_arm_l": -4.1}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"torso": 1.5, "neck": -1.0, "head": 0.0, "tail": 0.0, "wing_arm": 3.0, "wing_fore": 2.0, "wing_arm_l": -4.5}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": 1.3, "neck": -0.87, "head": -0.75, "tail": -1.0, "wing_arm": 2.46, "wing_fore": 1.87, "wing_arm_l": -4.1}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": 0.75, "neck": -0.5, "head": -1.3, "tail": -1.73, "wing_arm": 1.0, "wing_fore": 1.5, "wing_arm_l": -3.0}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 0.0, "neck": -0.0, "head": -1.5, "tail": -2.0, "wing_arm": -1.0, "wing_fore": 1.0, "wing_arm_l": -1.5}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": -0.75, "neck": 0.5, "head": -1.3, "tail": -1.73, "wing_arm": -3.0, "wing_fore": 0.5, "wing_arm_l": 0.0}, "root": [0, 0]},
+   {"t": 0.6667, "bones": {"torso": -1.3, "neck": 0.87, "head": -0.75, "tail": -1.0, "wing_arm": -4.46, "wing_fore": 0.13, "wing_arm_l": 1.1}, "root": [0, 0]},
+   {"t": 0.75, "bones": {"torso": -1.5, "neck": 1.0, "head": -0.0, "tail": -0.0, "wing_arm_l": 1.5, "wing_arm": -5}, "root": [0, 0]},
+   {"t": 0.8333, "bones": {"torso": -1.3, "neck": 0.87, "head": 0.75, "tail": 1.0, "wing_arm": -4.46, "wing_fore": 0.13, "wing_arm_l": 1.1}, "root": [0, 0]},
+   {"t": 0.9167, "bones": {"torso": -0.75, "neck": 0.5, "head": 1.3, "tail": 1.73, "wing_arm": -3.0, "wing_fore": 0.5, "wing_arm_l": 0.0}, "root": [0, 0]}
+  ]},
+  "idle_ground": {"loop": true, "length": 1.0, "frames": [
+   {"t": 0.0, "bones": {"tail": 3.0, "wing_arm": 1.0, "wing_fore": 2.0, "wing_tip": 1.0, "wing_arm_l": -2.0}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": 0.5, "neck": -0.5, "tail": 2.6, "wing_arm": 3.0, "wing_fore": 2.5, "wing_tip": 1.0, "wing_arm_l": -3.5}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": 0.87, "neck": -0.87, "head": 2.0, "tail": 1.5, "wing_arm": 4.46, "wing_fore": 2.87, "wing_tip": 1.0, "wing_arm_l": -4.6}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"torso": 1.0, "neck": -1.0, "head": 3.0, "tail": 0.0, "wing_arm": 5.0, "wing_fore": 3.0, "wing_tip": 1.0, "wing_arm_l": -5.0}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": 0.87, "neck": -0.87, "head": 3.0, "tail": -1.5, "wing_arm": 4.46, "wing_fore": 2.87, "wing_tip": 1.0, "wing_arm_l": -4.6}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": 0.5, "neck": -0.5, "head": 2.0, "tail": -2.6, "wing_arm": 3.0, "wing_fore": 2.5, "wing_tip": 1.0, "wing_arm_l": -3.5}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 0.0, "neck": -0.0, "tail": -3.0, "wing_arm": 1.0, "wing_fore": 2.0, "wing_tip": 1.0, "wing_arm_l": -2.0}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": -0.5, "neck": 0.5, "head": -1.0, "tail": -2.6, "wing_arm": -1.0, "wing_fore": 1.5, "wing_tip": 1.0, "wing_arm_l": -0.5}, "root": [0, 0]},
+   {"t": 0.6667, "bones": {"torso": -0.87, "neck": 0.87, "head": -2.0, "tail": -1.5, "wing_arm": -2.46, "wing_fore": 1.13, "wing_tip": 1.0, "wing_arm_l": 0.6}, "root": [0, 0]},
+   {"t": 0.75, "bones": {"torso": -1.0, "neck": 1.0, "head": -2.0, "tail": -0.0, "wing_arm": -3.0, "wing_fore": 1.0, "wing_tip": 1.0, "wing_arm_l": 1.0}, "root": [0, 0]},
+   {"t": 0.8333, "bones": {"torso": -0.87, "neck": 0.87, "head": -1.0, "tail": 1.5, "wing_arm": -2.46, "wing_fore": 1.13, "wing_tip": 1.0, "wing_arm_l": 0.6}, "root": [0, 0]},
+   {"t": 0.9167, "bones": {"torso": -0.5, "neck": 0.5, "tail": 2.6, "wing_arm": -1.0, "wing_fore": 1.5, "wing_tip": 1.0, "wing_arm_l": -0.5}, "root": [0, 0]}
+  ]},
+  "fly": {"loop": true, "length": 0.5, "frames": [
+   {"t": 0.0, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -4.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": -30, "wing_arm_l": 15, "wing_fore": -6, "wing_tip": -2}, "root": [0, -6]},
+   {"t": 0.0833, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -3.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": -18, "wing_fore": -14, "wing_tip": -8, "wing_arm_l": 9}, "root": [0, -2]},
+   {"t": 0.1667, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -2.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": 4, "wing_fore": -8, "wing_tip": -8, "wing_arm_l": -2}, "root": [0, 3]},
+   {"t": 0.25, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -4.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": 24, "wing_fore": 10, "wing_tip": 4, "wing_arm_l": -12}, "root": [0, 6]},
+   {"t": 0.3333, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -3.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": 10, "wing_fore": 16, "wing_tip": 10, "wing_arm_l": -5}, "root": [0, 2]},
+   {"t": 0.4167, "bones": {"pelvis": -8.0, "torso": -2.0, "neck": 2.0, "head": 4.0, "tail": -2.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": -14, "wing_fore": 4, "wing_tip": 6, "wing_arm_l": 7}, "root": [0, -3]}
+  ]},
+  "eat": {"loop": true, "length": 0.8333, "frames": [
+   {"t": 0.0, "bones": {"wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": -4.0, "neck": -6.0, "head": -10.0, "tail": 2.0, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": -7.0, "neck": -10.0, "head": -18.0, "tail": 3.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"torso": -7.0, "neck": -10.0, "head": -16.0, "tail": 3.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": -5.0, "neck": -6.0, "head": -8.0, "tail": 2.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": -3.0, "neck": -3.0, "head": -2.0, "tail": 1.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": -3.0, "neck": -3.0, "head": 2.0, "tail": 1.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": -3.0, "neck": -3.0, "head": -1.0, "tail": 1.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.6667, "bones": {"torso": -3.0, "neck": -3.0, "head": 2.0, "tail": 1.5, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.75, "bones": {"torso": -2.0, "neck": -2.0, "tail": 1.0, "wing_arm": 3.0, "wing_fore": 1.0, "wing_arm_l": -4.0}, "root": [0, 0]}
+  ]},
+  "throw": {"loop": false, "frames": [
+   {"t": 0, "bones": {}, "root": [0.0, 0]},
+   {"t": 0.15, "bones": {"torso": 3.0, "neck": 4.0, "head": 6.0, "tail": 1.8, "wing_arm": 3.0, "wing_fore": 1.5, "wing_arm_l": -3.6}, "root": [0.9, 0]},
+   {"t": 0.3, "bones": {"torso": 6.0, "neck": 7.0, "head": 10.0, "tail": 3.6, "wing_arm": 6.0, "wing_fore": 3.0, "wing_arm_l": -7.2}, "root": [1.7, 0]},
+   {"t": 0.45, "bones": {"torso": 7.0, "neck": 8.0, "head": 12.0, "tail": 4.2, "wing_arm": 7.0, "wing_fore": 3.5, "wing_arm_l": -8.4}, "root": [2.0, 0]},
+   {"t": 0.6, "bones": {"torso": 7.0, "neck": 9.0, "head": 13.0, "tail": 4.2, "wing_arm": 7.0, "wing_fore": 3.5, "wing_arm_l": -8.4}, "root": [2.0, 0]},
+   {"t": 0.72, "bones": {"torso": 6.0, "neck": 8.0, "head": 12.0, "tail": 3.6, "wing_arm": 7.0, "wing_fore": 3.5, "wing_arm_l": -8.4}, "root": [1.7, 0]},
+   {"t": 0.84, "bones": {"torso": -4.0, "neck": -6.0, "head": -6.0, "tail": -2.4, "wing_arm": 3.0, "wing_fore": 1.5, "wing_arm_l": -3.6}, "root": [-2.0, 0]},
+   {"t": 0.92, "bones": {"torso": -8.0, "neck": -10.0, "head": -12.0, "tail": -4.8, "wing_arm": 2.0, "wing_fore": 1.0, "wing_arm_l": -2.4}, "root": [-4.0, 0]}
+  ]},
+  "dive": {"loop": false, "frames": [
+   {"t": 0, "bones": {}, "root": [0, 0]},
+   {"t": 0.12, "bones": {"torso": 2.0, "neck": 2.4, "head": 3.2, "tail": -2.4, "wing_arm": -4, "wing_fore": -2.4, "wing_tip": -1.6, "wing_arm_l": 2.0}, "root": [1.6, 0]},
+   {"t": 0.25, "bones": {"torso": 4.0, "neck": 4.8, "head": 6.4, "tail": -4.8, "wing_arm": -8, "wing_fore": -4.8, "wing_tip": -3.2, "wing_arm_l": 4.0}, "root": [3.2, 0]},
+   {"t": 0.38, "bones": {"torso": 5.0, "neck": 6.0, "head": 8.0, "tail": -6.0, "wing_arm": -12, "wing_fore": -7.2, "wing_tip": -4.8, "wing_arm_l": 6.0}, "root": [4.0, 0]},
+   {"t": 0.5, "bones": {"torso": 5.0, "neck": 6.0, "head": 8.0, "tail": -6.0, "wing_arm": -14, "wing_fore": -8.4, "wing_tip": -5.6, "wing_arm_l": 7.0}, "root": [4.0, 0]},
+   {"t": 0.62, "bones": {"torso": 4.5, "neck": 5.4, "head": 5.2, "tail": -5.4, "wing_arm": -13, "wing_fore": -7.8, "wing_tip": -5.2, "wing_arm_l": 6.5}, "root": [3.6, 0]},
+   {"t": 0.75, "bones": {"torso": 5.0, "neck": 6.0, "head": 8.0, "tail": -6.0, "wing_arm": -14, "wing_fore": -8.4, "wing_tip": -5.6, "wing_arm_l": 7.0}, "root": [4.0, 0]},
+   {"t": 0.88, "bones": {"torso": 4.5, "neck": 5.4, "head": 5.2, "tail": -5.4, "wing_arm": -13, "wing_fore": -7.8, "wing_tip": -5.2, "wing_arm_l": 6.5}, "root": [3.6, 0]},
+   {"t": 1.0, "bones": {"pelvis": -14.0, "torso": -6.0, "neck": -8.0, "head": -6.0, "tail": -6.0, "thigh_l": -18.0, "shin_l": -12.0, "claw_l": 10.0, "thigh_r": -18.0, "shin_r": -12.0, "claw_r": 10.0, "wing_arm": -26, "wing_fore": -15.6, "wing_tip": -10.4, "wing_arm_l": 13.0}, "root": [-6, 0]},
+   {"t": 2.0, "bones": {"torso": -8.0, "neck": -6.0, "head": -6.0, "tail": 8.0, "wing_arm": -22, "wing_fore": -13.2, "wing_tip": -8.8, "wing_arm_l": 11.0}, "root": [0, 0]},
+   {"t": 2.12, "bones": {"torso": -6.4, "neck": -4.8, "head": -4.8, "tail": 6.4, "wing_arm": -17.6, "wing_fore": -10.56, "wing_tip": -7.04, "wing_arm_l": 8.8}, "root": [0, 0]},
+   {"t": 2.25, "bones": {"torso": -4.8, "neck": -3.6, "head": -3.6, "tail": 4.8, "wing_arm": -13.2, "wing_fore": -7.92, "wing_tip": -5.28, "wing_arm_l": 6.6}, "root": [0, 0]},
+   {"t": 2.4, "bones": {"torso": -3.2, "neck": -2.4, "head": -2.4, "tail": 3.2, "wing_arm": -8.8, "wing_fore": -5.28, "wing_tip": -3.52, "wing_arm_l": 4.4}, "root": [0, 0]},
+   {"t": 2.55, "bones": {"torso": -2.0, "neck": -1.5, "head": -1.5, "tail": 2.0, "wing_arm": -5.5, "wing_fore": -3.3, "wing_tip": -2.2, "wing_arm_l": 2.75}, "root": [0, 0]},
+   {"t": 2.7, "bones": {"torso": -0.8, "neck": -0.6, "head": -0.6, "tail": 0.8, "wing_arm": -2.2, "wing_fore": -1.32, "wing_tip": -0.88, "wing_arm_l": 1.1}, "root": [0, 0]},
+   {"t": 2.85, "bones": {}, "root": [0, 0]}
+  ]},
+  "flail": {"loop": false, "frames": [
+   {"t": 0, "bones": {}, "root": [0, 0]},
+   {"t": 0.15, "bones": {"torso": 2.5, "neck": 2.0, "head": 3.0, "tail": -2.0, "wing_arm": -6, "wing_arm_l": 3.0, "wing_fore": -3, "wing_tip": -2}, "root": [1.5, 0]},
+   {"t": 0.3, "bones": {"torso": 4.5, "neck": 3.6, "head": 5.4, "tail": -3.6, "wing_arm": -12, "wing_arm_l": 6.0, "wing_fore": -6, "wing_tip": -4}, "root": [2.7, 0]},
+   {"t": 0.45, "bones": {"torso": 5.0, "neck": 4.0, "head": 6.0, "tail": -4.0, "wing_arm": -18, "wing_arm_l": 9.0, "wing_fore": -9, "wing_tip": -6}, "root": [3.0, 0]},
+   {"t": 0.6, "bones": {"torso": 5.0, "neck": 4.0, "head": 6.0, "tail": -4.0, "wing_arm": -20, "wing_arm_l": 10.0, "wing_fore": -10, "wing_tip": -6}, "root": [3.0, 0]},
+   {"t": 0.75, "bones": {"torso": 4.75, "neck": 3.8, "head": 5.7, "tail": -3.8, "wing_arm": -19, "wing_arm_l": 9.5, "wing_fore": -9.5, "wing_tip": -6}, "root": [2.8, 0]},
+   {"t": 0.9, "bones": {"torso": 5.0, "neck": 4.0, "head": 6.0, "tail": -4.0, "wing_arm": -20, "wing_arm_l": 10.0, "wing_fore": -10, "wing_tip": -6}, "root": [3.0, 0]},
+   {"t": 1.0, "bones": {"torso": -6.0, "neck": -4.0, "head": -6.0, "tail": 4.0, "wing_arm": 24, "wing_fore": 14, "wing_tip": 10, "wing_arm_l": -12.0}, "root": [-3, 0]},
+   {"t": 1.1429, "bones": {"torso": 2.0, "neck": -4.0, "head": 6.0, "tail": -4.0, "wing_arm": -30, "wing_arm_l": 15.0, "wing_fore": -12, "wing_tip": -6}, "root": [-3, 0]},
+   {"t": 1.2857, "bones": {"torso": -5.0, "neck": -4.0, "head": -8.0, "tail": 3.0, "wing_arm": 20, "wing_fore": 16, "wing_tip": 8, "wing_arm_l": -10.0}, "root": [-3, 0]},
+   {"t": 1.4286, "bones": {"torso": 1.0, "neck": -4.0, "head": 4.0, "tail": -3.0, "wing_arm": -28, "wing_arm_l": 14.0, "wing_fore": -10, "wing_tip": -6}, "root": [-3, 0]},
+   {"t": 1.5714, "bones": {"torso": -6.0, "neck": -4.0, "head": -4.0, "tail": 4.0, "wing_arm": 26, "wing_fore": 12, "wing_tip": 12, "wing_arm_l": -13.0}, "root": [-3, 0]},
+   {"t": 1.7143, "bones": {"torso": 2.0, "neck": -4.0, "head": 8.0, "tail": -4.0, "wing_arm": -30, "wing_arm_l": 15.0, "wing_fore": -12, "wing_tip": -6}, "root": [-3, 0]},
+   {"t": 1.8571, "bones": {"torso": -2.0, "neck": -4.0, "wing_arm": 10, "wing_fore": 6, "wing_tip": 4, "wing_arm_l": -5.0}, "root": [-3, 0]}
+  ]},
+  "spread": {"loop": false, "frames": [
+   {"t": 0, "bones": {}, "root": [0, 0]},
+   {"t": 0.1, "bones": {"torso": 1.4, "neck": 1.4, "head": 2.8, "tail": -2.1, "wing_arm": -9.5, "wing_fore": -3.5, "wing_tip": -2.1, "wing_arm_l": 4.75}, "root": [0, 0]},
+   {"t": 0.2, "bones": {"torso": 2.8, "neck": 2.8, "head": 5.6, "tail": -4.2, "wing_arm": -19, "wing_fore": -7.0, "wing_tip": -4.2, "wing_arm_l": 9.5}, "root": [0, 0]},
+   {"t": 0.3, "bones": {"torso": 3.6, "neck": 3.6, "head": 7.2, "tail": -5.4, "wing_arm": -24, "wing_fore": -9.0, "wing_tip": -5.4, "wing_arm_l": 12.0}, "root": [0, 0]},
+   {"t": 0.4, "bones": {"torso": 4.0, "neck": 4.0, "head": 8.0, "tail": -6.0, "wing_arm": -27, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 13.5}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 4.0, "neck": 4.0, "head": 9.0, "tail": -6.0, "wing_arm": -28, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 14.0}, "root": [0, 0]},
+   {"t": 0.6, "bones": {"torso": 4.0, "neck": 4.0, "head": 7.0, "tail": -6.0, "wing_arm": -26, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 13.0}, "root": [0, 0]},
+   {"t": 0.7, "bones": {"torso": 4.0, "neck": 4.0, "head": 9.0, "tail": -6.0, "wing_arm": -28, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 14.0}, "root": [0, 0]},
+   {"t": 0.8, "bones": {"torso": 4.0, "neck": 4.0, "head": 7.0, "tail": -6.0, "wing_arm": -26, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 13.0}, "root": [0, 0]},
+   {"t": 0.9, "bones": {"torso": 4.0, "neck": 4.0, "head": 9.0, "tail": -6.0, "wing_arm": -28, "wing_fore": -10.0, "wing_tip": -6.0, "wing_arm_l": 14.0}, "root": [0, 0]}
+  ]},
+  "wail": {"loop": true, "length": 0.6667, "frames": [
+   {"t": 0.0, "bones": {"torso": 3.0, "neck": 6.0, "head": 12.0, "tail": 4.0, "wing_arm": -26, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 13.0}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": 3.0, "neck": 7.41, "head": 14.83, "tail": 4.0, "wing_arm": -27.5, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 13.75}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": 3.0, "neck": 8.0, "head": 16.0, "tail": 4.0, "wing_arm": -28, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 14.0}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"torso": 3.0, "neck": 7.41, "head": 14.83, "tail": 4.0, "wing_arm": -27.5, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 13.75}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": 3.0, "neck": 6.0, "head": 12.0, "tail": 4.0, "wing_arm": -26, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 13.0}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": 3.0, "neck": 4.59, "head": 9.17, "tail": 4.0, "wing_arm": -24.5, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 12.25}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 3.0, "neck": 4.0, "head": 8.0, "tail": 4.0, "wing_arm": -24, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 12.0}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": 3.0, "neck": 4.59, "head": 9.17, "tail": 4.0, "wing_arm": -24.5, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 12.25}, "root": [0, 0]}
+  ]},
+  "beam": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {}, "root": [0, 0]},
+   {"t": 0.1, "bones": {"torso": 1.0, "neck": 1.25, "head": 2.5, "tail": -1.0, "wing_arm": 3.0, "wing_fore": 2.0, "wing_tip": 1.0, "wing_arm_l": -2.5}, "root": [0, 0]},
+   {"t": 0.2, "bones": {"torso": 2.0, "neck": 2.5, "head": 5.0, "tail": -2.0, "wing_arm": 6.0, "wing_fore": 4.0, "wing_tip": 2.0, "wing_arm_l": -5.0}, "root": [0, 0]},
+   {"t": 0.3, "bones": {"torso": 3.0, "neck": 3.75, "head": 7.5, "tail": -3.0, "wing_arm": 9.0, "wing_fore": 6.0, "wing_tip": 3.0, "wing_arm_l": -7.5}, "root": [0, 0]},
+   {"t": 0.4, "bones": {"torso": 4.0, "neck": 5.0, "head": 10.0, "tail": -4.0, "wing_arm": 12.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -10.0}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 4.0, "neck": 5.0, "head": 11.5, "tail": -4.0, "wing_arm": 13.5, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -11.5}, "root": [0, 0]},
+   {"t": 0.6, "bones": {"torso": 4.0, "neck": 5.0, "head": 8.5, "tail": -4.0, "wing_arm": 10.5, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.5}, "root": [0, 0]},
+   {"t": 0.7, "bones": {"torso": 4.0, "neck": 5.0, "head": 11.5, "tail": -4.0, "wing_arm": 13.5, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -11.5}, "root": [0, 0]},
+   {"t": 0.8, "bones": {"torso": 4.0, "neck": 5.0, "head": 8.5, "tail": -4.0, "wing_arm": 10.5, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.5}, "root": [0, 0]},
+   {"t": 0.9, "bones": {"torso": 4.0, "neck": 5.0, "head": 11.5, "tail": -4.0, "wing_arm": 13.5, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -11.5}, "root": [0, 0]},
+   {"t": 1.0, "bones": {"torso": -4.0, "neck": -8.0, "head": -4.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [3, 0]},
+   {"t": 1.1667, "bones": {"torso": -4.0, "neck": -8.0, "head": -3.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [4, 0]},
+   {"t": 1.3333, "bones": {"torso": -4.0, "neck": -8.0, "head": -4.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [3, 0]},
+   {"t": 1.5, "bones": {"torso": -4.0, "neck": -8.0, "head": -3.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [4, 0]},
+   {"t": 1.6667, "bones": {"torso": -4.0, "neck": -8.0, "head": -4.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [3, 0]},
+   {"t": 1.8333, "bones": {"torso": -4.0, "neck": -8.0, "head": -3.0, "tail": 4.0, "wing_arm": 14.0, "wing_fore": 8.0, "wing_tip": 4.0, "wing_arm_l": -8.0}, "root": [4, 0]},
+   {"t": 2.0, "bones": {"head": -6.0, "torso": 4.0, "neck": -4.0, "tail": -4.0, "wing_arm": 18.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -10.0}, "root": [0, 0]},
+   {"t": 2.1429, "bones": {"head": 5.0, "torso": -3.0, "neck": 3.0, "tail": 3.0, "wing_arm": 4.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -3.0}, "root": [0, 0]},
+   {"t": 2.2857, "bones": {"head": -5.0, "torso": 3.0, "neck": -3.0, "tail": -3.0, "wing_arm": 16.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -9.0}, "root": [0, 0]},
+   {"t": 2.4286, "bones": {"head": 4.0, "torso": -2.0, "neck": 2.0, "tail": 2.0, "wing_arm": 6.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 2.5714, "bones": {"head": -3.0, "torso": 2.0, "neck": -2.0, "tail": -2.0, "wing_arm": 13.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -7.5}, "root": [0, 0]},
+   {"t": 2.7143, "bones": {"head": 2.0, "torso": -1.0, "neck": 1.0, "tail": 1.0, "wing_arm": 8.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -5.0}, "root": [0, 0]},
+   {"t": 2.8571, "bones": {"wing_arm": 10.0, "wing_fore": 6.0, "wing_tip": 2.0, "wing_arm_l": -6.0}, "root": [0, 0]}
+  ]},
+  "stagger": {"loop": false, "frames": [
+   {"t": 0, "bones": {}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": 8.0, "neck": 6.0, "head": 12.0, "tail": -8.0, "wing_arm": -18, "wing_fore": -10.8, "wing_tip": -7.2, "wing_arm_l": 9.0}, "root": [4.0, 0]},
+   {"t": 0.1667, "bones": {"torso": 6.0, "neck": 4.0, "head": 8.0, "tail": -6.0, "wing_arm": -24, "wing_fore": -14.4, "wing_tip": -9.6, "wing_arm_l": 12.0}, "root": [3.0, 0]},
+   {"t": 0.25, "bones": {"torso": 4.0, "head": 2.0, "tail": -4.0, "wing_arm": -16, "wing_fore": -9.6, "wing_tip": -6.4, "wing_arm_l": 8.0}, "root": [2.0, 0]},
+   {"t": 0.3333, "bones": {"torso": 2.0, "neck": -4.0, "head": -6.0, "tail": -2.0, "wing_arm": -20, "wing_fore": -12.0, "wing_tip": -8.0, "wing_arm_l": 10.0}, "root": [1.0, 0]},
+   {"t": 0.4167, "bones": {"torso": 3.0, "neck": -6.0, "head": -10.0, "tail": -3.0, "wing_arm": -16, "wing_fore": -9.6, "wing_tip": -6.4, "wing_arm_l": 8.0}, "root": [1.5, 0]},
+   {"t": 0.5, "bones": {"torso": 1.0, "neck": -6.0, "head": -12.0, "tail": -1.0, "wing_arm": -20, "wing_fore": -12.0, "wing_tip": -8.0, "wing_arm_l": 10.0}, "root": [0.5, 0]},
+   {"t": 0.6667, "bones": {"torso": 2.0, "neck": -6.0, "head": -10.0, "tail": -2.0, "wing_arm": -16, "wing_fore": -9.6, "wing_tip": -6.4, "wing_arm_l": 8.0}, "root": [1.0, 0]}
+  ]},
+  "fall": {"loop": true, "length": 0.3333, "frames": [
+   {"t": 0.0, "bones": {"pelvis": 8.0, "torso": 4.0, "neck": 6.0, "head": 8.0, "tail": -8.0, "thigh_l": -10.0, "shin_l": 10.0, "thigh_r": -14.0, "shin_r": 8.0, "wing_arm": -10, "wing_fore": -4, "wing_tip": -2, "wing_arm_l": 5.0}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"pelvis": 8.0, "torso": 4.0, "neck": 6.0, "head": 12.0, "tail": -8.0, "thigh_l": -10.0, "shin_l": 10.0, "thigh_r": -14.0, "shin_r": 8.0, "wing_arm": -24, "wing_fore": -10, "wing_tip": -6, "wing_arm_l": 12.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"pelvis": 8.0, "torso": 4.0, "neck": 6.0, "head": 8.0, "tail": -8.0, "thigh_l": -10.0, "shin_l": 10.0, "thigh_r": -14.0, "shin_r": 8.0, "wing_arm": -30, "wing_fore": -14, "wing_tip": -10, "wing_arm_l": 15.0}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"pelvis": 8.0, "torso": 4.0, "neck": 6.0, "head": 12.0, "tail": -8.0, "thigh_l": -10.0, "shin_l": 10.0, "thigh_r": -14.0, "shin_r": 8.0, "wing_arm": -18, "wing_fore": -8, "wing_tip": -4, "wing_arm_l": 9.0}, "root": [0, 0]}
+  ]},
+  "down": {"loop": false, "frames": [
+   {"t": 0, "bones": {"torso": -3.0, "neck": -3.6, "head": -5.4, "tail": 2.4, "wing_arm": 6.0, "wing_fore": 4.2, "wing_tip": 2.4, "wing_arm_l": 2.4}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": -6.0, "neck": -7.2, "head": -10.8, "tail": 4.8, "wing_arm": 12.0, "wing_fore": 8.4, "wing_tip": 4.8, "wing_arm_l": 4.8}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": -8.5, "neck": -10.2, "head": -15.3, "tail": 6.8, "wing_arm": 17.0, "wing_fore": 11.9, "wing_tip": 6.8, "wing_arm_l": 6.8}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": -10.0, "neck": -12.0, "head": -18.0, "tail": 8.0, "wing_arm": 20.0, "wing_fore": 14.0, "wing_tip": 8.0, "wing_arm_l": 8.0}, "root": [0, 0]}
+  ]},
+  "yank": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": -22.0, "neck": -30.0, "head": -20.0, "tail": 6.0, "wing_arm": 4.0, "wing_arm_l": -4.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": 8.0, "neck": 18.0, "head": 25.0, "tail": -4.0, "wing_arm": -6.0, "wing_fore": -4.0, "wing_arm_l": 6.0}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": 4.0, "neck": 8.0, "head": 12.0, "tail": -2.0, "wing_arm": -6.0, "wing_arm_l": 4.0}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 1.0, "neck": 2.0, "head": 3.0, "wing_arm": -1.0}, "root": [0, 0]}
+  ]},
+  "hang": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": -2.0, "neck": -4.0, "head": 4.0}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": -5.0, "neck": -12.0, "head": 15.0, "wing_arm": -4.0}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": -6.0, "neck": -14.0, "head": 18.0, "wing_arm": -5.0}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": -1.0, "neck": -3.0, "head": 4.0}, "root": [0, 0]}
+  ]},
+  "bow": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": -14.0, "neck": -12.0, "head": -6.0, "tail": 3.0, "wing_arm": 6.0, "wing_fore": 4.0, "wing_arm_l": 3.0}, "root": [0, 0.0]},
+   {"t": 0.25, "bones": {"torso": -32.0, "neck": -28.0, "head": -14.0, "tail": 6.0, "wing_arm": 14.0, "wing_fore": 10.0, "wing_tip": 5.0, "wing_arm_l": 6.0, "thigh_l": -12.0, "shin_l": 22.0, "thigh_r": -18.0, "shin_r": 30.0}, "root": [0, -15.2]},
+   {"t": 0.5, "bones": {"torso": -66.0, "neck": -66.0, "head": -36.0, "tail": 12.0, "wing_arm": 22.0, "wing_fore": 16.0, "wing_tip": 10.0, "wing_arm_l": 9.0, "thigh_l": -18.0, "shin_l": 34.0, "thigh_r": -30.0, "shin_r": 50.0}, "root": [0, -55.4]}
+  ]},
+  "collapse": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": -20.0, "neck": -18.0, "head": -8.0, "tail": 4.0, "wing_arm": 8.0, "wing_fore": 6.0, "wing_arm_l": 4.0, "thigh_l": -8.0, "shin_l": 14.0, "thigh_r": -8.0, "shin_r": 14.0}, "root": [0, -1.5]},
+   {"t": 0.25, "bones": {"pelvis": -6.0, "torso": -38.0, "neck": -36.0, "head": -16.0, "tail": 8.0, "wing_arm": 16.0, "wing_fore": 12.0, "wing_tip": 6.0, "wing_arm_l": 7.0, "thigh_l": -14.0, "shin_l": 26.0, "thigh_r": -16.0, "shin_r": 30.0}, "root": [0, 21.3]},
+   {"t": 0.5, "bones": {"pelvis": -10.0, "torso": -50.0, "neck": -52.0, "head": -26.0, "tail": 12.0, "wing_arm": 22.0, "wing_fore": 16.0, "wing_tip": 10.0, "wing_arm_l": 9.0, "thigh_l": -18.0, "shin_l": 34.0, "thigh_r": -22.0, "shin_r": 40.0}, "root": [0, 30.0]},
+   {"t": 0.75, "bones": {"pelvis": -12.0, "torso": -54.0, "neck": -60.0, "head": -32.0, "tail": 14.0, "wing_arm": 24.0, "wing_fore": 18.0, "wing_tip": 12.0, "wing_arm_l": 10.0, "thigh_l": -18.0, "shin_l": 34.0, "thigh_r": -24.0, "shin_r": 42.0}, "root": [0, 27.4]}
+  ]}
+ }
+}

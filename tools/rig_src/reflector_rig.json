@@ -1,0 +1,260 @@
+{
+ "reference": {
+  "size": [
+   1536,
+   1024
+  ],
+  "joints": {
+   "center": [
+    762.0,
+    600.0
+   ],
+   "tail": [
+    1320.0,
+    640.0
+   ],
+   "neck": [
+    740.0,
+    440.0
+   ],
+   "crown": [
+    560.0,
+    307.0
+   ],
+   "shoulder": [
+    633.0,
+    513.0
+   ],
+   "grip": [
+    487.0,
+    544.0
+   ],
+   "mirror_c": [
+    273.0,
+    440.0
+   ],
+   "hip_near": [
+    747.0,
+    667.0
+   ],
+   "knee_near": [
+    687.0,
+    747.0
+   ],
+   "ankle_near": [
+    627.0,
+    800.0
+   ],
+   "hip_far": [
+    1107.0,
+    680.0
+   ],
+   "knee_far": [
+    1153.0,
+    740.0
+   ],
+   "ankle_far": [
+    1200.0,
+    797.0
+   ]
+  },
+  "content_height": 726
+ },
+ "bones": [
+  [
+   "body",
+   "",
+   "tail",
+   "neck"
+  ],
+  [
+   "head",
+   "body",
+   "neck",
+   "crown"
+  ],
+  [
+   "thigh_far",
+   "body",
+   "hip_far",
+   "knee_far"
+  ],
+  [
+   "shin_far",
+   "thigh_far",
+   "knee_far",
+   "ankle_far"
+  ],
+  [
+   "thigh_near",
+   "body",
+   "hip_near",
+   "knee_near"
+  ],
+  [
+   "shin_near",
+   "thigh_near",
+   "knee_near",
+   "ankle_near"
+  ],
+  [
+   "arm",
+   "body",
+   "shoulder",
+   "grip"
+  ],
+  [
+   "mirror",
+   "arm",
+   "grip",
+   "mirror_c"
+  ]
+ ],
+ "root_length": 0.0,
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "shin_near",
+   "shin_far"
+  ]
+ },
+ "parts": {
+  "chr_reflector_body": {
+   "size": [
+    704,
+    548
+   ],
+   "bone": "body",
+   "pivot": [
+    650.0,
+    456.0
+   ],
+   "tip": [
+    70.0,
+    256.0
+   ],
+   "z": 0
+  },
+  "chr_reflector_head": {
+   "size": [
+    263,
+    327
+   ],
+   "bone": "head",
+   "pivot": [
+    225.0,
+    253.0
+   ],
+   "tip": [
+    45.0,
+    120.0
+   ],
+   "z": 2
+  },
+  "chr_reflector_thigh_far": {
+   "size": [
+    159,
+    109
+   ],
+   "bone": "thigh_far",
+   "pivot": [
+    83.0,
+    19.0
+   ],
+   "tip": [
+    129.0,
+    79.0
+   ],
+   "z": -2
+  },
+  "chr_reflector_shin_far": {
+   "size": [
+    291,
+    189
+   ],
+   "bone": "shin_far",
+   "pivot": [
+    114.0,
+    47.0
+   ],
+   "tip": [
+    161.0,
+    104.0
+   ],
+   "z": -2
+  },
+  "chr_reflector_thigh_near": {
+   "size": [
+    211,
+    185
+   ],
+   "bone": "thigh_near",
+   "pivot": [
+    113.0,
+    75.0
+   ],
+   "tip": [
+    53.0,
+    155.0
+   ],
+   "z": 1
+  },
+  "chr_reflector_shin_near": {
+   "size": [
+    307,
+    249
+   ],
+   "bone": "shin_near",
+   "pivot": [
+    237.0,
+    114.0
+   ],
+   "tip": [
+    177.0,
+    167.0
+   ],
+   "z": 1
+  },
+  "chr_reflector_arm": {
+   "size": [
+    289,
+    280
+   ],
+   "bone": "arm",
+   "pivot": [
+    234.0,
+    119.0
+   ],
+   "tip": [
+    88.0,
+    150.0
+   ],
+   "z": 3
+  },
+  "chr_reflector_mirror": {
+   "size": [
+    430,
+    571
+   ],
+   "bone": "mirror",
+   "pivot": [
+    338.0,
+    388.0
+   ],
+   "tip": [
+    124.0,
+    284.0
+   ],
+   "z": 4
+  }
+ },
+ "points": {
+  "glow": {
+   "bone": "mirror",
+   "at": [
+    279.8,
+    -28.2
+   ]
+  }
+ }
+}

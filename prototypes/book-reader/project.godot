@@ -1,0 +1,25 @@
+config_version=5
+
+[application]
+
+config/name="MV-BOOK-006 繪本閱讀器"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7")
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://text/book_text.zh_TW.translation", "res://text/book_text.en.translation")
+locale/fallback="zh_TW"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.06, 0.05, 0.04, 1)

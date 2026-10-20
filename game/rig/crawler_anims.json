@@ -1,0 +1,46 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {"loop": true, "length": 0.5, "frames": [
+   {"t": 0.0, "bones": {"thigh_1": 3.0, "shin_1": 9.0, "foot_1": -6.0, "thigh_3": 4.0, "shin_3": -9.0, "foot_3": 5.0, "thigh_2": -3.0, "foot_2": 1.5, "thigh_4": -3.0, "foot_4": 1.5, "head": 1.0}, "root": [0.0, 0.0]},
+   {"t": 0.0833, "bones": {"thigh_1": 6.0, "shin_1": 18.0, "foot_1": -12.0, "thigh_3": 8.0, "shin_3": -18.0, "foot_3": 10.0, "thigh_2": -2.0, "foot_2": 1.0, "thigh_4": -2.0, "foot_4": 1.0, "head": 2.0}, "root": [0.0, -1.0]},
+   {"t": 0.1667, "bones": {"thigh_1": 2.4, "shin_1": 7.2, "foot_1": -4.8, "thigh_3": 3.2, "shin_3": -7.2, "foot_3": 4.0, "thigh_2": -3.2, "foot_2": 1.6, "thigh_4": -3.2, "foot_4": 1.6, "head": 1.0}, "root": [0.0, 0.0]},
+   {"t": 0.25, "bones": {"thigh_2": 4.0, "shin_2": -9.0, "foot_2": 5.0, "thigh_4": 4.0, "shin_4": -9.0, "foot_4": 5.0, "thigh_1": -3.0, "foot_1": 1.5, "thigh_3": -3.0, "foot_3": 1.5, "head": -1.0}, "root": [0.0, 0.0]},
+   {"t": 0.3333, "bones": {"thigh_2": 8.0, "shin_2": -18.0, "foot_2": 10.0, "thigh_4": 8.0, "shin_4": -18.0, "foot_4": 10.0, "thigh_1": -2.0, "foot_1": 1.0, "thigh_3": -2.0, "foot_3": 1.0, "head": -2.0}, "root": [0.0, -1.0]},
+   {"t": 0.4167, "bones": {"thigh_2": 3.2, "shin_2": -7.2, "foot_2": 4.0, "thigh_4": 3.2, "shin_4": -7.2, "foot_4": 4.0, "thigh_1": -3.2, "foot_1": 1.6, "thigh_3": -3.2, "foot_3": 1.6, "head": -1.0}, "root": [0.0, 0.0]}
+  ]},
+  "telegraph": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"head": -2.0, "thigh_1": -3.0, "shin_1": 8.0, "foot_1": -5.0, "thigh_2": 3.0, "shin_2": -5.0, "foot_2": 3.0, "thigh_3": -3.0, "shin_3": -3.0, "foot_3": 3.0, "thigh_4": -4.0, "shin_4": -3.0, "foot_4": 4.0}, "root": [1.5, 0.0]},
+   {"t": 0.0833, "bones": {"head": -4, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [3.0, 0.0]},
+   {"t": 0.1667, "bones": {"head": -4, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [3.0, 0.0]},
+   {"t": 0.25, "bones": {"head": -2, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [2.0, 0.0]},
+   {"t": 0.3333, "bones": {"head": -4, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [3.0, 0.0]},
+   {"t": 0.4167, "bones": {"head": -2, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [2.0, 0.0]},
+   {"t": 0.5, "bones": {"head": -4, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [3.0, 0.0]},
+   {"t": 0.5833, "bones": {"head": -2, "thigh_1": -6, "shin_1": 16, "foot_1": -10, "thigh_2": 6, "shin_2": -10, "foot_2": 6, "thigh_3": -6, "shin_3": -6, "foot_3": 6, "thigh_4": -8, "shin_4": -6, "foot_4": 8}, "root": [2.0, 0.0]}
+  ]},
+  "attack": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"head": 1.5, "thigh_1": 6.0, "shin_1": 11.0, "foot_1": -3.0, "thigh_2": -6.0, "shin_2": -8.0, "foot_2": 4.0, "thigh_3": -6.0, "shin_3": -8.0, "foot_3": 4.0, "thigh_4": -6.0, "shin_4": -9.0, "foot_4": 5.0}, "root": [-2.0, -2.0]},
+   {"t": 0.0833, "bones": {"head": 3, "thigh_1": 12, "shin_1": 22, "foot_1": -6, "thigh_2": -12, "shin_2": -16, "foot_2": 8, "thigh_3": -12, "shin_3": -16, "foot_3": 8, "thigh_4": -12, "shin_4": -18, "foot_4": 10}, "root": [-4.0, -4.0]},
+   {"t": 0.25, "bones": {"head": -3, "thigh_1": 12, "shin_1": 22, "foot_1": -6, "thigh_2": -12, "shin_2": -16, "foot_2": 8, "thigh_3": -12, "shin_3": -16, "foot_3": 8, "thigh_4": -12, "shin_4": -18, "foot_4": 10}, "root": [-4.0, -3.0]},
+   {"t": 0.3333, "bones": {"head": -2.0, "thigh_1": 6.0, "shin_1": 11.0, "foot_1": -3.0, "thigh_2": -6.0, "shin_2": -8.0, "foot_2": 4.0, "thigh_3": -6.0, "shin_3": -8.0, "foot_3": 4.0, "thigh_4": -6.0, "shin_4": -9.0, "foot_4": 5.0}, "root": [-3.0, -1.0]}
+  ]},
+  "recover": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"head": -4, "thigh_1": 8, "shin_1": 10, "foot_1": -6, "thigh_2": -6, "shin_2": -6, "thigh_3": -6, "shin_3": -6, "thigh_4": -6, "shin_4": -8}, "root": [-2.0, 0.0]},
+   {"t": 0.1667, "bones": {"head": -2, "thigh_1": 4, "shin_1": 6, "foot_1": -4, "thigh_2": -3, "shin_2": -3, "thigh_3": -3, "shin_3": -3, "thigh_4": -3, "shin_4": -4}, "root": [-1.0, 0.0]},
+   {"t": 0.3333, "bones": {"head": 1, "shin_1": 3, "foot_1": -2}, "root": [0.0, 0.0]},
+   {"t": 0.5, "bones": {}, "root": [0.0, 0.0]}
+  ]},
+  "stagger": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"body": 3.0, "head": 4, "shin_1": 18, "foot_1": -8, "thigh_2": 6, "shin_2": -16, "shin_3": -6, "foot_3": 4, "shin_4": 2}, "root": [1.0, 0.0]},
+   {"t": 0.0833, "bones": {"body": 3.0, "head": -4, "shin_1": 6, "foot_1": -8, "thigh_2": -6, "shin_2": -4, "shin_3": 6, "foot_3": 4, "shin_4": -10}, "root": [-1.0, 0.0]},
+   {"t": 0.1667, "bones": {"body": 3.0, "head": 4, "shin_1": 18, "foot_1": -8, "thigh_2": 6, "shin_2": -16, "shin_3": -6, "foot_3": 4, "shin_4": 2}, "root": [1.0, 0.0]},
+   {"t": 0.25, "bones": {"body": 3.0, "head": -4, "shin_1": 6, "foot_1": -8, "thigh_2": -6, "shin_2": -4, "shin_3": 6, "foot_3": 4, "shin_4": -10}, "root": [-1.0, 0.0]},
+   {"t": 0.3333, "bones": {"body": 3.0, "head": 4, "shin_1": 18, "foot_1": -8, "thigh_2": 6, "shin_2": -16, "shin_3": -6, "foot_3": 4, "shin_4": 2}, "root": [1.0, 0.0]},
+   {"t": 0.4167, "bones": {"body": 3.0, "head": -4, "shin_1": 6, "foot_1": -8, "thigh_2": -6, "shin_2": -4, "shin_3": 6, "foot_3": 4, "shin_4": -10}, "root": [-1.0, 0.0]},
+   {"t": 0.5, "bones": {"body": 3.0, "head": 4, "shin_1": 18, "foot_1": -8, "thigh_2": 6, "shin_2": -16, "shin_3": -6, "foot_3": 4, "shin_4": 2}, "root": [1.0, 0.0]},
+   {"t": 0.5833, "bones": {"body": 2.0, "head": -4, "shin_1": 6, "foot_1": -8, "thigh_2": -6, "shin_2": -4, "shin_3": 6, "foot_3": 4, "shin_4": -10}, "root": [0.0, 0.0]},
+   {"t": 0.6667, "bones": {"body": 2.0, "head": 4, "shin_1": 18, "foot_1": -8, "thigh_2": 6, "shin_2": -16, "shin_3": -6, "foot_3": 4, "shin_4": 2}, "root": [0.0, 0.0]}
+  ]}
+ }
+}

@@ -1,0 +1,636 @@
+{
+ "scale": 0.47770700636942676,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": -1,
+ "anims": "res://rig/sevenmacaw_anims.json",
+ "origin": {
+  "x_joint": "feet",
+  "sole_parts": [
+   "claw_l",
+   "claw_r"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "tail_root"
+  ],
+  [
+   "tail",
+   "pelvis",
+   "tail_root",
+   "tail_tip"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck_base"
+  ],
+  [
+   "neck",
+   "torso",
+   "neck_base",
+   "head_j"
+  ],
+  [
+   "head",
+   "neck",
+   "head_j",
+   "beak"
+  ],
+  [
+   "wing_arm",
+   "torso",
+   "shoulder",
+   "elbow"
+  ],
+  [
+   "wing_fore",
+   "wing_arm",
+   "elbow",
+   "wrist"
+  ],
+  [
+   "wing_tip",
+   "wing_fore",
+   "wrist",
+   "wing_end"
+  ],
+  [
+   "thigh_l",
+   "pelvis",
+   "hip_l",
+   "knee_l"
+  ],
+  [
+   "shin_l",
+   "thigh_l",
+   "knee_l",
+   "ankle_l"
+  ],
+  [
+   "claw_l",
+   "shin_l",
+   "ankle_l",
+   "toe_l"
+  ],
+  [
+   "thigh_r",
+   "pelvis",
+   "hip_r",
+   "knee_r"
+  ],
+  [
+   "shin_r",
+   "thigh_r",
+   "knee_r",
+   "ankle_r"
+  ],
+  [
+   "claw_r",
+   "shin_r",
+   "ankle_r",
+   "toe_r"
+  ],
+  [
+   "wing_arm_l",
+   "torso",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "wing_fore_l",
+   "wing_arm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "wing_tip_l",
+   "wing_fore_l",
+   "wrist_l",
+   "wing_end_l"
+  ]
+ ],
+ "reference": {
+  "size": [
+   733.758,
+   489.172
+  ],
+  "joints": {
+   "feet": [
+    192.0382,
+    458.5987
+   ],
+   "hip": [
+    205.414,
+    310.5096
+   ],
+   "tail_root": [
+    312.8981,
+    348.7261
+   ],
+   "tail_tip": [
+    714.172,
+    427.5478
+   ],
+   "neck_base": [
+    131.3694,
+    193.4713
+   ],
+   "head_j": [
+    162.4204,
+    142.3567
+   ],
+   "beak": [
+    66.879,
+    95.5414
+   ],
+   "shoulder": [
+    214.9682,
+    191.0828
+   ],
+   "elbow": [
+    293.7898,
+    95.5414
+   ],
+   "wrist": [
+    382.1656,
+    102.707
+   ],
+   "wing_end": [
+    621.0191,
+    102.707
+   ],
+   "hip_l": [
+    167.1975,
+    324.8408
+   ],
+   "knee_l": [
+    188.6943,
+    375.0
+   ],
+   "ankle_l": [
+    150.4777,
+    422.7707
+   ],
+   "toe_l": [
+    76.4331,
+    444.2675
+   ],
+   "hip_r": [
+    238.8535,
+    329.6178
+   ],
+   "knee_r": [
+    253.1847,
+    379.7771
+   ],
+   "ankle_r": [
+    255.5732,
+    432.3248
+   ],
+   "toe_r": [
+    195.8599,
+    453.8217
+   ],
+   "shoulder_l": [
+    214.9682,
+    191.0828
+   ],
+   "elbow_l": [
+    293.7898,
+    95.5414
+   ],
+   "wrist_l": [
+    382.1656,
+    102.707
+   ],
+   "wing_end_l": [
+    621.0191,
+    102.707
+   ]
+  }
+ },
+ "parts": {
+  "chr_sevenmacaw_pelvis": {
+   "size": [
+    156.6879,
+    192.0382
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    15.7643,
+    100.3185
+   ],
+   "tip": [
+    123.2484,
+    138.535
+   ],
+   "z": 1
+  },
+  "chr_sevenmacaw_tail": {
+   "size": [
+    437.5796,
+    167.6752
+   ],
+   "bone": "tail",
+   "pivot": [
+    32.9618,
+    71.6561
+   ],
+   "tip": [
+    434.2357,
+    150.4777
+   ],
+   "z": 0
+  },
+  "chr_sevenmacaw_torso": {
+   "size": [
+    219.7452,
+    221.1783
+   ],
+   "bone": "torso",
+   "pivot": [
+    125.1592,
+    167.6752
+   ],
+   "tip": [
+    51.1146,
+    50.6369
+   ],
+   "z": 7
+  },
+  "chr_sevenmacaw_neck": {
+   "size": [
+    120.3822,
+    141.4013
+   ],
+   "bone": "neck",
+   "pivot": [
+    41.5605,
+    98.4076
+   ],
+   "tip": [
+    72.6115,
+    47.293
+   ],
+   "z": 8
+  },
+  "chr_sevenmacaw_head": {
+   "size": [
+    213.0573,
+    170.0637
+   ],
+   "bone": "head",
+   "pivot": [
+    103.6624,
+    122.293
+   ],
+   "tip": [
+    8.121,
+    75.4777
+   ],
+   "z": 9
+  },
+  "chr_sevenmacaw_wing_arm": {
+   "size": [
+    141.4013,
+    223.0892
+   ],
+   "bone": "wing_arm",
+   "pivot": [
+    23.4076,
+    111.3057
+   ],
+   "tip": [
+    102.2293,
+    15.7643
+   ],
+   "z": 12
+  },
+  "chr_sevenmacaw_wing_fore": {
+   "size": [
+    281.8471,
+    240.2866
+   ],
+   "bone": "wing_fore",
+   "pivot": [
+    14.3312,
+    36.7834
+   ],
+   "tip": [
+    102.707,
+    43.949
+   ],
+   "z": 11
+  },
+  "chr_sevenmacaw_wing_tip": {
+   "size": [
+    282.3248,
+    167.6752
+   ],
+   "bone": "wing_tip",
+   "pivot": [
+    32.0064,
+    82.6433
+   ],
+   "tip": [
+    270.8599,
+    82.6433
+   ],
+   "z": 10
+  },
+  "chr_sevenmacaw_thigh_l": {
+   "size": [
+    56.8471,
+    68.3121
+   ],
+   "bone": "thigh_l",
+   "pivot": [
+    22.4522,
+    0.9554
+   ],
+   "tip": [
+    43.949,
+    51.1146
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_shin_l": {
+   "size": [
+    66.879,
+    79.7771
+   ],
+   "bone": "shin_l",
+   "pivot": [
+    53.9809,
+    15.7643
+   ],
+   "tip": [
+    15.7643,
+    63.535
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_claw_l": {
+   "size": [
+    107.9618,
+    52.0701
+   ],
+   "bone": "claw_l",
+   "pivot": [
+    76.9108,
+    15.7643
+   ],
+   "tip": [
+    2.8662,
+    37.2611
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_thigh_r": {
+   "size": [
+    44.4268,
+    51.5924
+   ],
+   "bone": "thigh_r",
+   "pivot": [
+    10.5096,
+    -14.8089
+   ],
+   "tip": [
+    24.8408,
+    35.3503
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_shin_r": {
+   "size": [
+    34.3949,
+    84.5541
+   ],
+   "bone": "shin_r",
+   "pivot": [
+    15.7643,
+    15.7643
+   ],
+   "tip": [
+    18.1529,
+    68.3121
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_claw_r": {
+   "size": [
+    139.4904,
+    53.5032
+   ],
+   "bone": "claw_r",
+   "pivot": [
+    82.6433,
+    15.7643
+   ],
+   "tip": [
+    22.9299,
+    37.2611
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_wing_arm_l": {
+   "size": [
+    141.4013,
+    223.0892
+   ],
+   "bone": "wing_arm_l",
+   "pivot": [
+    23.4076,
+    111.3057
+   ],
+   "tip": [
+    102.2293,
+    15.7643
+   ],
+   "z": -1
+  },
+  "chr_sevenmacaw_wing_fore_l": {
+   "size": [
+    281.8471,
+    240.2866
+   ],
+   "bone": "wing_fore_l",
+   "pivot": [
+    14.3312,
+    36.7834
+   ],
+   "tip": [
+    102.707,
+    43.949
+   ],
+   "z": -2
+  },
+  "chr_sevenmacaw_wing_tip_l": {
+   "size": [
+    282.3248,
+    167.6752
+   ],
+   "bone": "wing_tip_l",
+   "pivot": [
+    32.0064,
+    82.6433
+   ],
+   "tip": [
+    270.8599,
+    82.6433
+   ],
+   "z": -3
+  },
+  "chr_sevenmacaw_head_jawhurt": {
+   "size": [
+    206.3694,
+    175.7962
+   ],
+   "bone": "head",
+   "pivot": [
+    105.5732,
+    125.1592
+   ],
+   "tip": [
+    10.0318,
+    78.3439
+   ],
+   "z": 9,
+   "visible": false
+  },
+  "chr_sevenmacaw_head_maize": {
+   "size": [
+    193.949,
+    167.1975
+   ],
+   "bone": "head",
+   "pivot": [
+    105.0955,
+    116.5605
+   ],
+   "tip": [
+    9.5541,
+    69.7452
+   ],
+   "z": 9,
+   "visible": false
+  },
+  "chr_sevenmacaw_head_blind": {
+   "size": [
+    194.4268,
+    167.1975
+   ],
+   "bone": "head",
+   "pivot": [
+    105.5732,
+    116.5605
+   ],
+   "tip": [
+    10.0318,
+    69.7452
+   ],
+   "z": 9,
+   "visible": false
+  }
+ },
+ "points": {
+  "jaw": {
+   "bone": "head",
+   "at": [
+    65.6369,
+    3.2484
+   ]
+  },
+  "teeth": {
+   "bone": "head",
+   "at": [
+    71.8471,
+    15.8599
+   ]
+  },
+  "eye": {
+   "bone": "head",
+   "at": [
+    58.4236,
+    59.3312
+   ]
+  },
+  "glint_1": {
+   "bone": "wing_tip",
+   "at": [
+    136.6242,
+    -45.3822
+   ]
+  },
+  "glint_2": {
+   "bone": "wing_tip",
+   "at": [
+    171.0191,
+    9.0764
+   ]
+  },
+  "glint_3": {
+   "bone": "wing_tip",
+   "at": [
+    114.172,
+    100.7962
+   ]
+  },
+  "glint_4": {
+   "bone": "wing_fore",
+   "at": [
+    136.0032,
+    75.7166
+   ]
+  },
+  "glint_5": {
+   "bone": "wing_fore",
+   "at": [
+    64.6338,
+    69.9841
+   ]
+  },
+  "glint_6": {
+   "bone": "torso",
+   "at": [
+    59.8089,
+    1.0987
+   ]
+  },
+  "glint_7": {
+   "bone": "torso",
+   "at": [
+    62.8662,
+    34.6815
+   ]
+  },
+  "glint_8": {
+   "bone": "torso",
+   "at": [
+    140.0637,
+    -49.8726
+   ]
+  },
+  "glint_9": {
+   "bone": "tail",
+   "at": [
+    250.3662,
+    -16.5764
+   ]
+  },
+  "glint_10": {
+   "bone": "tail",
+   "at": [
+    332.2452,
+    13.6146
+   ]
+  }
+ }
+}

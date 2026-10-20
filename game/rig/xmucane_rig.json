@@ -1,0 +1,276 @@
+{
+ "scale": 0.13591433278418452,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": 1,
+ "anims": "res://rig/xmucane_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "pelvis"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "sole"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "torso",
+   "neck",
+   "crown"
+  ],
+  [
+   "upper_arm",
+   "torso",
+   "shoulder",
+   "elbow"
+  ],
+  [
+   "forearm",
+   "upper_arm",
+   "elbow",
+   "wrist"
+  ],
+  [
+   "hand",
+   "forearm",
+   "wrist",
+   "finger"
+  ],
+  [
+   "upper_arm_l",
+   "torso",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "forearm_l",
+   "upper_arm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "hand_l",
+   "forearm_l",
+   "wrist_l",
+   "finger_l"
+  ]
+ ],
+ "reference": {
+  "size": [
+   139.1763,
+   208.7644
+  ],
+  "joints": {
+   "center": [
+    72.1026,
+    86.9852
+   ],
+   "hip": [
+    59.8023,
+    86.9852
+   ],
+   "sole": [
+    59.8023,
+    186.2026
+   ],
+   "neck": [
+    72.7142,
+    57.084
+   ],
+   "crown": [
+    74.0733,
+    23.785
+   ],
+   "shoulder": [
+    65.5107,
+    72.3064
+   ],
+   "elbow": [
+    74.0733,
+    88.6161
+   ],
+   "wrist": [
+    90.383,
+    91.3344
+   ],
+   "finger": [
+    108.0519,
+    103.9745
+   ],
+   "shoulder_l": [
+    65.5107,
+    72.3064
+   ],
+   "elbow_l": [
+    74.0733,
+    88.6161
+   ],
+   "wrist_l": [
+    90.383,
+    91.3344
+   ],
+   "finger_l": [
+    108.0519,
+    103.9745
+   ]
+  }
+ },
+ "parts": {
+  "chr_xmucane_pelvis": {
+   "size": [
+    60.6178,
+    109.0033
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    23.9209,
+    8.4267
+   ],
+   "tip": [
+    23.9209,
+    107.6442
+   ],
+   "z": 0
+  },
+  "chr_xmucane_torso": {
+   "size": [
+    56.2685,
+    56.2685
+   ],
+   "bone": "torso",
+   "pivot": [
+    23.785,
+    45.2595
+   ],
+   "tip": [
+    36.6969,
+    15.3583
+   ],
+   "z": 2
+  },
+  "chr_xmucane_head": {
+   "size": [
+    37.6483,
+    39.9588
+   ],
+   "bone": "head",
+   "pivot": [
+    16.7175,
+    34.5222
+   ],
+   "tip": [
+    18.0766,
+    1.2232
+   ],
+   "z": 3
+  },
+  "chr_xmucane_upper_arm": {
+   "size": [
+    19.028,
+    19.1639
+   ],
+   "bone": "upper_arm",
+   "pivot": [
+    5.0288,
+    -1.9028
+   ],
+   "tip": [
+    13.5914,
+    14.4069
+   ],
+   "z": 5
+  },
+  "chr_xmucane_forearm": {
+   "size": [
+    27.047,
+    14.5428
+   ],
+   "bone": "forearm",
+   "pivot": [
+    5.3007,
+    6.388
+   ],
+   "tip": [
+    21.6104,
+    9.1063
+   ],
+   "z": 5
+  },
+  "chr_xmucane_hand": {
+   "size": [
+    23.3773,
+    18.0766
+   ],
+   "bone": "hand",
+   "pivot": [
+    5.3007,
+    4.2133
+   ],
+   "tip": [
+    22.9695,
+    16.8534
+   ],
+   "z": 6
+  },
+  "chr_xmucane_upper_arm_l": {
+   "size": [
+    19.028,
+    19.1639
+   ],
+   "bone": "upper_arm_l",
+   "pivot": [
+    5.0288,
+    -1.9028
+   ],
+   "tip": [
+    13.5914,
+    14.4069
+   ],
+   "z": -1
+  },
+  "chr_xmucane_forearm_l": {
+   "size": [
+    27.047,
+    14.5428
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    5.3007,
+    6.388
+   ],
+   "tip": [
+    21.6104,
+    9.1063
+   ],
+   "z": -1
+  },
+  "chr_xmucane_hand_l": {
+   "size": [
+    23.3773,
+    18.0766
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    5.3007,
+    4.2133
+   ],
+   "tip": [
+    22.9695,
+    16.8534
+   ],
+   "z": -1
+  }
+ },
+ "points": {}
+}

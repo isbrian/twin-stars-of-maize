@@ -1,0 +1,34 @@
+{
+ "src": "chr_batch2/chr_rat_reference.png",
+ "joints": {
+  "center": [768.5, 520],
+  "rump": [650, 480], "neck": [1100, 470], "nose": [1470, 430],
+  "tail_mid": [330, 505], "tail_end": [60, 500],
+  "hip_far": [660, 545], "toe_hf": [575, 750],
+  "hip_near": [800, 600], "toe_hn": [900, 740],
+  "sh_near": [1030, 590], "toe_fn": [1135, 760],
+  "sh_far": [1170, 590], "toe_ff": [1265, 735]
+ },
+ "bones": [
+  ["body", "", "rump", "neck", 120, 1],
+  ["head", "body", "neck", "nose", 110, 3],
+  ["tail", "body", "rump", "tail_mid", 30, 1],
+  ["tail_tip", "tail", "tail_mid", "tail_end", 30, 1],
+  ["hind_far", "body", "hip_far", "toe_hf", 45, 0],
+  ["front_far", "body", "sh_far", "toe_ff", 45, 0],
+  ["hind_near", "body", "hip_near", "toe_hn", 50, 2],
+  ["front_near", "body", "sh_near", "toe_fn", 50, 2]
+ ],
+ "erase": [
+  [[1420, 330], [1495, 330], [1495, 425], [1420, 425]]
+ ],
+ "polys": {
+  "head": [[1035, 240], [1500, 240], [1500, 560], [1110, 600], [1085, 480], [1035, 400]]
+ },
+ "overlap": {
+  "hind_far": [[575, 540], [705, 540], [705, 650], [575, 650]],
+  "front_far": [[1105, 530], [1235, 530], [1235, 650], [1105, 650]]
+ },
+ "cap": 40,
+ "origin": {"x_joint": "center", "sole_parts": ["hind_far", "front_far", "hind_near", "front_near"]}
+}

@@ -1,0 +1,389 @@
+{
+ "scale": 0.12951334379905807,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": 1,
+ "anims": "res://rig/healer_woman_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "foot_b",
+   "foot_f"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "hem"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "torso",
+   "neck",
+   "crown"
+  ],
+  [
+   "upper_arm",
+   "torso",
+   "shoulder",
+   "elbow"
+  ],
+  [
+   "forearm",
+   "upper_arm",
+   "elbow",
+   "wrist"
+  ],
+  [
+   "hand",
+   "forearm",
+   "wrist",
+   "finger"
+  ],
+  [
+   "leg_b",
+   "pelvis",
+   "hip_b",
+   "ankle_b"
+  ],
+  [
+   "foot_b",
+   "leg_b",
+   "ankle_b",
+   "toe_b"
+  ],
+  [
+   "leg_f",
+   "pelvis",
+   "hip_f",
+   "ankle_f"
+  ],
+  [
+   "foot_f",
+   "leg_f",
+   "ankle_f",
+   "toe_f"
+  ],
+  [
+   "upper_arm_l",
+   "torso",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "forearm_l",
+   "upper_arm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "hand_l",
+   "forearm_l",
+   "wrist_l",
+   "finger_l"
+  ]
+ ],
+ "reference": {
+  "size": [
+   132.6217,
+   198.9325
+  ],
+  "joints": {
+   "center": [
+    67.0879,
+    98.4301
+   ],
+   "hip": [
+    62.1664,
+    98.4301
+   ],
+   "hem": [
+    60.8713,
+    161.8917
+   ],
+   "neck": [
+    79.0031,
+    49.2151
+   ],
+   "crown": [
+    88.0691,
+    18.1319
+   ],
+   "shoulder": [
+    69.2896,
+    60.8713
+   ],
+   "elbow": [
+    69.9372,
+    78.3556
+   ],
+   "wrist": [
+    92.343,
+    84.8312
+   ],
+   "finger": [
+    108.5322,
+    92.343
+   ],
+   "hip_b": [
+    42.7394,
+    116.562
+   ],
+   "ankle_b": [
+    35.6162,
+    168.3673
+   ],
+   "toe_b": [
+    55.6907,
+    177.4333
+   ],
+   "hip_f": [
+    72.5275,
+    116.562
+   ],
+   "ankle_f": [
+    84.1837,
+    169.0149
+   ],
+   "toe_f": [
+    106.2009,
+    174.843
+   ],
+   "shoulder_l": [
+    69.2896,
+    60.8713
+   ],
+   "elbow_l": [
+    69.9372,
+    78.3556
+   ],
+   "wrist_l": [
+    92.343,
+    84.8312
+   ],
+   "finger_l": [
+    108.5322,
+    92.343
+   ]
+  }
+ },
+ "parts": {
+  "chr_healer_woman_pelvis": {
+   "size": [
+    59.4466,
+    73.3046
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    31.6013,
+    8.8069
+   ],
+   "tip": [
+    30.3061,
+    72.2684
+   ],
+   "z": 2
+  },
+  "chr_healer_woman_torso": {
+   "size": [
+    63.073,
+    72.7865
+   ],
+   "bone": "torso",
+   "pivot": [
+    27.8454,
+    67.606
+   ],
+   "tip": [
+    44.6821,
+    18.3909
+   ],
+   "z": 3
+  },
+  "chr_healer_woman_head": {
+   "size": [
+    34.321,
+    38.595
+   ],
+   "bone": "head",
+   "pivot": [
+    12.1743,
+    33.4144
+   ],
+   "tip": [
+    21.2402,
+    2.3312
+   ],
+   "z": 4
+  },
+  "chr_healer_woman_upper_arm": {
+   "size": [
+    14.2465,
+    20.8516
+   ],
+   "bone": "upper_arm",
+   "pivot": [
+    5.8281,
+    0.0
+   ],
+   "tip": [
+    6.4757,
+    17.4843
+   ],
+   "z": 5
+  },
+  "chr_healer_woman_forearm": {
+   "size": [
+    32.2488,
+    16.7072
+   ],
+   "bone": "forearm",
+   "pivot": [
+    4.6625,
+    5.051
+   ],
+   "tip": [
+    27.0683,
+    11.5267
+   ],
+   "z": 5
+  },
+  "chr_healer_woman_hand": {
+   "size": [
+    21.8878,
+    15.2826
+   ],
+   "bone": "hand",
+   "pivot": [
+    5.051,
+    4.533
+   ],
+   "tip": [
+    21.2402,
+    12.0447
+   ],
+   "z": 6
+  },
+  "chr_healer_woman_leg_b": {
+   "size": [
+    13.4694,
+    18.7794
+   ],
+   "bone": "leg_b",
+   "pivot": [
+    12.4333,
+    -38.2064
+   ],
+   "tip": [
+    5.31,
+    13.5989
+   ],
+   "z": 0
+  },
+  "chr_healer_woman_foot_b": {
+   "size": [
+    31.3422,
+    18.1319
+   ],
+   "bone": "foot_b",
+   "pivot": [
+    10.4906,
+    5.6986
+   ],
+   "tip": [
+    30.5651,
+    14.7645
+   ],
+   "z": 0
+  },
+  "chr_healer_woman_leg_f": {
+   "size": [
+    13.8579,
+    18.1319
+   ],
+   "bone": "leg_f",
+   "pivot": [
+    -4.1444,
+    -39.5016
+   ],
+   "tip": [
+    7.5118,
+    12.9513
+   ],
+   "z": 1
+  },
+  "chr_healer_woman_foot_f": {
+   "size": [
+    31.2127,
+    15.9301
+   ],
+   "bone": "foot_f",
+   "pivot": [
+    8.0298,
+    5.8281
+   ],
+   "tip": [
+    30.0471,
+    11.6562
+   ],
+   "z": 1
+  },
+  "chr_healer_woman_upper_arm_l": {
+   "size": [
+    14.2465,
+    20.8516
+   ],
+   "bone": "upper_arm_l",
+   "pivot": [
+    5.8281,
+    0.0
+   ],
+   "tip": [
+    6.4757,
+    17.4843
+   ],
+   "z": -1
+  },
+  "chr_healer_woman_forearm_l": {
+   "size": [
+    32.2488,
+    16.7072
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    4.6625,
+    5.051
+   ],
+   "tip": [
+    27.0683,
+    11.5267
+   ],
+   "z": -1
+  },
+  "chr_healer_woman_hand_l": {
+   "size": [
+    21.8878,
+    15.2826
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    5.051,
+    4.533
+   ],
+   "tip": [
+    21.2402,
+    12.0447
+   ],
+   "z": -1
+  }
+ },
+ "points": {}
+}

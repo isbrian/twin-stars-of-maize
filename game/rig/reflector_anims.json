@@ -1,0 +1,415 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {
+   "loop": true,
+   "length": 0.6667,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "mirror": 0,
+      "arm": 0
+     },
+     "root": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "arm": 2,
+      "mirror": -2
+     },
+     "root": [
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "t": 0.3333,
+     "bones": {
+      "arm": 3,
+      "mirror": -3
+     },
+     "root": [
+      0.0,
+      -2.0
+     ]
+    },
+    {
+     "t": 0.5,
+     "bones": {
+      "arm": 2,
+      "mirror": -2
+     },
+     "root": [
+      0.0,
+      -1.0
+     ]
+    }
+   ]
+  },
+  "turn": {
+   "loop": false,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "arm": -6,
+      "mirror": 4,
+      "body": 2
+     },
+     "root": [
+      2.0,
+      1.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "arm": -14,
+      "mirror": 10,
+      "body": 4,
+      "head": -4
+     },
+     "root": [
+      4.0,
+      3.0
+     ]
+    },
+    {
+     "t": 0.3333,
+     "bones": {
+      "arm": -18,
+      "mirror": 14,
+      "body": 5,
+      "head": -6
+     },
+     "root": [
+      5.0,
+      4.0
+     ]
+    },
+    {
+     "t": 0.5,
+     "bones": {
+      "arm": -14,
+      "mirror": 10,
+      "body": 4,
+      "head": -4
+     },
+     "root": [
+      4.0,
+      3.0
+     ]
+    },
+    {
+     "t": 0.6667,
+     "bones": {
+      "arm": -6,
+      "mirror": 4,
+      "body": 2
+     },
+     "root": [
+      2.0,
+      1.0
+     ]
+    },
+    {
+     "t": 0.75,
+     "bones": {
+      "arm": 0,
+      "mirror": 0,
+      "body": 0
+     },
+     "root": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "telegraph": {
+   "loop": false,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "arm": 21.9,
+      "mirror": -21.7,
+      "thigh_near": 4,
+      "shin_near": -4,
+      "thigh_far": 4,
+      "shin_far": -4
+     },
+     "root": [
+      0.0,
+      2.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "arm": 48.1,
+      "mirror": -47.7,
+      "thigh_near": 8,
+      "shin_near": -8,
+      "thigh_far": 8,
+      "shin_far": -8,
+      "head": 4
+     },
+     "root": [
+      0.0,
+      5.0
+     ]
+    },
+    {
+     "t": 0.3333,
+     "bones": {
+      "arm": 65.6,
+      "mirror": -65.0,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      0.0,
+      6.0
+     ]
+    },
+    {
+     "t": 0.5,
+     "bones": {
+      "arm": 70.0,
+      "mirror": -65.0,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      0.0,
+      7.0
+     ]
+    }
+   ]
+  },
+  "attack": {
+   "loop": false,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "arm": 70.0,
+      "mirror": -65.0,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      3.0,
+      7.0
+     ]
+    },
+    {
+     "t": 0.0833,
+     "bones": {
+      "arm": 65.6,
+      "mirror": -60.7,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      1.0,
+      7.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "arm": 70.0,
+      "mirror": -65.0,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      3.0,
+      7.0
+     ]
+    },
+    {
+     "t": 0.25,
+     "bones": {
+      "arm": 65.6,
+      "mirror": -60.7,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      1.0,
+      7.0
+     ]
+    },
+    {
+     "t": 0.3333,
+     "bones": {
+      "arm": 70.0,
+      "mirror": -65.0,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      3.0,
+      7.0
+     ]
+    },
+    {
+     "t": 0.4167,
+     "bones": {
+      "arm": 65.6,
+      "mirror": -60.7,
+      "thigh_near": 10,
+      "shin_near": -10,
+      "thigh_far": 10,
+      "shin_far": -10,
+      "head": 6
+     },
+     "root": [
+      1.0,
+      7.0
+     ]
+    }
+   ]
+  },
+  "recover": {
+   "loop": false,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "arm": 10,
+      "mirror": -6,
+      "thigh_near": 4,
+      "shin_near": -4,
+      "thigh_far": 4,
+      "shin_far": -4
+     },
+     "root": [
+      0.0,
+      3.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "arm": -10,
+      "mirror": 8,
+      "body": 2
+     },
+     "root": [
+      0.0,
+      2.0
+     ]
+    },
+    {
+     "t": 0.4167,
+     "bones": {
+      "arm": -12,
+      "mirror": 10,
+      "body": 3
+     },
+     "root": [
+      0.0,
+      3.0
+     ]
+    },
+    {
+     "t": 0.6667,
+     "bones": {
+      "arm": -10,
+      "mirror": 8,
+      "body": 2
+     },
+     "root": [
+      0.0,
+      2.0
+     ]
+    },
+    {
+     "t": 0.9167,
+     "bones": {
+      "arm": -4,
+      "mirror": 3
+     },
+     "root": [
+      0.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  "stagger": {
+   "loop": false,
+   "frames": [
+    {
+     "t": 0.0,
+     "bones": {
+      "body": -6,
+      "head": -8,
+      "arm": -8,
+      "mirror": 18
+     },
+     "root": [
+      5.0,
+      0.0
+     ]
+    },
+    {
+     "t": 0.1667,
+     "bones": {
+      "body": -8,
+      "head": -10,
+      "arm": -12,
+      "mirror": 24
+     },
+     "root": [
+      7.0,
+      1.0
+     ]
+    },
+    {
+     "t": 0.4167,
+     "bones": {
+      "body": -6,
+      "head": -8,
+      "arm": -10,
+      "mirror": 20
+     },
+     "root": [
+      6.0,
+      1.0
+     ]
+    }
+   ]
+  }
+ }
+}

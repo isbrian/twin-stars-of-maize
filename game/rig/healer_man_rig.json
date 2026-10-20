@@ -1,0 +1,441 @@
+{
+ "scale": 0.13385826771653545,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": 1,
+ "anims": "res://rig/healer_man_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "foot_b",
+   "foot_f"
+  ]
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "loin"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck"
+  ],
+  [
+   "head",
+   "torso",
+   "neck",
+   "crown"
+  ],
+  [
+   "upper_arm",
+   "torso",
+   "shoulder",
+   "elbow"
+  ],
+  [
+   "forearm",
+   "upper_arm",
+   "elbow",
+   "wrist"
+  ],
+  [
+   "hand",
+   "forearm",
+   "wrist",
+   "finger"
+  ],
+  [
+   "thigh_b",
+   "pelvis",
+   "hip_b",
+   "knee_b"
+  ],
+  [
+   "shin_b",
+   "thigh_b",
+   "knee_b",
+   "ankle_b"
+  ],
+  [
+   "foot_b",
+   "shin_b",
+   "ankle_b",
+   "toe_b"
+  ],
+  [
+   "thigh_f",
+   "pelvis",
+   "hip_f",
+   "knee_f"
+  ],
+  [
+   "shin_f",
+   "thigh_f",
+   "knee_f",
+   "ankle_f"
+  ],
+  [
+   "foot_f",
+   "shin_f",
+   "ankle_f",
+   "toe_f"
+  ],
+  [
+   "upper_arm_l",
+   "torso",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "forearm_l",
+   "upper_arm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "hand_l",
+   "forearm_l",
+   "wrist_l",
+   "finger_l"
+  ]
+ ],
+ "reference": {
+  "size": [
+   137.0709,
+   205.6063
+  ],
+  "joints": {
+   "center": [
+    68.3346,
+    85.6693
+   ],
+   "hip": [
+    60.2362,
+    85.6693
+   ],
+   "loin": [
+    60.2362,
+    127.1654
+   ],
+   "neck": [
+    80.315,
+    44.1732
+   ],
+   "crown": [
+    87.0079,
+    18.7402
+   ],
+   "shoulder": [
+    73.622,
+    58.8976
+   ],
+   "elbow": [
+    77.2362,
+    77.6378
+   ],
+   "wrist": [
+    97.7165,
+    85.6693
+   ],
+   "finger": [
+    112.4409,
+    95.7087
+   ],
+   "hip_b": [
+    48.8583,
+    125.1575
+   ],
+   "knee_b": [
+    41.4961,
+    144.5669
+   ],
+   "ankle_b": [
+    31.4567,
+    172.0079
+   ],
+   "toe_b": [
+    52.874,
+    181.378
+   ],
+   "hip_f": [
+    69.6063,
+    115.1181
+   ],
+   "knee_f": [
+    80.315,
+    134.5276
+   ],
+   "ankle_f": [
+    86.3386,
+    174.0157
+   ],
+   "toe_f": [
+    111.1024,
+    179.3701
+   ],
+   "shoulder_l": [
+    73.622,
+    58.8976
+   ],
+   "elbow_l": [
+    77.2362,
+    77.6378
+   ],
+   "wrist_l": [
+    97.7165,
+    85.6693
+   ],
+   "finger_l": [
+    112.4409,
+    95.7087
+   ]
+  }
+ },
+ "parts": {
+  "chr_healer_man_pelvis": {
+   "size": [
+    45.5118,
+    61.0394
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    20.748,
+    5.3543
+   ],
+   "tip": [
+    20.748,
+    46.8504
+   ],
+   "z": 2
+  },
+  "chr_healer_man_torso": {
+   "size": [
+    66.126,
+    61.5748
+   ],
+   "bone": "torso",
+   "pivot": [
+    24.8976,
+    56.2205
+   ],
+   "tip": [
+    44.9764,
+    14.7244
+   ],
+   "z": 3
+  },
+  "chr_healer_man_head": {
+   "size": [
+    30.3858,
+    33.063
+   ],
+   "bone": "head",
+   "pivot": [
+    8.0315,
+    27.7087
+   ],
+   "tip": [
+    14.7244,
+    2.2756
+   ],
+   "z": 4
+  },
+  "chr_healer_man_upper_arm": {
+   "size": [
+    12.315,
+    24.0945
+   ],
+   "bone": "upper_arm",
+   "pivot": [
+    3.3465,
+    0.0
+   ],
+   "tip": [
+    6.9606,
+    18.7402
+   ],
+   "z": 5
+  },
+  "chr_healer_man_forearm": {
+   "size": [
+    29.8504,
+    18.6063
+   ],
+   "bone": "forearm",
+   "pivot": [
+    4.0157,
+    5.2205
+   ],
+   "tip": [
+    24.4961,
+    13.252
+   ],
+   "z": 5
+  },
+  "chr_healer_man_hand": {
+   "size": [
+    21.4173,
+    15.7953
+   ],
+   "bone": "hand",
+   "pivot": [
+    6.1575,
+    2.6772
+   ],
+   "tip": [
+    20.8819,
+    12.7165
+   ],
+   "z": 6
+  },
+  "chr_healer_man_thigh_b": {
+   "size": [
+    21.2835,
+    27.5748
+   ],
+   "bone": "thigh_b",
+   "pivot": [
+    12.0472,
+    -1.4724
+   ],
+   "tip": [
+    4.685,
+    17.937
+   ],
+   "z": 0
+  },
+  "chr_healer_man_shin_b": {
+   "size": [
+    26.6378,
+    44.3071
+   ],
+   "bone": "shin_b",
+   "pivot": [
+    17.2677,
+    8.8346
+   ],
+   "tip": [
+    7.2283,
+    36.2756
+   ],
+   "z": 0
+  },
+  "chr_healer_man_foot_b": {
+   "size": [
+    31.5906,
+    22.3543
+   ],
+   "bone": "foot_b",
+   "pivot": [
+    7.6299,
+    7.8976
+   ],
+   "tip": [
+    29.0472,
+    17.2677
+   ],
+   "z": 0
+  },
+  "chr_healer_man_thigh_f": {
+   "size": [
+    17.6693,
+    28.378
+   ],
+   "bone": "thigh_f",
+   "pivot": [
+    -4.685,
+    -0.5354
+   ],
+   "tip": [
+    6.0236,
+    18.874
+   ],
+   "z": 1
+  },
+  "chr_healer_man_shin_f": {
+   "size": [
+    17.6693,
+    56.7559
+   ],
+   "bone": "shin_f",
+   "pivot": [
+    3.6142,
+    9.2362
+   ],
+   "tip": [
+    9.6378,
+    48.7244
+   ],
+   "z": 1
+  },
+  "chr_healer_man_foot_f": {
+   "size": [
+    31.9921,
+    18.4724
+   ],
+   "bone": "foot_f",
+   "pivot": [
+    6.1575,
+    7.8976
+   ],
+   "tip": [
+    30.9213,
+    13.252
+   ],
+   "z": 1
+  },
+  "chr_healer_man_upper_arm_l": {
+   "size": [
+    12.315,
+    24.0945
+   ],
+   "bone": "upper_arm_l",
+   "pivot": [
+    3.3465,
+    0.0
+   ],
+   "tip": [
+    6.9606,
+    18.7402
+   ],
+   "z": -1
+  },
+  "chr_healer_man_forearm_l": {
+   "size": [
+    29.8504,
+    18.6063
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    4.0157,
+    5.2205
+   ],
+   "tip": [
+    24.4961,
+    13.252
+   ],
+   "z": -1
+  },
+  "chr_healer_man_hand_l": {
+   "size": [
+    21.4173,
+    15.7953
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    6.1575,
+    2.6772
+   ],
+   "tip": [
+    20.8819,
+    12.7165
+   ],
+   "z": -1
+  }
+ },
+ "points": {}
+}

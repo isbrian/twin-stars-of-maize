@@ -1,0 +1,374 @@
+{
+ "reference": {
+  "size": [
+   1024,
+   1536
+  ],
+  "joints": {
+   "crown": [
+    585.0,
+    45.0
+   ],
+   "neck": [
+    600.0,
+    285.0
+   ],
+   "hip": [
+    580.0,
+    715.0
+   ],
+   "waist": [
+    570.0,
+    610.0
+   ],
+   "shoulder_r": [
+    425.0,
+    455.0
+   ],
+   "elbow_r": [
+    350.0,
+    640.0
+   ],
+   "wrist_r": [
+    332.0,
+    745.0
+   ],
+   "hand_tip_r": [
+    325.0,
+    885.0
+   ],
+   "hip_r": [
+    600.0,
+    720.0
+   ],
+   "knee_r": [
+    670.0,
+    1000.0
+   ],
+   "ankle_r": [
+    690.0,
+    1290.0
+   ],
+   "toe_r": [
+    835.0,
+    1345.0
+   ],
+   "hip_l": [
+    560.0,
+    730.0
+   ],
+   "knee_l": [
+    380.0,
+    1030.0
+   ],
+   "ankle_l": [
+    272.0,
+    1285.0
+   ],
+   "toe_l": [
+    405.0,
+    1365.0
+   ],
+   "shoulder_l": [
+    397.0,
+    447.0
+   ],
+   "elbow_l": [
+    322.0,
+    632.0
+   ],
+   "wrist_l": [
+    304.0,
+    737.0
+   ],
+   "hand_tip_l": [
+    297.0,
+    877.0
+   ],
+   "loin_tip": [
+    580.0,
+    835.0
+   ]
+  }
+ },
+ "parts": {
+  "chr_xbalanque_torso": {
+   "size": [
+    443,
+    1196
+   ],
+   "bone": "spine",
+   "pivot": [
+    300.0,
+    525.0
+   ],
+   "tip": [
+    320.0,
+    95.0
+   ],
+   "z": 0
+  },
+  "chr_xbalanque_head": {
+   "size": [
+    273,
+    254
+   ],
+   "bone": "head",
+   "pivot": [
+    134.0,
+    239.0
+   ],
+   "tip": [
+    119.0,
+    -1.0
+   ],
+   "z": 1
+  },
+  "chr_xbalanque_upperarm_r": {
+   "size": [
+    172,
+    352
+   ],
+   "bone": "upperarm_r",
+   "pivot": [
+    114.0,
+    125.0
+   ],
+   "tip": [
+    39.0,
+    310.0
+   ],
+   "z": 3
+  },
+  "chr_xbalanque_forearm_r": {
+   "size": [
+    135,
+    176
+   ],
+   "bone": "forearm_r",
+   "pivot": [
+    74.0,
+    33.0
+   ],
+   "tip": [
+    56.0,
+    138.0
+   ],
+   "z": 4
+  },
+  "chr_xbalanque_hand_open_r": {
+   "size": [
+    133,
+    177
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    66.0,
+    33.0
+   ],
+   "tip": [
+    59.0,
+    173.0
+   ],
+   "z": 5
+  },
+  "chr_xbalanque_thigh_r": {
+   "size": [
+    199,
+    259
+   ],
+   "bone": "thigh_r",
+   "pivot": [
+    54.0,
+    -73.0
+   ],
+   "tip": [
+    124.0,
+    207.0
+   ],
+   "z": 2
+  },
+  "chr_xbalanque_shin_r": {
+   "size": [
+    138,
+    408
+   ],
+   "bone": "shin_r",
+   "pivot": [
+    63.0,
+    33.0
+   ],
+   "tip": [
+    83.0,
+    323.0
+   ],
+   "z": 2
+  },
+  "chr_xbalanque_foot_r": {
+   "size": [
+    198,
+    125
+   ],
+   "bone": "foot_r",
+   "pivot": [
+    33.0,
+    38.0
+   ],
+   "tip": [
+    178.0,
+    93.0
+   ],
+   "z": 2
+  },
+  "chr_xbalanque_thigh_l": {
+   "size": [
+    261,
+    334
+   ],
+   "bone": "thigh_l",
+   "pivot": [
+    249.0,
+    -42.0
+   ],
+   "tip": [
+    69.0,
+    258.0
+   ],
+   "z": -2
+  },
+  "chr_xbalanque_shin_l": {
+   "size": [
+    250,
+    386
+   ],
+   "bone": "shin_l",
+   "pivot": [
+    177.0,
+    33.0
+   ],
+   "tip": [
+    69.0,
+    288.0
+   ],
+   "z": -2
+  },
+  "chr_xbalanque_foot_l": {
+   "size": [
+    177,
+    143
+   ],
+   "bone": "foot_l",
+   "pivot": [
+    33.0,
+    33.0
+   ],
+   "tip": [
+    166.0,
+    113.0
+   ],
+   "z": -2
+  },
+  "chr_xbalanque_hand_grip_r": {
+   "size": [
+    140,
+    102
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    0.0,
+    51.0
+   ],
+   "tip": [
+    140.0,
+    51.0
+   ],
+   "z": 5,
+   "visible": false
+  },
+  "chr_xbalanque_upperarm_l": {
+   "size": [
+    172,
+    352
+   ],
+   "bone": "upperarm_l",
+   "pivot": [
+    114.0,
+    125.0
+   ],
+   "tip": [
+    39.0,
+    310.0
+   ],
+   "z": -3
+  },
+  "chr_xbalanque_forearm_l": {
+   "size": [
+    135,
+    176
+   ],
+   "bone": "forearm_l",
+   "pivot": [
+    74.0,
+    33.0
+   ],
+   "tip": [
+    56.0,
+    138.0
+   ],
+   "z": -3
+  },
+  "chr_xbalanque_hand_open_l": {
+   "size": [
+    133,
+    177
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    66.0,
+    33.0
+   ],
+   "tip": [
+    59.0,
+    173.0
+   ],
+   "z": -3,
+   "visible": false
+  },
+  "chr_xbalanque_hand_grip_l": {
+   "size": [
+    140,
+    102
+   ],
+   "bone": "hand_l",
+   "pivot": [
+    0.0,
+    51.0
+   ],
+   "tip": [
+    140.0,
+    51.0
+   ],
+   "z": -3,
+   "visible": false
+  },
+  "wpn_axe": {
+   "size": [
+    1536,
+    1024
+   ],
+   "bone": "hand_r",
+   "pivot": [
+    433.5,
+    770.6
+   ],
+   "tip": [
+    1365.3,
+    396.8
+   ],
+   "z": 3,
+   "visible": false,
+   "attach_t": 0.5,
+   "angle_deg": -90
+  }
+ }
+}

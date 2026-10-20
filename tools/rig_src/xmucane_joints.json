@@ -1,0 +1,33 @@
+{
+ "src": "chr_batch2/chr_xmucane_reference.png",
+ "joints": {
+  "center": [530.5, 640],
+  "hip": [440, 640], "sole": [440, 1370],
+  "neck": [535, 420], "crown": [545, 175],
+  "shoulder": [482, 532], "elbow": [545, 652], "wrist": [665, 672], "finger": [795, 765]
+ },
+ "bones": [
+  ["pelvis", "", "hip", "sole", 220, 0],
+  ["torso", "pelvis", "hip", "neck", 170, 2],
+  ["head", "torso", "neck", "crown", 130, 3],
+  ["upper_arm", "torso", "shoulder", "elbow", 45, 5],
+  ["forearm", "upper_arm", "elbow", "wrist", 40, 5],
+  ["hand", "forearm", "wrist", "finger", 45, 6],
+  ["upper_arm_l", "torso", "shoulder_l", "elbow_l", 0, -1],
+  ["forearm_l", "upper_arm_l", "elbow_l", "wrist_l", 0, -1],
+  ["hand_l", "forearm_l", "wrist_l", "finger_l", 0, -1]
+ ],
+ "far": [
+  ["upper_arm_l", "upper_arm_l", "upper_arm", -1, [0, 0]],
+  ["forearm_l", "forearm_l", "forearm", -1, [0, 0]],
+  ["hand_l", "hand_l", "hand", -1, [0, 0]]
+ ],
+ "polys": {
+  "hand": [[665, 600], [830, 600], [830, 800], [665, 800]],
+  "forearm": [[560, 612], [600, 605], [665, 640], [665, 708], [640, 705], [590, 692], [548, 682], [545, 660]],
+  "upper_arm": [[445, 552], [548, 546], [552, 600], [560, 612], [545, 660], [548, 682], [523, 668], [490, 645], [452, 595]],
+  "torso": [[250, 380], [380, 380], [380, 470], [625, 470], [625, 560], [600, 598], [540, 604], [440, 598], [352, 594], [352, 720], [250, 720]]
+ },
+ "cap": 40,
+ "origin": {"x_joint": "center", "sole_parts": ["pelvis"]}
+}

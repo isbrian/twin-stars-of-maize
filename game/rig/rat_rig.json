@@ -1,0 +1,261 @@
+{
+ "scale": 0.07590132827324478,
+ "root_length": 0.0,
+ "humanoid": false,
+ "faces": 1,
+ "anims": "res://rig/rat_anims.json",
+ "origin": {
+  "x_joint": "center",
+  "sole_parts": [
+   "hind_far",
+   "front_far",
+   "hind_near",
+   "front_near"
+  ]
+ },
+ "bones": [
+  [
+   "body",
+   "",
+   "rump",
+   "neck"
+  ],
+  [
+   "head",
+   "body",
+   "neck",
+   "nose"
+  ],
+  [
+   "tail",
+   "body",
+   "rump",
+   "tail_mid"
+  ],
+  [
+   "tail_tip",
+   "tail",
+   "tail_mid",
+   "tail_end"
+  ],
+  [
+   "hind_far",
+   "body",
+   "hip_far",
+   "toe_hf"
+  ],
+  [
+   "front_far",
+   "body",
+   "sh_far",
+   "toe_ff"
+  ],
+  [
+   "hind_near",
+   "body",
+   "hip_near",
+   "toe_hn"
+  ],
+  [
+   "front_near",
+   "body",
+   "sh_near",
+   "toe_fn"
+  ]
+ ],
+ "reference": {
+  "size": [
+   116.5844,
+   77.723
+  ],
+  "joints": {
+   "center": [
+    58.3302,
+    39.4687
+   ],
+   "rump": [
+    49.3359,
+    36.4326
+   ],
+   "neck": [
+    83.4915,
+    35.6736
+   ],
+   "nose": [
+    111.575,
+    32.6376
+   ],
+   "tail_mid": [
+    25.0474,
+    38.3302
+   ],
+   "tail_end": [
+    4.5541,
+    37.9507
+   ],
+   "hip_far": [
+    50.0949,
+    41.3662
+   ],
+   "toe_hf": [
+    43.6433,
+    56.926
+   ],
+   "hip_near": [
+    60.7211,
+    45.5408
+   ],
+   "toe_hn": [
+    68.3112,
+    56.167
+   ],
+   "sh_near": [
+    78.1784,
+    44.7818
+   ],
+   "toe_fn": [
+    86.148,
+    57.685
+   ],
+   "sh_far": [
+    88.8046,
+    44.7818
+   ],
+   "toe_ff": [
+    96.0152,
+    55.7875
+   ]
+  }
+ },
+ "parts": {
+  "chr_rat_body": {
+   "size": [
+    47.2106,
+    23.6053
+   ],
+   "bone": "body",
+   "pivot": [
+    10.019,
+    11.2334
+   ],
+   "tip": [
+    44.1746,
+    10.4744
+   ],
+   "z": 1
+  },
+  "chr_rat_head": {
+   "size": [
+    33.852,
+    26.7932
+   ],
+   "bone": "head",
+   "pivot": [
+    4.9336,
+    16.8501
+   ],
+   "tip": [
+    33.0171,
+    13.814
+   ],
+   "z": 3
+  },
+  "chr_rat_tail": {
+   "size": [
+    30.2846,
+    5.9962
+   ],
+   "bone": "tail",
+   "pivot": [
+    27.2486,
+    2.9602
+   ],
+   "tip": [
+    2.9602,
+    4.8577
+   ],
+   "z": 1
+  },
+  "chr_rat_tail_tip": {
+   "size": [
+    23.9848,
+    10.6262
+   ],
+   "bone": "tail_tip",
+   "pivot": [
+    20.9488,
+    9.7154
+   ],
+   "tip": [
+    0.4554,
+    9.3359
+   ],
+   "z": 1
+  },
+  "chr_rat_hind_far": {
+   "size": [
+    15.4839,
+    17.5332
+   ],
+   "bone": "hind_far",
+   "pivot": [
+    11.1575,
+    0.3795
+   ],
+   "tip": [
+    4.7059,
+    15.9393
+   ],
+   "z": 0
+  },
+  "chr_rat_front_far": {
+   "size": [
+    14.649,
+    16.167
+   ],
+   "bone": "front_far",
+   "pivot": [
+    4.9336,
+    4.5541
+   ],
+   "tip": [
+    12.1442,
+    15.5598
+   ],
+   "z": 0
+  },
+  "chr_rat_hind_near": {
+   "size": [
+    17.6091,
+    12.8273
+   ],
+   "bone": "hind_near",
+   "pivot": [
+    6.2998,
+    1.9734
+   ],
+   "tip": [
+    13.8899,
+    12.5996
+   ],
+   "z": 2
+  },
+  "chr_rat_front_near": {
+   "size": [
+    18.6717,
+    15.8634
+   ],
+   "bone": "front_near",
+   "pivot": [
+    6.2239,
+    1.8216
+   ],
+   "tip": [
+    14.1935,
+    14.7249
+   ],
+   "z": 2
+  }
+ },
+ "points": {}
+}

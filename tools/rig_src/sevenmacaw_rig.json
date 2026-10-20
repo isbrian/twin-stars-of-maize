@@ -1,0 +1,633 @@
+{
+ "reference": {
+  "size": [
+   1536,
+   1024
+  ],
+  "joints": {
+   "feet": [
+    402.0,
+    960.0
+   ],
+   "hip": [
+    430.0,
+    650.0
+   ],
+   "tail_root": [
+    655.0,
+    730.0
+   ],
+   "tail_tip": [
+    1495.0,
+    895.0
+   ],
+   "neck_base": [
+    275.0,
+    405.0
+   ],
+   "head_j": [
+    340.0,
+    298.0
+   ],
+   "beak": [
+    140.0,
+    200.0
+   ],
+   "shoulder": [
+    450.0,
+    400.0
+   ],
+   "elbow": [
+    615.0,
+    200.0
+   ],
+   "wrist": [
+    800.0,
+    215.0
+   ],
+   "wing_end": [
+    1300.0,
+    215.0
+   ],
+   "hip_l": [
+    350.0,
+    680.0
+   ],
+   "knee_l": [
+    395.0,
+    785.0
+   ],
+   "ankle_l": [
+    315.0,
+    885.0
+   ],
+   "toe_l": [
+    160.0,
+    930.0
+   ],
+   "hip_r": [
+    500.0,
+    690.0
+   ],
+   "knee_r": [
+    530.0,
+    795.0
+   ],
+   "ankle_r": [
+    535.0,
+    905.0
+   ],
+   "toe_r": [
+    410.0,
+    950.0
+   ],
+   "shoulder_l": [
+    450.0,
+    400.0
+   ],
+   "elbow_l": [
+    615.0,
+    200.0
+   ],
+   "wrist_l": [
+    800.0,
+    215.0
+   ],
+   "wing_end_l": [
+    1300.0,
+    215.0
+   ]
+  },
+  "content_height": 942
+ },
+ "bones": [
+  [
+   "pelvis",
+   "",
+   "hip",
+   "tail_root"
+  ],
+  [
+   "tail",
+   "pelvis",
+   "tail_root",
+   "tail_tip"
+  ],
+  [
+   "torso",
+   "pelvis",
+   "hip",
+   "neck_base"
+  ],
+  [
+   "neck",
+   "torso",
+   "neck_base",
+   "head_j"
+  ],
+  [
+   "head",
+   "neck",
+   "head_j",
+   "beak"
+  ],
+  [
+   "wing_arm",
+   "torso",
+   "shoulder",
+   "elbow"
+  ],
+  [
+   "wing_fore",
+   "wing_arm",
+   "elbow",
+   "wrist"
+  ],
+  [
+   "wing_tip",
+   "wing_fore",
+   "wrist",
+   "wing_end"
+  ],
+  [
+   "thigh_l",
+   "pelvis",
+   "hip_l",
+   "knee_l"
+  ],
+  [
+   "shin_l",
+   "thigh_l",
+   "knee_l",
+   "ankle_l"
+  ],
+  [
+   "claw_l",
+   "shin_l",
+   "ankle_l",
+   "toe_l"
+  ],
+  [
+   "thigh_r",
+   "pelvis",
+   "hip_r",
+   "knee_r"
+  ],
+  [
+   "shin_r",
+   "thigh_r",
+   "knee_r",
+   "ankle_r"
+  ],
+  [
+   "claw_r",
+   "shin_r",
+   "ankle_r",
+   "toe_r"
+  ],
+  [
+   "wing_arm_l",
+   "torso",
+   "shoulder_l",
+   "elbow_l"
+  ],
+  [
+   "wing_fore_l",
+   "wing_arm_l",
+   "elbow_l",
+   "wrist_l"
+  ],
+  [
+   "wing_tip_l",
+   "wing_fore_l",
+   "wrist_l",
+   "wing_end_l"
+  ]
+ ],
+ "root_length": 0.0,
+ "origin": {
+  "x_joint": "feet",
+  "sole_parts": [
+   "claw_l",
+   "claw_r"
+  ]
+ },
+ "parts": {
+  "chr_sevenmacaw_pelvis": {
+   "size": [
+    328,
+    402
+   ],
+   "bone": "pelvis",
+   "pivot": [
+    33.0,
+    210.0
+   ],
+   "tip": [
+    258.0,
+    290.0
+   ],
+   "z": 1
+  },
+  "chr_sevenmacaw_tail": {
+   "size": [
+    916,
+    351
+   ],
+   "bone": "tail",
+   "pivot": [
+    69.0,
+    150.0
+   ],
+   "tip": [
+    909.0,
+    315.0
+   ],
+   "z": 0
+  },
+  "chr_sevenmacaw_torso": {
+   "size": [
+    460,
+    463
+   ],
+   "bone": "torso",
+   "pivot": [
+    262.0,
+    351.0
+   ],
+   "tip": [
+    107.0,
+    106.0
+   ],
+   "z": 7
+  },
+  "chr_sevenmacaw_neck": {
+   "size": [
+    252,
+    296
+   ],
+   "bone": "neck",
+   "pivot": [
+    87.0,
+    206.0
+   ],
+   "tip": [
+    152.0,
+    99.0
+   ],
+   "z": 8
+  },
+  "chr_sevenmacaw_head": {
+   "size": [
+    446,
+    356
+   ],
+   "bone": "head",
+   "pivot": [
+    217.0,
+    256.0
+   ],
+   "tip": [
+    17.0,
+    158.0
+   ],
+   "z": 9
+  },
+  "chr_sevenmacaw_wing_arm": {
+   "size": [
+    296,
+    467
+   ],
+   "bone": "wing_arm",
+   "pivot": [
+    49.0,
+    233.0
+   ],
+   "tip": [
+    214.0,
+    33.0
+   ],
+   "z": 12
+  },
+  "chr_sevenmacaw_wing_fore": {
+   "size": [
+    590,
+    503
+   ],
+   "bone": "wing_fore",
+   "pivot": [
+    30.0,
+    77.0
+   ],
+   "tip": [
+    215.0,
+    92.0
+   ],
+   "z": 11
+  },
+  "chr_sevenmacaw_wing_tip": {
+   "size": [
+    591,
+    351
+   ],
+   "bone": "wing_tip",
+   "pivot": [
+    67.0,
+    173.0
+   ],
+   "tip": [
+    567.0,
+    173.0
+   ],
+   "z": 10
+  },
+  "chr_sevenmacaw_thigh_l": {
+   "size": [
+    119,
+    143
+   ],
+   "bone": "thigh_l",
+   "pivot": [
+    47.0,
+    2.0
+   ],
+   "tip": [
+    92.0,
+    107.0
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_shin_l": {
+   "size": [
+    140,
+    167
+   ],
+   "bone": "shin_l",
+   "pivot": [
+    113.0,
+    33.0
+   ],
+   "tip": [
+    33.0,
+    133.0
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_claw_l": {
+   "size": [
+    226,
+    109
+   ],
+   "bone": "claw_l",
+   "pivot": [
+    161.0,
+    33.0
+   ],
+   "tip": [
+    6.0,
+    78.0
+   ],
+   "z": 2
+  },
+  "chr_sevenmacaw_thigh_r": {
+   "size": [
+    93,
+    108
+   ],
+   "bone": "thigh_r",
+   "pivot": [
+    22.0,
+    -31.0
+   ],
+   "tip": [
+    52.0,
+    74.0
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_shin_r": {
+   "size": [
+    72,
+    177
+   ],
+   "bone": "shin_r",
+   "pivot": [
+    33.0,
+    33.0
+   ],
+   "tip": [
+    38.0,
+    143.0
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_claw_r": {
+   "size": [
+    292,
+    112
+   ],
+   "bone": "claw_r",
+   "pivot": [
+    173.0,
+    33.0
+   ],
+   "tip": [
+    48.0,
+    78.0
+   ],
+   "z": 3
+  },
+  "chr_sevenmacaw_wing_arm_l": {
+   "size": [
+    296,
+    467
+   ],
+   "bone": "wing_arm_l",
+   "pivot": [
+    49.0,
+    233.0
+   ],
+   "tip": [
+    214.0,
+    33.0
+   ],
+   "z": -1
+  },
+  "chr_sevenmacaw_wing_fore_l": {
+   "size": [
+    590,
+    503
+   ],
+   "bone": "wing_fore_l",
+   "pivot": [
+    30.0,
+    77.0
+   ],
+   "tip": [
+    215.0,
+    92.0
+   ],
+   "z": -2
+  },
+  "chr_sevenmacaw_wing_tip_l": {
+   "size": [
+    591,
+    351
+   ],
+   "bone": "wing_tip_l",
+   "pivot": [
+    67.0,
+    173.0
+   ],
+   "tip": [
+    567.0,
+    173.0
+   ],
+   "z": -3
+  },
+  "chr_sevenmacaw_head_jawhurt": {
+   "size": [
+    432,
+    368
+   ],
+   "bone": "head",
+   "pivot": [
+    221.0,
+    262.0
+   ],
+   "tip": [
+    21.0,
+    164.0
+   ],
+   "z": 9,
+   "visible": false
+  },
+  "chr_sevenmacaw_head_maize": {
+   "size": [
+    406,
+    350
+   ],
+   "bone": "head",
+   "pivot": [
+    220.0,
+    244.0
+   ],
+   "tip": [
+    20.0,
+    146.0
+   ],
+   "z": 9,
+   "visible": false
+  },
+  "chr_sevenmacaw_head_blind": {
+   "size": [
+    407,
+    350
+   ],
+   "bone": "head",
+   "pivot": [
+    221.0,
+    244.0
+   ],
+   "tip": [
+    21.0,
+    146.0
+   ],
+   "z": 9,
+   "visible": false
+  }
+ },
+ "points": {
+  "jaw": {
+   "bone": "head",
+   "at": [
+    137.4,
+    6.8
+   ]
+  },
+  "teeth": {
+   "bone": "head",
+   "at": [
+    150.4,
+    33.2
+   ]
+  },
+  "eye": {
+   "bone": "head",
+   "at": [
+    122.3,
+    124.2
+   ]
+  },
+  "glint_1": {
+   "bone": "wing_tip",
+   "at": [
+    286.0,
+    -95.0
+   ]
+  },
+  "glint_2": {
+   "bone": "wing_tip",
+   "at": [
+    358.0,
+    19.0
+   ]
+  },
+  "glint_3": {
+   "bone": "wing_tip",
+   "at": [
+    239.0,
+    211.0
+   ]
+  },
+  "glint_4": {
+   "bone": "wing_fore",
+   "at": [
+    284.7,
+    158.5
+   ]
+  },
+  "glint_5": {
+   "bone": "wing_fore",
+   "at": [
+    135.3,
+    146.5
+   ]
+  },
+  "glint_6": {
+   "bone": "torso",
+   "at": [
+    125.2,
+    2.3
+   ]
+  },
+  "glint_7": {
+   "bone": "torso",
+   "at": [
+    131.6,
+    72.6
+   ]
+  },
+  "glint_8": {
+   "bone": "torso",
+   "at": [
+    293.2,
+    -104.4
+   ]
+  },
+  "glint_9": {
+   "bone": "tail",
+   "at": [
+    524.1,
+    -34.7
+   ]
+  },
+  "glint_10": {
+   "bone": "tail",
+   "at": [
+    695.5,
+    28.5
+   ]
+  }
+ }
+}

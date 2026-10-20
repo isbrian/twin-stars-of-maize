@@ -1,0 +1,43 @@
+{
+ "src": "chr_batch3/chr_healer_woman_reference.png",
+ "joints": {
+  "center": [518, 760],
+  "hip": [480, 760], "hem": [470, 1250],
+  "neck": [610, 380], "crown": [680, 140],
+  "shoulder": [535, 470], "elbow": [540, 605], "wrist": [713, 655], "finger": [838, 713],
+  "hip_b": [330, 900], "ankle_b": [275, 1300], "toe_b": [430, 1370],
+  "hip_f": [560, 900], "ankle_f": [650, 1305], "toe_f": [820, 1350]
+ },
+ "bones": [
+  ["pelvis", "", "hip", "hem", 120, 2],
+  ["torso", "pelvis", "hip", "neck", 170, 3],
+  ["head", "torso", "neck", "crown", 130, 4],
+  ["upper_arm", "torso", "shoulder", "elbow", 40, 5],
+  ["forearm", "upper_arm", "elbow", "wrist", 35, 5],
+  ["hand", "forearm", "wrist", "finger", 45, 6],
+  ["leg_b", "pelvis", "hip_b", "ankle_b", 40, 0],
+  ["foot_b", "leg_b", "ankle_b", "toe_b", 55, 0],
+  ["leg_f", "pelvis", "hip_f", "ankle_f", 40, 1],
+  ["foot_f", "leg_f", "ankle_f", "toe_f", 55, 1],
+  ["upper_arm_l", "torso", "shoulder_l", "elbow_l", 0, -1],
+  ["forearm_l", "upper_arm_l", "elbow_l", "wrist_l", 0, -1],
+  ["hand_l", "forearm_l", "wrist_l", "finger_l", 0, -1]
+ ],
+ "far": [
+  ["upper_arm_l", "upper_arm_l", "upper_arm", -1, [0, 0]],
+  ["forearm_l", "forearm_l", "forearm", -1, [0, 0]],
+  ["hand_l", "hand_l", "hand", -1, [0, 0]]
+ ],
+ "polys": {
+  "hand": [[720, 600], [880, 600], [880, 760], [720, 760]],
+  "forearm": [[575, 590], [720, 615], [720, 695], [640, 690], [580, 660]],
+  "upper_arm": [[490, 490], [585, 470], [600, 600], [580, 630], [530, 630], [505, 600]],
+  "pelvis": [[220, 700], [305, 692], [450, 735], [590, 775], [620, 800], [700, 1180], [690, 1218], [463, 1258], [236, 1200], [220, 900]],
+  "torso": [[190, 480], [610, 480], [600, 775], [590, 775], [450, 735], [305, 692], [220, 700], [190, 700]]
+ },
+ "overlap": {
+  "torso": [[480, 470], [600, 470], [605, 560], [490, 565]]
+ },
+ "cap": 40,
+ "origin": {"x_joint": "center", "sole_parts": ["foot_b", "foot_f"]}
+}

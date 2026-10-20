@@ -1,0 +1,42 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {"loop": true, "length": 1.0, "frames": [
+   {"t": 0.0, "bones": {"torso": 0.0, "head": 0.0, "upper_arm": 0.0, "forearm": 0.0, "upper_arm_l": 0.0, "forearm_l": 0.0}, "root": [0, 0]},
+   {"t": 0.0833, "bones": {"torso": 0.5, "head": -0.4, "upper_arm": -0.5, "forearm": 0.3, "upper_arm_l": -0.5, "forearm_l": 0.3}, "root": [0, 0]},
+   {"t": 0.1667, "bones": {"torso": 0.87, "head": -0.69, "upper_arm": -0.87, "forearm": 0.52, "upper_arm_l": -0.87, "forearm_l": 0.52}, "root": [0, 0]},
+   {"t": 0.25, "bones": {"torso": 1.0, "head": -0.8, "upper_arm": -1.0, "forearm": 0.6, "upper_arm_l": -1.0, "forearm_l": 0.6}, "root": [0, 0]},
+   {"t": 0.3333, "bones": {"torso": 0.87, "head": -0.69, "upper_arm": -0.87, "forearm": 0.52, "upper_arm_l": -0.87, "forearm_l": 0.52}, "root": [0, 0]},
+   {"t": 0.4167, "bones": {"torso": 0.5, "head": -0.4, "upper_arm": -0.5, "forearm": 0.3, "upper_arm_l": -0.5, "forearm_l": 0.3}, "root": [0, 0]},
+   {"t": 0.5, "bones": {"torso": 0.0, "head": 0.0, "upper_arm": 0.0, "forearm": 0.0, "upper_arm_l": 0.0, "forearm_l": 0.0}, "root": [0, 0]},
+   {"t": 0.5833, "bones": {"torso": -0.5, "head": 0.4, "upper_arm": 0.5, "forearm": -0.3, "upper_arm_l": 0.5, "forearm_l": -0.3}, "root": [0, 0]},
+   {"t": 0.6667, "bones": {"torso": -0.87, "head": 0.69, "upper_arm": 0.87, "forearm": -0.52, "upper_arm_l": 0.87, "forearm_l": -0.52}, "root": [0, 0]},
+   {"t": 0.75, "bones": {"torso": -1.0, "head": 0.8, "upper_arm": 1.0, "forearm": -0.6, "upper_arm_l": 1.0, "forearm_l": -0.6}, "root": [0, 0]},
+   {"t": 0.8333, "bones": {"torso": -0.87, "head": 0.69, "upper_arm": 0.87, "forearm": -0.52, "upper_arm_l": 0.87, "forearm_l": -0.52}, "root": [0, 0]},
+   {"t": 0.9167, "bones": {"torso": -0.5, "head": 0.4, "upper_arm": 0.5, "forearm": -0.3, "upper_arm_l": 0.5, "forearm_l": -0.3}, "root": [0, 0]}
+  ]},
+  "walk": {"loop": true, "length": 0.8333, "frames": [
+   {"t": 0.0, "bones": {"upper_arm": 0.0, "forearm": 0.0, "upper_arm_l": 0.0, "forearm_l": 0.0, "torso": 1.0, "head": -0.6, "thigh_f": 0.0, "shin_f": 0.0, "foot_f": 0.0, "thigh_b": 0.0, "shin_b": 0.0, "foot_b": 0.0}, "root": [0, -1.5]},
+   {"t": 0.0833, "bones": {"upper_arm": 5.88, "forearm": 2.35, "upper_arm_l": -5.88, "forearm_l": -2.35, "torso": 0.81, "head": -0.49, "thigh_f": -7.05, "shin_f": 4.12, "foot_f": 2.93, "thigh_b": 7.05, "shin_b": 0.0, "foot_b": -7.05}, "root": [0, -1.21]},
+   {"t": 0.1667, "bones": {"upper_arm": 9.51, "forearm": 3.8, "upper_arm_l": -9.51, "forearm_l": -3.8, "torso": 0.31, "head": -0.19, "thigh_f": -11.41, "shin_f": 6.66, "foot_f": 4.75, "thigh_b": 11.41, "shin_b": 0.0, "foot_b": -11.41}, "root": [0, -0.46]},
+   {"t": 0.25, "bones": {"upper_arm": 9.51, "forearm": 3.8, "upper_arm_l": -9.51, "forearm_l": -3.8, "torso": -0.31, "head": 0.19, "thigh_f": -11.41, "shin_f": 6.66, "foot_f": 4.75, "thigh_b": 11.41, "shin_b": 0.0, "foot_b": -11.41}, "root": [0, -0.46]},
+   {"t": 0.3333, "bones": {"upper_arm": 5.88, "forearm": 2.35, "upper_arm_l": -5.88, "forearm_l": -2.35, "torso": -0.81, "head": 0.49, "thigh_f": -7.05, "shin_f": 4.12, "foot_f": 2.93, "thigh_b": 7.05, "shin_b": 0.0, "foot_b": -7.05}, "root": [0, -1.21]},
+   {"t": 0.4167, "bones": {"upper_arm": 0.0, "forearm": 0.0, "upper_arm_l": 0.0, "forearm_l": 0.0, "torso": -1.0, "head": 0.6, "thigh_f": 0.0, "shin_f": 0.0, "foot_f": 0.0, "thigh_b": 0.0, "shin_b": 0.0, "foot_b": 0.0}, "root": [0, -1.5]},
+   {"t": 0.5, "bones": {"upper_arm": -5.88, "forearm": -2.35, "upper_arm_l": 5.88, "forearm_l": 2.35, "torso": -0.81, "head": 0.49, "thigh_f": 7.05, "shin_f": 0.0, "foot_f": -7.05, "thigh_b": -7.05, "shin_b": 4.12, "foot_b": 2.93}, "root": [0, -1.21]},
+   {"t": 0.5833, "bones": {"upper_arm": -9.51, "forearm": -3.8, "upper_arm_l": 9.51, "forearm_l": 3.8, "torso": -0.31, "head": 0.19, "thigh_f": 11.41, "shin_f": 0.0, "foot_f": -11.41, "thigh_b": -11.41, "shin_b": 6.66, "foot_b": 4.75}, "root": [0, -0.46]},
+   {"t": 0.6667, "bones": {"upper_arm": -9.51, "forearm": -3.8, "upper_arm_l": 9.51, "forearm_l": 3.8, "torso": 0.31, "head": -0.19, "thigh_f": 11.41, "shin_f": 0.0, "foot_f": -11.41, "thigh_b": -11.41, "shin_b": 6.66, "foot_b": 4.75}, "root": [0, -0.46]},
+   {"t": 0.75, "bones": {"upper_arm": -5.88, "forearm": -2.35, "upper_arm_l": 5.88, "forearm_l": 2.35, "torso": 0.81, "head": -0.49, "thigh_f": 7.05, "shin_f": 0.0, "foot_f": -7.05, "thigh_b": -7.05, "shin_b": 4.12, "foot_b": 2.93}, "root": [0, -1.21]}
+  ]},
+  "reach": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": 8.0, "head": -4.0, "upper_arm": -14.0, "forearm": -40.0, "upper_arm_l": -12.0, "forearm_l": -38.0, "thigh_f": -6.0, "shin_f": 8.0}, "root": [0, 0.0]},
+   {"t": 0.1667, "bones": {"torso": 14.0, "head": -7.0, "upper_arm": -14.0, "forearm": -76.0, "upper_arm_l": -13.0, "forearm_l": -72.0, "thigh_f": -6.0, "shin_f": 8.0}, "root": [0, 0.0]},
+   {"t": 0.3333, "bones": {"torso": 16.0, "head": -8.0, "upper_arm": -15.0, "forearm": -86.0, "upper_arm_l": -14.0, "forearm_l": -82.0, "thigh_f": -6.0, "shin_f": 8.0}, "root": [0, 0.0]}
+  ]},
+  "pick": {"loop": false, "frames": [
+   {"t": 0.0, "bones": {"torso": 25.0, "head": -10.0, "upper_arm": -12.0, "forearm": -15.0, "upper_arm_l": -10.0, "forearm_l": -15.0, "thigh_f": -15.0, "shin_f": 25.0, "thigh_b": -9.0, "shin_b": 15.0}, "root": [0, -1.9]},
+   {"t": 0.25, "bones": {"torso": 50.0, "head": -20.0, "upper_arm": -8.0, "forearm": -8.0, "upper_arm_l": -6.0, "forearm_l": -8.0, "thigh_f": -30.0, "shin_f": 45.0, "thigh_b": -18.0, "shin_b": 27.0}, "root": [0, -2.7]},
+   {"t": 0.5, "bones": {"torso": 22.0, "head": -8.0, "upper_arm": -18.0, "forearm": -75.0, "upper_arm_l": -16.0, "forearm_l": -75.0, "thigh_f": -12.0, "shin_f": 20.0, "thigh_b": -7.0, "shin_b": 12.0}, "root": [0, -1.6]},
+   {"t": 0.6667, "bones": {"torso": 6.0, "head": -2.0, "upper_arm": -18.0, "forearm": -85.0, "upper_arm_l": -16.0, "forearm_l": -85.0}, "root": [0, 0.0]}
+  ]}
+ }
+}

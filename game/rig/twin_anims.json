@@ -1,0 +1,150 @@
+{
+ "fps": 12,
+ "anims": {
+  "idle": {"loop": true, "length": 1.0, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 0.3, "upperarm_l": 3.6, "forearm_l": 0.4, "upperarm_r": -14.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.5, "bones": {"spine": 1.3, "head": -0.8, "upperarm_l": 4.6, "forearm_l": 0.4, "upperarm_r": -13.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 1.0]}
+  ]},
+  "run": {"loop": true, "hand": "weapon", "steps": [1, 4], "frames": [
+   {"t": 0.0, "bones": {"spine": 11.3, "head": -4.8, "upperarm_l": -30.4, "forearm_l": -55.6, "thigh_l": -26.7, "shin_l": 79.7, "foot_l": 10.7, "thigh_r": 20.4, "shin_r": -2.6, "foot_r": -3.7, "upperarm_r": -30.4, "forearm_r": -55.6, "hand_r": 37.6}, "pelvis": [0.0, -1.4]},
+   {"t": 0.0833, "bones": {"spine": 10.3, "head": -3.8, "upperarm_l": -3.4, "forearm_l": -46.9, "thigh_l": -57.0, "shin_l": 64.7, "foot_l": 3.7, "thigh_r": 50.7, "shin_r": 12.4, "foot_r": 3.2, "upperarm_r": -55.4, "forearm_r": -64.3, "hand_r": 46.2}, "pelvis": [0.0, -3.8]},
+   {"t": 0.1667, "bones": {"spine": 8.3, "head": -1.8, "upperarm_l": -1.4, "forearm_l": -46.9, "thigh_l": -57.0, "shin_l": 34.7, "foot_l": 3.7, "thigh_r": 50.7, "shin_r": 42.4, "foot_r": 3.2, "upperarm_r": -53.4, "forearm_r": -64.3, "hand_r": 46.2}, "pelvis": [0.0, 1.2]},
+   {"t": 0.25, "bones": {"spine": 7.3, "head": -0.8, "upperarm_l": -26.4, "forearm_l": -55.6, "thigh_l": -26.7, "shin_l": 19.7, "foot_l": 10.7, "thigh_r": 20.4, "shin_r": 57.4, "foot_r": -3.7, "upperarm_r": -26.4, "forearm_r": -55.6, "hand_r": 37.6}, "pelvis": [0.0, -9.6]},
+   {"t": 0.3333, "bones": {"spine": 8.3, "head": -1.8, "upperarm_l": -53.4, "forearm_l": -64.3, "thigh_l": 3.7, "shin_l": 34.7, "foot_l": 17.6, "thigh_r": -9.9, "shin_r": 42.4, "foot_r": -10.7, "upperarm_r": -1.4, "forearm_r": -46.9, "hand_r": 28.9}, "pelvis": [0.0, 3.9]},
+   {"t": 0.4167, "bones": {"spine": 10.3, "head": -3.8, "upperarm_l": -55.4, "forearm_l": -64.3, "thigh_l": 3.7, "shin_l": 64.7, "foot_l": 17.6, "thigh_r": -9.9, "shin_r": 12.4, "foot_r": -10.7, "upperarm_r": -3.4, "forearm_r": -46.9, "hand_r": 28.9}, "pelvis": [0.0, 8.3]}
+  ]},
+  "jump_up": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 4.3, "head": -1.8, "upperarm_l": 31.6, "forearm_l": -15.6, "thigh_l": -11.7, "shin_l": 49.7, "foot_l": 0.7, "thigh_r": -29.6, "shin_r": 42.4, "foot_r": -13.7, "upperarm_r": -78.4, "forearm_r": -35.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "fall": {"loop": true, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 2.3, "head": 0.2, "upperarm_l": 53.6, "forearm_l": -15.6, "thigh_l": -16.7, "shin_l": 29.7, "foot_l": 5.7, "thigh_r": -4.6, "shin_r": 17.4, "foot_r": -8.7, "upperarm_r": -96.4, "forearm_r": -35.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": 2.3, "head": 0.2, "upperarm_l": 63.6, "forearm_l": -15.6, "thigh_l": -14.7, "shin_l": 29.7, "foot_l": 3.7, "thigh_r": -6.6, "shin_r": 21.4, "foot_r": -10.7, "upperarm_r": -106.4, "forearm_r": -35.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "land": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 17.3, "head": -6.8, "upperarm_l": -51.4, "forearm_l": -15.6, "thigh_l": -31.7, "shin_l": 59.7, "foot_l": -24.3, "thigh_r": -44.6, "shin_r": 62.4, "foot_r": -23.7, "upperarm_r": -61.4, "forearm_r": -15.6, "hand_r": 47.6}, "pelvis": [0.0, 2.3]},
+   {"t": 0.0833, "bones": {"spine": 11.3, "head": -4.8, "upperarm_l": -25.4, "forearm_l": -5.6, "thigh_l": -21.7, "shin_l": 39.7, "foot_l": -16.3, "thigh_r": -29.6, "shin_r": 42.4, "foot_r": -15.7, "upperarm_r": -40.4, "forearm_r": -10.6, "hand_r": 47.6}, "pelvis": [0.0, -0.9]},
+   {"t": 0.1667, "bones": {"spine": 3.3, "head": -1.8, "upperarm_l": 0.6, "forearm_l": 0.4, "thigh_l": -6.7, "shin_l": 12.7, "foot_l": -5.3, "thigh_r": -9.6, "shin_r": 14.4, "foot_r": -5.7, "upperarm_r": -17.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, -1.2]}
+  ]},
+  "roll": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 47.3, "head": 18.2, "upperarm_l": -131.4, "forearm_l": -65.6, "thigh_l": -131.7, "shin_l": 139.7, "foot_l": 0.7, "thigh_r": -104.6, "shin_r": 117.4, "foot_r": -13.7, "upperarm_r": -121.4, "forearm_r": -65.6, "hand_r": 97.6}, "pelvis": [0.0, 49.1]},
+   {"t": 0.0833, "bones": {"pelvis": 90.0, "spine": 47.3, "head": 18.2, "upperarm_l": -131.4, "forearm_l": -65.6, "thigh_l": -131.7, "shin_l": 139.7, "foot_l": 0.7, "thigh_r": -104.6, "shin_r": 117.4, "foot_r": -13.7, "upperarm_r": -121.4, "forearm_r": -65.6, "hand_r": 97.6}, "pelvis": [0.0, 15.3]},
+   {"t": 0.1667, "bones": {"pelvis": -180.0, "spine": 47.3, "head": 18.2, "upperarm_l": -131.4, "forearm_l": -65.6, "thigh_l": -131.7, "shin_l": 139.7, "foot_l": 0.7, "thigh_r": -104.6, "shin_r": 117.4, "foot_r": -13.7, "upperarm_r": -121.4, "forearm_r": -65.6, "hand_r": 97.6}, "pelvis": [0.0, 33.6]},
+   {"t": 0.25, "bones": {"pelvis": -90.0, "spine": 47.3, "head": 18.2, "upperarm_l": -131.4, "forearm_l": -65.6, "thigh_l": -131.7, "shin_l": 139.7, "foot_l": 0.7, "thigh_r": -104.6, "shin_r": 117.4, "foot_r": -13.7, "upperarm_r": -121.4, "forearm_r": -65.6, "hand_r": 97.6}, "pelvis": [0.0, 86.6]}
+  ]},
+  "hurt": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": -22.7, "head": -11.8, "upperarm_l": -51.4, "forearm_l": -15.6, "thigh_l": -16.7, "shin_l": 24.7, "foot_l": 0.7, "thigh_r": -19.6, "shin_r": 17.4, "foot_r": -8.7, "upperarm_r": -71.4, "forearm_r": -15.6, "hand_r": 37.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.0833, "bones": {"spine": -14.7, "head": -6.8, "upperarm_l": -39.4, "forearm_l": -15.6, "thigh_l": -11.7, "shin_l": 17.7, "foot_l": 0.7, "thigh_r": -14.6, "shin_r": 17.4, "foot_r": -8.7, "upperarm_r": -59.4, "forearm_r": -15.6, "hand_r": 37.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "heal": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 0.3, "head": 0.2, "upperarm_l": -54.4, "forearm_l": -65.6, "hand_l": 27.6, "upperarm_r": -14.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.25, "bones": {"spine": -2.7, "head": -14.8, "upperarm_l": -101.4, "forearm_l": -75.6, "hand_l": 57.6, "upperarm_r": -11.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.75, "bones": {"spine": -0.7, "head": -0.8, "upperarm_l": -53.4, "forearm_l": -65.6, "hand_l": 27.6, "upperarm_r": -13.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "interact": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 7.3, "head": -1.8, "upperarm_l": -116.4, "forearm_l": 9.4, "hand_l": 12.6, "upperarm_r": -21.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": 3.3, "head": -0.8, "upperarm_l": -57.4, "forearm_l": -5.6, "upperarm_r": -17.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "swap_in": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 15.3, "head": -6.8, "upperarm_l": 20.6, "forearm_l": -15.6, "thigh_l": -21.7, "shin_l": 44.7, "foot_l": -19.3, "thigh_r": -34.6, "shin_r": 52.4, "foot_r": -23.7, "upperarm_r": -69.4, "forearm_r": -35.6, "hand_r": 37.6}, "pelvis": [0.0, 0.7]},
+   {"t": 0.0833, "bones": {"spine": 9.3, "head": -4.8, "upperarm_l": 6.6, "forearm_l": -5.6, "thigh_l": -11.7, "shin_l": 24.7, "foot_l": -11.3, "thigh_r": -19.6, "shin_r": 30.4, "foot_r": -13.7, "upperarm_r": -43.4, "forearm_r": -15.6, "hand_r": 37.6}, "pelvis": [0.0, -0.8]},
+   {"t": 0.1667, "bones": {"spine": 2.3, "head": -1.8, "upperarm_l": 1.6, "forearm_l": 0.4, "thigh_l": -0.7, "shin_l": 0.7, "foot_l": -0.3, "thigh_r": -0.6, "shin_r": 0.4, "foot_r": 0.3, "upperarm_r": -16.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, -0.2]}
+  ]},
+  "double_jump": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 7.3, "head": -1.8, "upperarm_l": 128.6, "forearm_l": 34.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": 138.6, "forearm_r": 34.4, "hand_r": 37.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.0833, "bones": {"spine": 12.3, "head": -1.8, "upperarm_l": 163.6, "forearm_l": 44.4, "thigh_l": -61.7, "shin_l": 99.7, "foot_l": 10.7, "thigh_r": -54.6, "shin_r": 87.4, "foot_r": -13.7, "upperarm_r": 173.6, "forearm_r": 44.4, "hand_r": 37.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": 5.3, "head": -0.8, "upperarm_l": 30.6, "forearm_l": -15.6, "thigh_l": -21.7, "shin_l": 44.7, "foot_l": -4.3, "thigh_r": -24.6, "shin_r": 37.4, "foot_r": -8.7, "upperarm_r": -89.4, "forearm_r": -35.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "tool_cast": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 7.3, "head": -2.8, "upperarm_l": -141.4, "forearm_l": 9.4, "hand_l": 12.6, "upperarm_r": -21.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": 3.3, "head": -0.8, "upperarm_l": -77.4, "forearm_l": -5.6, "upperarm_r": -17.4, "forearm_r": -5.6, "hand_r": 42.6}, "pelvis": [0.0, 0.0]}
+  ]},
+  "attack_axe_side": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": -7.7, "head": 3.2, "upperarm_l": -26.4, "forearm_l": -25.6, "upperarm_r": 113.6, "forearm_r": 74.4, "hand_r": 27.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": 15.3, "head": -6.8, "upperarm_l": 0.6, "forearm_l": -5.6, "upperarm_r": -109.4, "forearm_r": 34.4, "hand_r": 57.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 13.3, "head": -6.8, "upperarm_l": -2.4, "forearm_l": -2.6, "upperarm_r": -57.4, "forearm_r": 24.4, "hand_r": 57.6}, "pelvis": [0.0, 0.0], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": 5.3, "head": -2.8, "upperarm_l": 0.6, "forearm_l": -1.6, "upperarm_r": -24.4, "forearm_r": -0.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "attack_axe_up": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 5.3, "head": 0.2, "upperarm_l": -29.4, "forearm_l": -15.6, "upperarm_r": 10.6, "forearm_r": 4.4, "hand_r": 57.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": -7.7, "head": -11.8, "upperarm_l": 33.6, "forearm_l": -5.6, "upperarm_r": 168.6, "forearm_r": 9.4, "hand_r": 97.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": -2.7, "head": -6.8, "upperarm_l": 18.6, "forearm_l": -5.6, "upperarm_r": -151.4, "forearm_r": 34.4, "hand_r": 67.6}, "pelvis": [0.0, 0.0], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": -0.7, "head": -0.8, "upperarm_l": 6.6, "forearm_l": -1.6, "upperarm_r": -53.4, "forearm_r": -5.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "attack_axe_down": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": -0.7, "head": 3.2, "upperarm_l": -173.4, "forearm_l": -15.6, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": 136.6, "forearm_r": 4.4, "hand_r": 67.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": 17.3, "head": 13.2, "upperarm_l": -71.4, "forearm_l": 24.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -56.4, "forearm_r": 24.4, "hand_r": 102.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 9.3, "head": 6.2, "upperarm_l": -43.4, "forearm_l": 14.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -63.4, "forearm_r": 4.4, "hand_r": 107.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "attack_stick_side": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": -0.7, "head": 3.2, "upperarm_l": -13.4, "forearm_l": -5.6, "upperarm_r": 36.6, "forearm_r": 34.4, "hand_r": 67.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": 22.3, "head": -9.8, "upperarm_l": -76.4, "forearm_l": -25.6, "thigh_l": 3.3, "shin_l": -10.3, "foot_l": 0.7, "thigh_r": -19.6, "shin_r": 27.4, "foot_r": -13.7, "upperarm_r": -96.4, "forearm_r": -10.6, "hand_r": 82.6}, "pelvis": [0.0, 2.2], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 17.3, "head": -6.8, "upperarm_l": -51.4, "forearm_l": -5.6, "thigh_l": 0.3, "shin_l": -4.3, "foot_l": 0.7, "thigh_r": -14.6, "shin_r": 19.4, "foot_r": -7.7, "upperarm_r": -71.4, "forearm_r": 4.4, "hand_r": 67.6}, "pelvis": [0.0, 0.3], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": 7.3, "head": -2.8, "upperarm_l": -11.4, "forearm_l": -0.6, "upperarm_r": -36.4, "forearm_r": -0.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "attack_stick_up": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 3.3, "head": 1.2, "upperarm_l": -7.4, "forearm_l": -5.6, "upperarm_r": -7.4, "forearm_r": -5.6, "hand_r": 67.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": -4.7, "head": -9.8, "upperarm_l": -169.4, "forearm_l": -5.6, "upperarm_r": 175.6, "forearm_r": 4.4, "hand_r": 92.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": -2.7, "head": -4.8, "upperarm_l": -81.4, "forearm_l": -25.6, "upperarm_r": -141.4, "forearm_r": 4.4, "hand_r": 77.6}, "pelvis": [0.0, 0.0], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": -0.7, "head": -0.8, "upperarm_l": -3.4, "forearm_l": -0.6, "upperarm_r": -43.4, "forearm_r": -5.6, "hand_r": 47.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "attack_stick_down": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": -0.7, "head": 3.2, "upperarm_l": 156.6, "forearm_l": 4.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": 146.6, "forearm_r": 4.4, "hand_r": 77.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": 12.3, "head": 13.2, "upperarm_l": -66.4, "forearm_l": 44.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -56.4, "forearm_r": 34.4, "hand_r": 97.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 7.3, "head": 8.2, "upperarm_l": -41.4, "forearm_l": 14.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -61.4, "forearm_r": 14.4, "hand_r": 97.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "parry_side": {"loop": false, "hand": "open", "frames": [
+   {"t": 1.0, "bones": {"spine": 3.3, "head": -0.8, "upperarm_l": -57.4, "forearm_l": -85.6, "upperarm_r": -77.4, "forearm_r": -110.6, "hand_r": 12.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 1.3, "head": 0.2, "upperarm_l": -25.4, "forearm_l": -45.6, "upperarm_r": -45.4, "forearm_r": -75.6, "hand_r": 17.6}, "pelvis": [0.0, 0.0], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": 0.3, "head": 0.2, "upperarm_l": -4.4, "forearm_l": -5.6, "upperarm_r": -19.4, "forearm_r": -20.6, "hand_r": 27.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "parry_up": {"loop": false, "hand": "open", "frames": [
+   {"t": 1.0, "bones": {"spine": -2.7, "head": -6.8, "upperarm_l": 138.6, "forearm_l": 94.4, "upperarm_r": 148.6, "forearm_r": 104.4, "hand_r": 7.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": -0.7, "head": -3.8, "upperarm_l": -143.4, "forearm_l": 54.4, "upperarm_r": -153.4, "forearm_r": 74.4, "hand_r": 7.6}, "pelvis": [0.0, 0.0], "phase": "recovery"},
+   {"t": 2.5, "bones": {"spine": 0.3, "head": 0.2, "upperarm_l": -4.4, "forearm_l": -5.6, "upperarm_r": -34.4, "forearm_r": -15.6, "hand_r": 27.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "ballgear_down": {"loop": false, "hand": "open", "frames": [
+   {"t": 0.0, "bones": {"spine": -0.7, "head": 3.2, "upperarm_l": 146.6, "forearm_l": 4.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": 136.6, "forearm_r": 4.4, "hand_r": 7.6}, "pelvis": [0.0, 0.0], "phase": "startup"},
+   {"t": 1.0, "bones": {"spine": 15.3, "head": 13.2, "upperarm_l": -59.4, "forearm_l": 34.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -59.4, "forearm_r": 34.4, "hand_r": 7.6}, "pelvis": [0.0, 0.0], "phase": "active"},
+   {"t": 2.0, "bones": {"spine": 7.3, "head": 8.2, "upperarm_l": -41.4, "forearm_l": 4.4, "thigh_l": -36.7, "shin_l": 64.7, "foot_l": 0.7, "thigh_r": -34.6, "shin_r": 57.4, "foot_r": -13.7, "upperarm_r": -51.4, "forearm_r": 4.4, "hand_r": 17.6}, "pelvis": [0.0, 0.0], "phase": "recovery"}
+  ]},
+  "parry_success": {"loop": false, "hand": "open", "frames": [
+   {"t": 0.0, "bones": {"spine": 13.3, "head": -4.8, "upperarm_l": -67.4, "forearm_l": -65.6, "thigh_l": 6.3, "shin_l": -10.3, "foot_l": 0.7, "thigh_r": -19.6, "shin_r": 27.4, "foot_r": -10.7, "upperarm_r": -137.4, "forearm_r": -60.6, "hand_r": 7.6}, "pelvis": [0.0, 3.2]},
+   {"t": 0.1667, "bones": {"spine": 7.3, "head": -2.8, "upperarm_l": -51.4, "forearm_l": -65.6, "thigh_l": 2.3, "shin_l": -4.3, "foot_l": 0.7, "thigh_r": -12.6, "shin_r": 17.4, "foot_r": -5.7, "upperarm_r": -101.4, "forearm_r": -90.6, "hand_r": 7.6}, "pelvis": [0.0, 1.0]}
+  ]},
+  "dart": {"loop": false, "hand": "grip", "frames": [
+   {"t": 0.0, "bones": {"head": 2.5, "upperarm_l": -159.1, "forearm_l": 59.4, "hand_l": 7.6, "upperarm_r": -134.1, "forearm_r": 34.4, "hand_r": 7.6}}
+  ]},
+  "crouch": {"loop": true, "length": 1.0, "hand": "weapon", "frames": [
+   {"t": 0.0, "bones": {"spine": 28.0, "head": -14.0, "upperarm_l": -35.0, "forearm_l": -40.0, "upperarm_r": -45.0, "forearm_r": -40.0, "hand_r": 40.0, "thigh_l": -80.0, "shin_l": 120.0, "foot_l": -40.0, "thigh_r": -70.0, "shin_r": 115.0, "foot_r": -45.0}, "pelvis": [0.0, 25.2]},
+   {"t": 0.5, "bones": {"spine": 30.0, "head": -15.0, "upperarm_l": -35.0, "forearm_l": -40.0, "upperarm_r": -45.0, "forearm_r": -40.0, "hand_r": 40.0, "thigh_l": -80.0, "shin_l": 120.0, "foot_l": -40.0, "thigh_r": -70.0, "shin_r": 115.0, "foot_r": -45.0}, "pelvis": [0.0, 25.2]}
+  ]},
+  "walk": {"loop": true, "length": 0.8333, "hand": "weapon", "steps": [0, 2], "frames": [
+   {"t": 0.0, "bones": {"spine": 4.0, "head": -2.0, "upperarm_l": 14.0, "forearm_l": -6.0, "upperarm_r": -28.0, "forearm_r": -10.0, "hand_r": 42.6, "thigh_l": -22.0, "shin_l": 6.0, "foot_l": 0.0, "thigh_r": 18.0, "shin_r": 12.0, "foot_r": -8.0}, "pelvis": [0.0, -3.5]},
+   {"t": 0.1667, "bones": {"spine": 3.0, "head": -1.5, "upperarm_l": 4.0, "forearm_l": -4.0, "upperarm_r": -16.0, "forearm_r": -8.0, "hand_r": 42.6, "thigh_l": -4.0, "shin_l": 4.0, "foot_l": 0.0, "thigh_r": -2.0, "shin_r": 28.0, "foot_r": -6.0}, "pelvis": [0.0, -1.7]},
+   {"t": 0.4167, "bones": {"spine": 4.0, "head": -2.0, "upperarm_l": -10.0, "forearm_l": -8.0, "upperarm_r": -2.0, "forearm_r": -6.0, "hand_r": 42.6, "thigh_l": 18.0, "shin_l": 12.0, "foot_l": -8.0, "thigh_r": -22.0, "shin_r": 6.0, "foot_r": 0.0}, "pelvis": [0.0, 15.3]},
+   {"t": 0.5833, "bones": {"spine": 3.0, "head": -1.5, "upperarm_l": 4.0, "forearm_l": -4.0, "upperarm_r": -16.0, "forearm_r": -8.0, "hand_r": 42.6, "thigh_l": -2.0, "shin_l": 28.0, "foot_l": -6.0, "thigh_r": -4.0, "shin_r": 4.0, "foot_r": 0.0}, "pelvis": [0.0, 2.8]}
+  ]},
+  "lunge": {"loop": false, "hand": "open", "frames": [
+   {"t": 0.0, "bones": {"spine": 15.0, "head": -8.0, "upperarm_l": 30.0, "forearm_l": -20.0, "upperarm_r": 20.0, "forearm_r": -20.0, "hand_r": 40.0, "thigh_l": -40.0, "shin_l": 60.0, "foot_l": -20.0, "thigh_r": 10.0, "shin_r": 40.0, "foot_r": -15.0}, "pelvis": [0.0, -0.4]},
+   {"t": 0.1667, "bones": {"spine": 45.0, "head": -25.0, "upperarm_l": -140.0, "forearm_l": -10.0, "upperarm_r": -145.0, "forearm_r": -10.0, "hand_r": 30.0, "thigh_l": -55.0, "shin_l": 20.0, "foot_l": -10.0, "thigh_r": 45.0, "shin_r": 5.0, "foot_r": 10.0}, "pelvis": [30.0, 6.5]},
+   {"t": 0.3333, "bones": {"spine": 48.0, "head": -26.0, "upperarm_l": -145.0, "forearm_l": -10.0, "upperarm_r": -150.0, "forearm_r": -10.0, "hand_r": 30.0, "thigh_l": -55.0, "shin_l": 20.0, "foot_l": -10.0, "thigh_r": 45.0, "shin_r": 5.0, "foot_r": 10.0}, "pelvis": [34.0, 6.5]}
+  ]},
+  "knocked_down": {"loop": false, "hand": "open", "frames": [
+   {"t": 0.0, "bones": {"spine": -20.0, "head": 10.0, "upperarm_l": -60.0, "forearm_l": -20.0, "upperarm_r": -40.0, "forearm_r": -20.0, "hand_r": 40.0, "thigh_l": -10.0, "shin_l": 20.0, "foot_l": -5.0, "thigh_r": -5.0, "shin_r": 15.0, "foot_r": -5.0}, "pelvis": [-10.0, -2.6]},
+   {"t": 0.1667, "bones": {"spine": -30.0, "head": 12.0, "upperarm_l": -30.0, "forearm_l": -20.0, "upperarm_r": -10.0, "forearm_r": -20.0, "hand_r": 40.0, "thigh_l": -60.0, "shin_l": 40.0, "foot_l": -15.0, "thigh_r": -45.0, "shin_r": 50.0, "foot_r": -15.0}, "pelvis": [-20.0, 7.2]},
+   {"t": 0.3333, "bones": {"spine": -12.0, "head": 6.0, "upperarm_l": 25.0, "forearm_l": -25.0, "upperarm_r": 30.0, "forearm_r": -25.0, "hand_r": 40.0, "thigh_l": -85.0, "shin_l": 15.0, "foot_l": -20.0, "thigh_r": -80.0, "shin_r": 25.0, "foot_r": -20.0}, "pelvis": [-24.0, 33.7]}
+  ]},
+  "plant": {"loop": false, "hand": "weapon", "frames": [
+   {"t": 0, "bones": {"spine": 0.0, "head": 0.0, "upperarm_l": 4.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -14.0, "forearm_r": -6.0, "hand_r": 43.0, "thigh_l": 0.0, "shin_l": 0.0, "foot_l": 0.0, "thigh_r": 0.0, "shin_r": 0.0, "foot_r": 0.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": -6.0, "head": 4.0, "upperarm_l": -60.0, "forearm_l": 10.0, "hand_l": 0.0, "upperarm_r": 140.0, "forearm_r": 4.0, "hand_r": 68.0, "thigh_l": 0.0, "shin_l": 0.0, "foot_l": 0.0, "thigh_r": 0.0, "shin_r": 0.0, "foot_r": 0.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.3333, "bones": {"spine": 24.0, "head": 10.0, "upperarm_l": -30.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -40.0, "forearm_r": 10.0, "hand_r": 100.0, "thigh_l": -30.0, "shin_l": 50.0, "foot_l": -10.0, "thigh_r": -10.0, "shin_r": 30.0, "foot_r": -10.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.5, "bones": {"spine": 20.0, "head": 8.0, "upperarm_l": -25.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -35.0, "forearm_r": 8.0, "hand_r": 95.0, "thigh_l": -25.0, "shin_l": 42.0, "foot_l": -8.0, "thigh_r": -8.0, "shin_r": 25.0, "foot_r": -8.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.6667, "bones": {"spine": 0.0, "head": 0.0, "upperarm_l": 4.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -14.0, "forearm_r": -6.0, "hand_r": 43.0, "thigh_l": 0.0, "shin_l": 0.0, "foot_l": 0.0, "thigh_r": 0.0, "shin_r": 0.0, "foot_r": 0.0}, "pelvis": [0.0, 0.0]}
+  ]},
+  "grab": {"loop": false, "hand": "grip", "frames": [
+   {"t": 0, "bones": {"spine": 48.0, "head": -26.0, "upperarm_l": -145.0, "forearm_l": -10.0, "hand_l": 0.0, "upperarm_r": -150.0, "forearm_r": -10.0, "hand_r": 30.0, "thigh_l": -55.0, "shin_l": 20.0, "foot_l": -10.0, "thigh_r": 45.0, "shin_r": 5.0, "foot_r": 10.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.1667, "bones": {"spine": 25.0, "head": -10.0, "upperarm_l": -40.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -100.0, "forearm_r": -15.0, "hand_r": 20.0, "thigh_l": -30.0, "shin_l": 40.0, "foot_l": -8.0, "thigh_r": 20.0, "shin_r": 15.0, "foot_r": 0.0}, "pelvis": [0.0, 0.0]},
+   {"t": 0.3333, "bones": {"spine": 6.0, "head": -4.0, "upperarm_l": 10.0, "forearm_l": 0.0, "hand_l": 0.0, "upperarm_r": -80.0, "forearm_r": -25.0, "hand_r": 10.0, "thigh_l": 0.0, "shin_l": 0.0, "foot_l": 0.0, "thigh_r": 0.0, "shin_r": 0.0, "foot_r": 0.0}, "pelvis": [0.0, 0.0]}
+  ]}
+ }
+}
