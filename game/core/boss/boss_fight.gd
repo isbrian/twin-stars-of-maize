@@ -70,6 +70,7 @@ var tn: Tuning = Tune.data
 var tester := "slice"
 var keep_phase := false
 var log_dir := "user://boss_logs"
+var write_log := OS.is_debug_build()  # 發行版不寫紀錄檔，事件仍記在記憶體（MV-RELEASE-002）
 var player_scripted := false  # true：角色一律由測試或展示模式操控
 var gs  # state/game_state.gd；null＝原型模式
 var save_path := Save.PATH
@@ -169,8 +170,9 @@ func _ready() -> void:
 	_wire()
 	log = FightLog.new()
 	log.keep_phase = keep_phase
-	log.open(FightLog.safe_name(tester), FightLog.stamp_from(Time.get_datetime_dict_from_system()), log_dir)
-	print("BOSSLOG %s" % ProjectSettings.globalize_path(log_dir))
+	if write_log:
+		log.open(FightLog.safe_name(tester), FightLog.stamp_from(Time.get_datetime_dict_from_system()), log_dir)
+		print("BOSSLOG %s" % ProjectSettings.globalize_path(log_dir))
 	_apply_loadout()
 	_set_view(Nance.REGION)
 	stage = Stage.APPROACH

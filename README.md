@@ -1,12 +1,12 @@
 # 雙子星玉米人 Twin Stars of Maize
 
-> **English summary** — *Twin Stars of Maize* is a 2D side-scrolling action-exploration game (metroidvania-style vertical slice) inspired by the Hero Twins cycle of the K'iche' Maya narrative tradition. **The game is in Traditional Chinese only.** This is v0.1.0, an early playtest build: one forest area, one boss, and an eight-page picture-book prologue.
+> **English summary** — *Twin Stars of Maize* is a 2D side-scrolling action-exploration game (metroidvania-style vertical slice) inspired by the Hero Twins cycle of the K'iche' Maya narrative tradition. **The game is in Traditional Chinese only.** The downloads are v0.1.0 and the source is v0.1.1 (license and tooling fixes, no gameplay changes); this is an early playtest build: one forest area, one boss, and an eight-page picture-book prologue.
 >
 > **AI disclosure:** all art (characters, scenery, props, illustrations) and all audio (sound effects, ambience, music) were generated with AI (OpenAI ChatGPT / Codex) and reviewed one by one by the author before use. The code was written by the author together with AI.
 >
 > **Source and adaptation:** based on Allen J. Christenson's English translation (cross-checked with Dennis Tedlock's). This is an adaptation, not a faithful retelling of the original text.
 >
-> **License:** code (`game/**/*.gd`, `tools/`) MIT; art, audio and documents all rights reserved — see [LICENSE](LICENSE) and [LICENSE-ASSETS.md](LICENSE-ASSETS.md). Feedback is welcome via [Issues](../../issues).
+> **License:** code (the `.gd`/`.py`/`.sh` and `.tscn`/`.tres`/`.json`/`.cfg`/`project.godot`/`.uid`/`.import` files under `game/` and `prototypes/`, and `tools/`) MIT; art, audio and documents all rights reserved — see [LICENSE](LICENSE) and [LICENSE-ASSETS.md](LICENSE-ASSETS.md). Feedback is welcome via [Issues](../../issues).
 
 ![標題畫面](screenshots/title.jpg)
 
@@ -23,13 +23,13 @@
 
 ## 下載與遊玩
 
-到 [Releases](../../releases/latest) 下載：
+到 [Releases](../../releases/latest) 下載（下載檔是 v0.1.0；原始碼 v0.1.1 只修了授權範圍與發版工具，遊戲內容相同）：
 
 | 平台 | 檔案 | 第一次打開 |
 |---|---|---|
 | Windows 10／11（64 位元） | `TwinStarsOfMaize-v0.1.0-windows.zip` | 解壓後執行 `TwinStarsOfMaize.exe`。若出現「Windows 已保護您的電腦」，按「其他資訊」→「仍要執行」（本程式沒有付費的程式碼簽章） |
 | macOS：Intel 機型 11 以上、Apple 晶片機型 13 以上 | `TwinStarsOfMaize-v0.1.0-macos.zip` | 解壓後打開「雙子星玉米人」。第一次會被擋下（沒有 Apple 公證）：到「系統設定」→「隱私權與安全性」，往下找到這個 App，按「仍要打開」。或在終端機執行 `xattr -dr com.apple.quarantine 雙子星玉米人.app` 後再打開 |
-| 網頁版 | [直接在瀏覽器玩](https://isbrian.github.io/twin-stars-of-maize/) | 建議用桌機的 Chrome／Edge／Firefox；第一次載入約 70 MB。網頁版沒有「結束遊戲」 |
+| 網頁版 | [直接在瀏覽器玩](https://isbrian.github.io/twin-stars-of-maize/) | 建議用桌機的 Chrome／Edge／Firefox；第一次載入約 70 MB。網頁版的「結束遊戲」是灰色的，關掉分頁即可 |
 
 存檔在本機（網頁版存在瀏覽器裡）。建議用手把遊玩。
 
@@ -73,7 +73,7 @@
 
 ## 授權
 
-- 程式（`game/` 裡的 `.gd`）與工具（`tools/`）：[MIT](LICENSE)
+- 程式：[MIT](LICENSE)。範圍是 `game/` 與 `prototypes/` 的程式（`.gd`、`.py`、`.sh`）、場景、資料與 Godot 中繼檔（`.tscn`、`.tres`、`.json`、`.cfg`、`project.godot`、`.uid`、`.import`），以及工具（`tools/`）
 - 美術、音訊、文件：保留所有權利，見 [LICENSE-ASSETS.md](LICENSE-ASSETS.md)
 - 字型 Noto Serif TC／Noto Serif：SIL Open Font License 1.1（授權文字在字型旁）
 - 引擎 [Godot Engine](https://godotengine.org)（MIT）；引擎與它內含的第三方函式庫的授權聲明，附在每個下載檔與網頁版的 `THIRD_PARTY_NOTICES.txt`

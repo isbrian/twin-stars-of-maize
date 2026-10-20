@@ -12,7 +12,7 @@
 | 前置 | MV-SLICE-001d2b（#30 已合併） |
 | 設計依據 | [GitHub 公開上傳評估](../../report/GITHUB_PUBLIC_REVIEW_2026-10-20_0223.md)；[AI 素材條款與揭露](../../docs/legal/AI素材條款與揭露.md) 規則 1、6；[CULTURAL_PRINCIPLES](../../CULTURAL_PRINCIPLES.md)「標題與封面不出現聖典名」；[名稱表第 6 節](../../docs/design/MV-NAME-001_名稱表.md) |
 | 引擎 | Godot 4.7.2（`4.7.2.stable.official.ed1daf0bf`） |
-| 狀態 | 🔄 實作完成（自測 707／0），待最終審查與 Brian 驗收；外部發佈未做。見[執行報告](../../report/MV-RELEASE-001_公開試玩版_2026-10-21_0118_執行報告.md) |
+| 狀態 | ✅ 已發佈（2026-10-21）：公開倉庫 isbrian/twin-stars-of-maize、Release v0.1.0、GitHub Pages。見[執行報告](../../report/MV-RELEASE-001_公開試玩版_2026-10-21_0118_執行報告.md) |
 
 ## 背景與目的
 
@@ -117,8 +117,8 @@
 Brian：
 
 7. ✅（2026-10-21「試玩可以」；英文第 4 句改寫）標題畫面與製作說明看新標題；英文繪本對照清單；公開 README 文字。
-8. 每一步外部動作（第 6 節）的同意。
-9. 發佈後點開公開頁面、下載、網頁版各試一次。
+8. ✅ 每一步外部動作（第 6 節）的同意（2026-10-21，六步逐一同意）。
+9. 🔶 AI 已點開公開頁面、從 Release 下載核對、網頁版實際打開；瀏覽器下載的 macOS「仍要打開」流程與 Windows 實機待 Brian。
 
 ## 風險與退路
 

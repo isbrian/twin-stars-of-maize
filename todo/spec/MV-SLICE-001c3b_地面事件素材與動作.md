@@ -12,7 +12,7 @@
 | 前置 | MV-SLICE-001c3a（五段過場與佔位）、MV-SLICE-001b2b2（祖母、老鼠的骨架） |
 | 設計依據 | ART_SPEC 第 1～3 節（畫風、色盤）、[MV-ASSET-019](../../docs/assets/MV-ASSET-019_素材工單_反光型.md)（Codex 工單格式）；[MV-DESIGN-002 原典核對](../../docs/design/MV-DESIGN-002_原典核對.md) 第 4、5 項 |
 | 引擎 | Godot 4.7.2 |
-| 狀態 | ✅ 完成：影片與手把試玩通過（Brian 2026-10-19），合併：[PR #26](https://github.com/isbrian/Game-Popol-Vuh-Metroidvania/pull/26) |
+| 狀態 | ✅ 完成：影片與手把試玩通過（Brian 2026-10-19），合併：PR #26（私人倉庫） |
 
 ## 背景與目的
 

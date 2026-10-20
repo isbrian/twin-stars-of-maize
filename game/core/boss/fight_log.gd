@@ -43,6 +43,8 @@ func close(t: float, end_type: String) -> void:
 	closed = true
 	if _file != null:
 		_file.close()
+	if path_base.is_empty():  # 沒開檔（發行版）：不寫摘要
+		return
 	var md := FileAccess.open(path_base + ".md", FileAccess.WRITE)
 	if md != null:
 		md.store_string(summary_markdown(t))

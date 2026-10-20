@@ -1,6 +1,6 @@
 extends Node2D
 # 垂直切片的正式專案（MV-SLICE-001a）：主選單 → 遊戲本體（world/game_world.gd）→ 回主選單。
-# --self-test 跑自測；開發版另有 --room <id>、--boss、--boss-phase N、--shots <資料夾>、--rig-view、--fx-view、--cutscene <名稱>、--sound-tour、--title-tour（發行版忽略，直接進主選單）。
+# 開發版才有的參數：--self-test 跑自測、--room <id>、--boss、--boss-phase N、--shots <資料夾>、--rig-view、--fx-view、--cutscene <名稱>、--sound-tour、--title-tour（發行版忽略，直接進主選單）。
 
 const Runner := preload("res://tests/runner.gd")
 const LaunchArgs := preload("res://launch_args.gd")

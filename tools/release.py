@@ -2,9 +2,11 @@
 
   python3 tools/release.py scan [資料夾]   掃描禁用內容；沒給資料夾時掃私人倉庫進版控的檔
                                            （有發現就列出並以結束碼 1 結束）
-  python3 tools/release.py build <版號>     匯出 Windows、macOS、網頁版到 build/（需要 Godot 4.7.2 匯出範本）
+  python3 tools/release.py build <版號>     匯出 Windows、macOS、網頁版到 build/（需要 Godot 4.7.2 匯出範本），
+                                           再逐位元組掃描產物（有發現就以結束碼 1 結束）
   python3 tools/release.py snapshot <ref> <輸出資料夾>
-                                           公開倉庫的快照：git archive <ref>＋release/public/ 的檔放到根目錄；
+                                           公開倉庫的快照：git archive <ref>＋release/public/ 的檔放到根目錄、
+                                           私人倉庫連結改純文字；
                                            掃描不乾淨就刪掉輸出、結束碼 1
 
 禁用內容在執行時從本機環境取得（家目錄、倉庫所在磁碟的掛載路徑、git 作者信箱），
@@ -21,8 +23,14 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# 快照裡不得出現的資料夾：原典譯本、AI 測試素材、工作區、匯出產物、git 本身（快照不帶歷史）
-FORBIDDEN_DIRS = ("sources", "assets-test", ".superpowers", "build", ".git")
+# 快照裡不得出現的資料夾（任何深度）：原典譯本、AI 測試素材、工作區、匯出產物、git 本身（快照不帶歷史）、Claude 工作區
+FORBIDDEN_DIRS = ("sources", "assets-test", ".superpowers", "build", ".git", ".claude")
+# 私人倉庫（含舊名，GitHub 會轉址）。快照把它們的連結改成純文字（MV-RELEASE-002）；公開倉庫 twin-stars-of-maize 是 -dev 的前綴，不能誤判
+PRIVATE_REPOS = ("isbrian/twin-stars-of-maize-dev", "isbrian/Game-Popol-Vuh-Metroidvania")
+# 前綴：https／www／SSH（git@github.com:）／raw.githubusercontent.com（MV-RELEASE-002 最終審查）
+_PRIVATE = r"(?:https?://)?(?:git@)?(?:www\.)?(?:github\.com[/:]|raw\.githubusercontent\.com/)(?:" + "|".join(re.escape(r) for r in PRIVATE_REPOS) + r")(?![\w-])[^\s)\]>\"'`]*"
+PRIVATE_URL = re.compile(_PRIVATE, re.IGNORECASE)
+PRIVATE_MD_LINK = re.compile(r"\[([^\]]*)\]\(\s*<?" + _PRIVATE + r">?\s*\)", re.IGNORECASE)
 # 通用規則（比對前先轉小寫、還原 \/ 與 %2F）：任何使用者的家目錄、任何外接磁碟路徑、任何信箱。
 # `<` 開頭的是文件裡的佔位寫法（例如 /Volumes/<磁碟名>），不算。
 RULES = {
@@ -30,7 +38,7 @@ RULES = {
     "rule:volumes": re.compile(r"/volumes/[^/<\s\"'`)\]]+"),
     "rule:email": re.compile(r"[a-z0-9._%+-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}"),
 }
-EMAIL_OK = ("noreply", "@example.com")  # GitHub 匿名信箱、範例信箱
+EMAIL_OK = ("noreply", "@example.com", "git@github.com")  # GitHub 匿名信箱、範例信箱、GitHub 的 SSH 帳號（不是個人信箱）
 # 掃描器自己的規則與測試用假資料（alice、bob@foo.org…）只豁免通用規則；精確比對照樣檢查（test_scan_patterns_not_in_source）
 RULES_EXEMPT = ("tools/release.py", "tools/test_release.py")
 BUILD = ROOT / "build"
@@ -62,10 +70,18 @@ def scan(root, patterns, files=None):
     """回傳 [(相對路徑, 行號, pattern)]；二進位檔（前 8 KB 含 \\0）跳過；禁用資料夾回傳 (資料夾, 0, "forbidden dir")。"""
     root = Path(root)
     found = []
-    if files is None:  # 掃資料夾（快照）時才檢查禁用資料夾；掃私人倉庫的進版控檔時它們本來就在旁邊
-        found = [(d, 0, "forbidden dir") for d in FORBIDDEN_DIRS if (root / d).exists()]
-        files = sorted(p.relative_to(root).as_posix() for p in root.rglob("*")
-                       if p.is_file() and p.relative_to(root).parts[0] not in FORBIDDEN_DIRS)
+    rules = RULES
+    if files is None:  # 掃資料夾（快照）時才檢查禁用資料夾與私人網址；私人倉庫本來就有它們
+        rules = {**RULES, "rule:private-repo": PRIVATE_URL}
+        files = []
+        for p in sorted(root.rglob("*")):
+            parts = p.relative_to(root).parts
+            if any(x in FORBIDDEN_DIRS for x in parts[:-1]):
+                continue  # 禁用資料夾裡的東西：資料夾本身已回報
+            if parts[-1] in FORBIDDEN_DIRS and p.is_dir():
+                found.append((p.relative_to(root).as_posix(), 0, "forbidden dir"))
+            elif p.is_file():
+                files.append(p.relative_to(root).as_posix())
     for rel in files:
         path = root / rel
         data = path.read_bytes()
@@ -75,7 +91,7 @@ def scan(root, patterns, files=None):
             low = line.lower().replace("\\/", "/").replace("%2f", "/")
             hits = [(rel, n, p) for p in patterns if p.lower() in low]
             if not hits and rel not in RULES_EXEMPT:
-                for name, rx in RULES.items():
+                for name, rx in rules.items():
                     m = [x for x in rx.findall(low) if name != "rule:email" or not any(ok in x for ok in EMAIL_OK)]
                     if m:
                         hits.append((rel, n, name))
@@ -83,8 +99,30 @@ def scan(root, patterns, files=None):
     return found
 
 
+def scrub_private_links(text):
+    """私人倉庫的 Markdown 連結 → 「文字（私人倉庫）」；其他私人網址 → 「（私人倉庫連結）」。"""
+    return PRIVATE_URL.sub("（私人倉庫連結）", PRIVATE_MD_LINK.sub(r"\1（私人倉庫）", text))
+
+
+def scan_artifacts(paths, patterns):
+    """匯出產物逐位元組找精確字串（zip 逐一讀成員）；回傳 [(名稱, pattern)]，名稱相對於各路徑的上一層。"""
+    found = []
+    for path in map(Path, paths):
+        for f in (sorted(path.rglob("*")) if path.is_dir() else [path]):
+            if not f.is_file():
+                continue
+            name = f.relative_to(path.parent).as_posix()
+            if f.suffix == ".zip":
+                with zipfile.ZipFile(f) as zf:
+                    blobs = [(f"{name}:{n}", zf.read(n)) for n in zf.namelist()]
+            else:
+                blobs = [(name, f.read_bytes())]
+            found += [(n, p) for n, data in blobs for p in patterns if p.encode() in data]
+    return found
+
+
 def snapshot(ref, out, patterns=None):
-    """git archive ref 解到 out，release/public/ 的內容放到根目錄（覆蓋同名檔）、拿掉 release/；
+    """git archive ref 解到 out，release/public/ 的內容放到根目錄（覆蓋同名檔）、拿掉 release/、私人連結改純文字；
     掃描有發現就刪掉 out 並回傳發現清單，乾淨回傳 []。out 必須不存在或是空的。"""
     out = Path(out)
     if out.exists() and any(out.iterdir()):
@@ -97,6 +135,12 @@ def snapshot(ref, out, patterns=None):
     if public.exists():
         shutil.copytree(public, out, dirs_exist_ok=True)
     shutil.rmtree(out / "release", ignore_errors=True)
+    for f in out.rglob("*"):
+        if f.is_file() and b"\0" not in f.read_bytes()[:8192]:
+            text = f.read_text(encoding="utf-8", errors="surrogateescape")
+            scrubbed = scrub_private_links(text)
+            if scrubbed != text:
+                f.write_text(scrubbed, encoding="utf-8", errors="surrogateescape")
     found = scan(out, forbidden_patterns(ROOT) if patterns is None else patterns)
     if found:
         shutil.rmtree(out)
@@ -156,13 +200,19 @@ def build(version):
 
 def main(argv):
     if len(argv) >= 3 and argv[1] == "build":
-        for p in build(argv[2]):
+        out = build(argv[2])
+        for p in out:
             if p.is_dir():
                 size = sum(f.stat().st_size for f in p.rglob("*") if f.is_file())
                 print(f"BUILD {p.relative_to(ROOT)}/  {size / 1e6:.1f} MB")
             else:
                 print(f"BUILD {p.relative_to(ROOT)}  {p.stat().st_size / 1e6:.1f} MB  sha256 {_sha256(p)}")
-        return 0
+        pats = forbidden_patterns(ROOT)
+        found = scan_artifacts(out, pats)
+        for name, p in found:
+            print(f"BUILD 不乾淨 {name}  含禁用字串（第 {pats.index(p) + 1} 項）")
+        print(f"BUILD 產物掃描{'乾淨' if not found else f'：{len(found)} 筆'}")
+        return 1 if found else 0
     if len(argv) >= 4 and argv[1] == "snapshot":
         found = snapshot(argv[2], Path(argv[3]))
         for rel, n, p in found:

@@ -5,12 +5,13 @@ extends RefCounted
 # MV-SLICE-001b2a：--rig-view（雙胞胎的動作展示畫面，同樣只在開發版生效）。
 # MV-SLICE-001c1：--fx-view（Boss 特效展示畫面，同樣只在開發版生效；同樣接受 --frames）。
 # MV-SLICE-001c2a：--cutscene <名稱>（直接播 Boss 戰的某段演出，同樣只在開發版生效；同樣接受 --frames）。
+# MV-RELEASE-002：--self-test 也只在開發版生效（debug 由呼叫端傳入，測試才能模擬發行版）。
 
 
 ## 回傳 {"mode": "selftest"|"sound_tour"|"title_tour"|"shots"|"rig_view"|"fx_view"|"cutscene"|"boss"|"room"|"title", "boss_phase": int, "room": String, "shots_dir": String, "frames_dir": String, "cutscene": String}
-static func parse(args: PackedStringArray) -> Dictionary:
+static func parse(args: PackedStringArray, debug := OS.is_debug_build()) -> Dictionary:
 	var out := {"mode": "title", "boss_phase": 0, "room": "", "shots_dir": "", "frames_dir": "", "cutscene": ""}
-	if "--self-test" in args:
+	if debug and "--self-test" in args:
 		out.mode = "selftest"
 		return out
 	if "--sound-tour" in args:  # MV-SLICE-001d1a：聲音展示（開發版才生效）

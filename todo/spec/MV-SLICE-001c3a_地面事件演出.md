@@ -12,7 +12,7 @@
 | 前置 | MV-SLICE-001c2a～c2c（過場系統：黑邊、替身、字幕、長按跳過）、MV-SLICE-001b2b2（祖母、老鼠的骨架） |
 | 設計依據 | [MV-DESIGN-002 原典核對](../../docs/design/MV-DESIGN-002_原典核對.md) 第 4、5 項；繪本後篇第 9 張「老鼠與球具」（[MV-BOOK-003](../../docs/book/MV-BOOK-003_繪本後篇文本.md)） |
 | 引擎 | Godot 4.7.2 |
-| 狀態 | ✅ 完成：影片與手把試玩通過（Brian 2026-10-19），合併：[PR #25](https://github.com/isbrian/Game-Popol-Vuh-Metroidvania/pull/25) |
+| 狀態 | ✅ 完成：影片與手把試玩通過（Brian 2026-10-19），合併：PR #25（私人倉庫） |
 
 ## 背景與目的
 

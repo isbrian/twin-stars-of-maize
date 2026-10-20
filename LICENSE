@@ -2,9 +2,13 @@ MIT License
 
 Copyright (c) 2026 Brian
 
-This license applies to the source code of this repository: the GDScript
-files (*.gd) under game/ and everything under tools/. It does NOT apply to
-art, audio, fonts or documents; see LICENSE-ASSETS.md.
+This license applies to the source code of this repository:
+- the source files (*.gd, *.py, *.sh) under game/ and prototypes/;
+- the Godot scene, resource, data and metadata files under game/ and
+  prototypes/ (*.tscn, *.tres, *.json, *.cfg, project.godot, *.uid, *.import);
+- everything under tools/.
+It does NOT apply to art, audio, fonts or documents (including the picture
+book text in prototypes/book-reader/text/); see LICENSE-ASSETS.md.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
