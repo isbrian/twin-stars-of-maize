@@ -1,6 +1,6 @@
 # 雙子星玉米人 Twin Stars of Maize
 
-> **English summary** — *Twin Stars of Maize* is a 2D side-scrolling action-exploration game (metroidvania-style vertical slice) inspired by the Hero Twins cycle of the K'iche' Maya narrative tradition. **The game is in Traditional Chinese only.** The downloads are v0.1.0 and the source is v0.1.1 (license and tooling fixes, no gameplay changes); this is an early playtest build: one forest area, one boss, and an eight-page picture-book prologue.
+> **English summary** — *Twin Stars of Maize* is a 2D side-scrolling action-exploration game (metroidvania-style vertical slice) inspired by the Hero Twins cycle of the K'iche' Maya narrative tradition. **The game is in Traditional Chinese only.** This is v0.1.2, an early playtest build: one forest area, one boss, and an eight-page picture-book prologue.
 >
 > **AI disclosure:** all art (characters, scenery, props, illustrations) and all audio (sound effects, ambience, music) were generated with AI (OpenAI ChatGPT / Codex) and reviewed one by one by the author before use. The code was written by the author together with AI.
 >
@@ -23,12 +23,12 @@
 
 ## 下載與遊玩
 
-到 [Releases](../../releases/latest) 下載（下載檔是 v0.1.0；原始碼 v0.1.1 只修了授權範圍與發版工具，遊戲內容相同）：
+到 [Releases](../../releases/latest) 下載：
 
 | 平台 | 檔案 | 第一次打開 |
 |---|---|---|
-| Windows 10／11（64 位元） | `TwinStarsOfMaize-v0.1.0-windows.zip` | 解壓後執行 `TwinStarsOfMaize.exe`。若出現「Windows 已保護您的電腦」，按「其他資訊」→「仍要執行」（本程式沒有付費的程式碼簽章） |
-| macOS：Intel 機型 11 以上、Apple 晶片機型 13 以上 | `TwinStarsOfMaize-v0.1.0-macos.zip` | 解壓後打開「雙子星玉米人」。第一次會被擋下（沒有 Apple 公證）：到「系統設定」→「隱私權與安全性」，往下找到這個 App，按「仍要打開」。或在終端機執行 `xattr -dr com.apple.quarantine 雙子星玉米人.app` 後再打開 |
+| Windows 10／11（64 位元） | `TwinStarsOfMaize-v0.1.2-windows.zip` | 解壓後執行 `TwinStarsOfMaize.exe`。若出現「Windows 已保護您的電腦」，按「其他資訊」→「仍要執行」（本程式沒有付費的程式碼簽章） |
+| macOS：Intel 機型 11 以上、Apple 晶片機型 13 以上 | `TwinStarsOfMaize-v0.1.2-macos.zip` | 解壓後打開「雙子星玉米人」。第一次會被擋下（沒有 Apple 公證）：到「系統設定」→「隱私權與安全性」，往下找到這個 App，按「仍要打開」。或在終端機執行 `xattr -dr com.apple.quarantine 雙子星玉米人.app` 後再打開 |
 | 網頁版 | [直接在瀏覽器玩](https://isbrian.github.io/twin-stars-of-maize/) | 建議用桌機的 Chrome／Edge／Firefox；第一次載入約 70 MB。網頁版的「結束遊戲」是灰色的，關掉分頁即可 |
 
 存檔在本機（網頁版存在瀏覽器裡）。建議用手把遊玩。
@@ -54,8 +54,13 @@
 ## 已知問題
 
 - 這是試玩版，只有一個區域。
-- HUD 的幾處排版還在調整。
 - Windows 版作者沒有實機測過，歡迎回報。
+
+## 版本紀錄
+
+- **v0.1.2**：HUD 字放大、加描邊，空的血格調暗，沒上場的兄弟看得清楚；繪本翻頁預先載入插圖、開書只響一個音效；「要先讀繪本嗎？」按翻滾改成回主選單；製作說明的改編例子更新。
+- **v0.1.1**：只更新原始碼（授權範圍、發版工具），沒有新的下載檔。
+- **v0.1.0**：第一個公開試玩版。
 
 ## 回饋
 

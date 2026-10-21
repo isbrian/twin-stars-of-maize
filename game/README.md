@@ -269,8 +269,8 @@ godot --path game --resolution 1920x1080 --write-movie /tmp/d2a_tour.avi -- --ti
 
 | 項目 | 做法 |
 |---|---|
-| 入口 | 主選單「繪本」（讀完或離開回主選單）；第一次選新遊戲時選單下方問「要先讀繪本嗎？」（讀繪本／直接開始；翻滾＝直接開始），讀完或離開都直接開始新遊戲。問過一次就寫 `user://book_asked.json`，之後不再問（和存檔分開；刪掉這個檔就會再問） |
-| 閱讀器 | [ui/book_reader.gd](ui/book_reader.gd)（翻頁 0.3 秒交叉淡入淡出；右鍵／攻擊鍵／Enter 下一頁、左鍵上一頁、翻滾／暫停離開；最後一頁再往下＝讀完）、[ui/book_page.gd](ui/book_page.gd)、[ui/book_style.gd](ui/book_style.gd)（版面數值，和原型 `prototypes/book-reader/book_style.gd` 的繁中那組相同）；聲音 `ui_page_open`／`ui_page_close`，環境音不變 |
+| 入口 | 主選單「繪本」（讀完或離開回主選單）；第一次選新遊戲時選單下方問「要先讀繪本嗎？」（讀繪本／直接開始；翻滾或暫停＝取消回主選單、不算問過），讀完或離開都直接開始新遊戲。選了任一個就寫 `user://book_asked.json`，之後不再問（和存檔分開；刪掉這個檔就會再問） |
+| 閱讀器 | [ui/book_reader.gd](ui/book_reader.gd)（翻頁 0.3 秒交叉淡入淡出；右鍵／攻擊鍵／Enter 下一頁、左鍵上一頁、翻滾／暫停離開；最後一頁再往下＝讀完）、[ui/book_page.gd](ui/book_page.gd)、[ui/book_style.gd](ui/book_style.gd)（版面數值，和原型 `prototypes/book-reader/book_style.gd` 的繁中那組相同）；聲音 `ui_page_open`／`ui_page_close`（開繪本不另播 `ui_confirm`），環境音不變；前後頁插圖用背景執行緒預先載入 |
 | 文字 | [ui/book_text.gd](ui/book_text.gd) 由 `python3 tools/book_export.py` 從 `docs/book/` 產生（不要手改）；改了文本要重跑它，再重跑 `python3 tools/font_subset.py`。`tools/test_book_export.py` 會抓沒重跑的情形 |
 | 插圖 | `art/book/book_front_01～08.webp`：從 `assets-test/book_front/final/` 的 PNG 轉成 WebP 品質 90（Pillow：`Image.open(png).convert("RGB").save(webp, "WEBP", quality=90, method=6)`），匯入設 `compress/mode=1`（Lossy）、`compress/lossy_quality=0.9` |
 

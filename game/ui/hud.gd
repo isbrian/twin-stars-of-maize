@@ -2,6 +2,7 @@ extends Control
 # HUD：血量、治療次數、兩兄弟與各自的武器（MV-PROTO-002）、除錯鍵提示；
 # MV-PROTO-003：Boss 名稱、三段血條、破綻條（boss_name 空字串時不畫）。
 # MV-SLICE-001b1（SLICE-b8）：版面同 a，色塊換成素材；Boss 的條維持程式繪製、改用色盤配色（不用紅色）。
+# MV-SLICE-001d2c：字級 26 → 34、文字加深色描邊、空格調暗、沒上場的兄弟提高不透明度（d2a HUD 檢查 H1～H3）。
 
 const Weapons := preload("res://core/player/weapons.gd")
 const TEXTURES := {
@@ -31,6 +32,11 @@ const DARK := Color8(16, 13, 10)  # #100D0A
 const SPENT := Color8(60, 52, 44)
 const ROW := 46  # 圖示間距（同 a 的方塊）
 const RES_CELL := Vector2(40, 20)  # 資源條每格的大小（填色圖縮放）
+const FONT_SIZE := 34  # HUD 文字（1080p 基準）
+const OUTLINE := 6  # 文字描邊寬（1080p 基準；720p 約 2 px）
+const EMPTY_TINT := Color(0.42, 0.42, 0.42, 0.85)  # 空格（血格、治療次數）調暗，剩幾格一眼看出
+const SKILL_Y := 276.0
+const OBJECTIVE_Y := 390.0
 
 var player
 var show_hint := true  # Boss 戰不顯示除錯鍵（不告訴外人）
@@ -60,39 +66,55 @@ func _draw() -> void:
 	var t := TEXTURES
 	var h = player.health
 	for i in h.max_hp:
-		draw_texture(t.health_full if i < h.hp else t.health_empty, Vector2(40 + i * ROW, 40))
+		draw_texture(t.health_full if i < h.hp else t.health_empty, Vector2(40 + i * ROW, 40), pip_tint(i < h.hp))
 	if half_heart():  # 血量碎片湊一半（MV-SLICE-001c4a）：一格的左半片
 		draw_texture(t.health_half, Vector2(40 + h.max_hp * ROW, 40))
 	for i in player.tn.heal_charges:
-		draw_texture(t.heal_full if i < h.heal_charges else t.heal_empty, Vector2(44 + i * ROW, 88))
+		draw_texture(t.heal_full if i < h.heal_charges else t.heal_empty, Vector2(44 + i * ROW, 88), pip_tint(i < h.heal_charges))
 	if gs != null:  # 熱湯接在治療圖示後面
 		var sx: float = 44.0 + player.tn.heal_charges * ROW + 10.0
 		draw_texture(t.soup, Vector2(sx, 88))
-		draw_string(font, Vector2(sx + 38, 114), "%d／%d" % [gs.soup, gs.tn.soup_max], HORIZONTAL_ALIGNMENT_LEFT, -1, 26, TEXT)
+		_text(font, Vector2(sx + 38, 114), "%d／%d" % [gs.soup, gs.tn.soup_max], TEXT)
 	for i in player.twins.size():  # 名字＋武器圖示（斷臂、沒有武器顯示「—」）；場上的人較亮
 		var tw = player.twins[i]
-		var c := Color(TEXT, 0.95 if i == player.twin_index else 0.4)
+		var c := name_color(i == player.twin_index)
 		var y: float = 160.0 + i * 46.0
-		draw_string(font, Vector2(40, y), tw.display_name, HORIZONTAL_ALIGNMENT_LEFT, -1, 26, c)
-		var x := 40.0 + font.get_string_size(tw.display_name, HORIZONTAL_ALIGNMENT_LEFT, -1, 26).x + 14.0
+		_text(font, Vector2(40, y), tw.display_name, c)
+		var x := 40.0 + font.get_string_size(tw.display_name, HORIZONTAL_ALIGNMENT_LEFT, -1, FONT_SIZE).x + 14.0
 		var icon := weapon_icon(tw.weapon) if tw.weapon_enabled else null
 		if icon != null:
 			draw_texture(icon, Vector2(x, y - 30), Color(1, 1, 1, c.a))
 		else:
-			draw_string(font, Vector2(x, y), "—", HORIZONTAL_ALIGNMENT_LEFT, -1, 26, c)
+			_text(font, Vector2(x, y), "—", c)
 	if gs != null:
 		draw_texture(t.cacao, Vector2(40, 228))
-		draw_string(font, Vector2(88, 254), str(gs.cacao), HORIZONTAL_ALIGNMENT_LEFT, -1, 26, TEXT)
+		_text(font, Vector2(88, 254), str(gs.cacao), TEXT)
 		if gs.skill_slots[0] != "":
-			_draw_skill(Vector2(40, 276))
+			_draw_skill(Vector2(40, SKILL_Y))
 		if show_objective and objective_line() != "":
-			draw_string(font, Vector2(40, 390), objective_line(), HORIZONTAL_ALIGNMENT_LEFT, -1, 26, Color(TEXT, 0.9))
+			_text(font, Vector2(40, OBJECTIVE_Y), objective_line(), Color(TEXT, 0.9))
 	if boss_name != "":
 		_draw_boss()
 	if notice != "":
-		draw_string(ThemeDB.fallback_font, Vector2(0, size.y - 160), notice, HORIZONTAL_ALIGNMENT_CENTER, size.x, 28, Color(1, 1, 1, 0.9))
+		_text(ThemeDB.fallback_font, Vector2(0, size.y - 160), notice, Color(1, 1, 1, 0.9), 28, HORIZONTAL_ALIGNMENT_CENTER, size.x)
 	if show_hint:
 		draw_string(ThemeDB.fallback_font, Vector2(40, 1050), "Tab／Y 換人　1／2／3 換武器　F9 存回數值並印出數值表與招架紀錄　F10 重置房間", HORIZONTAL_ALIGNMENT_LEFT, -1, 22, Color(1, 1, 1, 0.6))
+
+
+## 先畫深色描邊再畫字（描邊跟著文字的不透明度）
+func _text(font: Font, pos: Vector2, s: String, color: Color, fsize := FONT_SIZE, align := HORIZONTAL_ALIGNMENT_LEFT, width := -1.0) -> void:
+	draw_string_outline(font, pos, s, align, width, fsize, OUTLINE, Color(DARK, 0.85 * color.a))
+	draw_string(font, pos, s, align, width, fsize, color)
+
+
+## 血格、治療次數的色調：空格調暗
+static func pip_tint(filled: bool) -> Color:
+	return Color.WHITE if filled else EMPTY_TINT
+
+
+## 名字與武器的顏色：場上的人亮、沒上場的暗米色但看得清楚
+static func name_color(active: bool) -> Color:
+	return Color(TEXT, 0.95) if active else Color(MUTED, 0.75)
 
 
 ## 武器的 HUD 圖示（Weapons.Weapon；-1＝沒有武器 → null）
@@ -176,7 +198,7 @@ func twin_lines() -> PackedStringArray:
 func _draw_boss() -> void:
 	var font := ThemeDB.fallback_font
 	var y := size.y - 100.0
-	draw_string(font, Vector2(0, y), boss_name, HORIZONTAL_ALIGNMENT_CENTER, size.x, 30, TEXT)
+	_text(font, Vector2(0, y), boss_name, TEXT, 30, HORIZONTAL_ALIGNMENT_CENTER, size.x)
 	var left := size.x / 2.0 - 465.0
 	for i in 3:
 		draw_rect(Rect2(left + i * 315.0, y + 18, 300, 18), GOLD if i < boss_segments else SPENT)

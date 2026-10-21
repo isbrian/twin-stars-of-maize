@@ -19,7 +19,7 @@ func test_no_sacred_name_in_title() -> void:
 
 
 func test_display_title_has_version() -> void:
-	check(TitleMenu.display_title() == "雙子星玉米人 v0.1.1", "製作說明標題帶版號（%s）" % TitleMenu.display_title())
+	check(TitleMenu.display_title() == "雙子星玉米人 v0.1.2", "製作說明標題帶版號（%s）" % TitleMenu.display_title())
 
 
 func test_credits_show_version() -> void:

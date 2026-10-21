@@ -192,6 +192,7 @@ func _menu_shots() -> void:
 	t.book = null
 	t.book_asked_path = "user://shots_book_asked.json"
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(t.book_asked_path))
+	t._has_save = false  # 有存檔時會先拍到覆蓋確認（MV-SLICE-001d2b2）
 	t.choose_item("新遊戲")
 	for i in SETTLE_FRAMES:
 		await get_tree().process_frame

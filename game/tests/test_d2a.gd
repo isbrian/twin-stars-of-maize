@@ -34,6 +34,20 @@ func test_credits_text_discloses() -> void:
 		check(w in all, "製作說明要寫到「%s」" % w)
 
 
+func test_credits_adaptations_registered() -> void:  # MV-SLICE-001d2d
+	var all := ""
+	for l in CreditsText.LINES:
+		all += l[1] + "\n"
+	var cp := FileAccess.get_file_as_string(ProjectSettings.globalize_path("res://").path_join("../CULTURAL_PRINCIPLES.md"))
+	check(cp != "", "讀得到 CULTURAL_PRINCIPLES.md")
+	# 製作說明的改編例子 → 改編清單裡對應那一列的關鍵字
+	var pairs := {"燒了尾巴": "老鼠是先被雙胞胎捕捉、燒尾", "祖母正在睡覺": "咬繩時祖母睡著", "牙痛發狂": "七金剛鸚鵡）牙痛發狂"}
+	for k in pairs:
+		check(k in all, "製作說明有「%s」" % k)
+		check(pairs[k] in cp, "改編清單有登記「%s」" % pairs[k])
+	check(not "影子" in all, "製作說明只舉切片看得到的改編（不提影子）")
+
+
 func test_credits_manual_scroll_and_close() -> void:
 	var c = await make_credits("manual")
 	var got := [0]

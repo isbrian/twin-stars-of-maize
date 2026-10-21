@@ -27,6 +27,11 @@ class GameTextTest(unittest.TestCase):
         self.assertIn('"a\\"b\\\\c"', s)
         self.assertIn('"一\\n二"', s)
 
+    def test_gd_str_normalizes_cr(self):  # MV-SLICE-001d2b2
+        out = book_export._gd_str("a\r\nb\rc")
+        self.assertEqual(out, '"a\\nb\\nc"')
+        self.assertNotIn("\r", out)
+
     def test_game_text_is_current(self):
         self.assertEqual(book_export.GAME_OUT.read_text(encoding="utf-8"), book_export.game_text(book_export.rows()),
                          "docs/book/ 改了：重跑 python3 tools/book_export.py")

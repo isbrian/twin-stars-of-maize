@@ -237,7 +237,8 @@ class PrivateLinkTest(unittest.TestCase):
                 self.assertIn(word, text, f"{name} 沒提到 {word}")
         readme = (pub / "README.md").read_text(encoding="utf-8")
         self.assertNotIn("網頁版沒有「結束遊戲」", readme)
-        self.assertIn("v0.1.1", readme)
+        self.assertIn("v0.1.2", readme)
+        self.assertNotIn("v0.1.0-", readme)  # 下載檔名跟著新版
 
 
 if __name__ == "__main__":

@@ -93,6 +93,28 @@ func test_turn_during_fade() -> void:
 	r.queue_free()
 
 
+func test_prefetch_neighbours() -> void:  # MV-SLICE-001d2b2（D2B2-1）
+	var r = await make_reader(4)
+	check(r.prefetched(3) and r.prefetched(5) and not r.prefetched(6), "開在第 4 頁：預先載入第 3、5 頁")
+	r.next_page()
+	check(r.prefetched(6), "翻到第 5 頁：預先載入第 6 頁")
+	var path: String = Style.art_path(6)
+	for i in 120:
+		if ResourceLoader.load_threaded_get_status(path) == ResourceLoader.THREAD_LOAD_LOADED:
+			break
+		await get_tree().process_frame
+	r._finish_fade()
+	var taken0: int = r.taken
+	r.next_page()
+	check(r.taken == taken0 + 1, "第 6 頁用的是預載的插圖")
+	check(r.page.get_child(0) is TextureRect and r.page.get_child(0).texture != null, "第 6 頁有插圖")
+	check(not r.prefetched(6), "用過的預載交出去")
+	r.queue_free()
+	r = await make_reader(1)
+	check(r.prefetched(2) and not r.prefetched(0), "第 1 頁只預載第 2 頁")
+	r.queue_free()
+
+
 func test_last_page_closes_once() -> void:
 	var r = await make_reader(8)
 	var got := [0]
@@ -250,13 +272,41 @@ func test_ask_read_starts_once() -> void:
 	await free_title(t)
 
 
-func test_ask_roll_starts() -> void:
+func test_ask_roll_returns_to_menu() -> void:  # MV-SLICE-001d2b2（D2B2-4）
+	for key in [&"roll", &"pause"]:
+		var t = await make_title()
+		var got := chosen_log(t)
+		t.choose_item("新遊戲")
+		await process_frames(2)
+		var back0: int = Audio.play_count.get(&"ui_back", 0)
+		await press(key)
+		check(not t.asking and got.is_empty() and t.book == null, "%s：回主選單、不開始（%s）" % [key, got])
+		check(Audio.play_count.get(&"ui_back", 0) == back0 + 1, "%s：播 ui_back" % key)
+		check(not FileAccess.file_exists(TEST_ASKED), "%s：不記錄問過" % key)
+		t.choose_item("新遊戲")
+		check(t.asking, "%s：再選新遊戲會再問" % key)
+		await free_title(t)
+
+
+func test_open_book_plays_one_sound() -> void:  # MV-SLICE-001d2b2（D2B2-2）
 	var t = await make_title()
-	var got := chosen_log(t)
+	var c0: int = Audio.play_count.get(&"ui_confirm", 0)
+	var o0: int = Audio.play_count.get(&"ui_page_open", 0)
+	t.choose_item("繪本")
+	check(Audio.play_count.get(&"ui_confirm", 0) == c0 and Audio.play_count.get(&"ui_page_open", 0) == o0 + 1, "主選單「繪本」：只播翻頁聲")
+	t.book.queue_free()
+	t.book = null
+	t.choose_item("製作說明")
+	check(Audio.play_count.get(&"ui_confirm", 0) == c0 + 1, "其他選項照舊播確認聲")
+	t.credits.queue_free()
+	t.credits = null
 	t.choose_item("新遊戲")
 	await process_frames(2)
-	await press(&"roll")
-	check(got == ["new"], "詢問中按翻滾＝直接開始（%s）" % [got])
+	c0 = Audio.play_count.get(&"ui_confirm", 0)
+	o0 = Audio.play_count.get(&"ui_page_open", 0)
+	await press(&"ui_accept")  # 游標在「讀繪本」
+	check(t.book != null, "詢問選讀繪本：開閱讀器")
+	check(Audio.play_count.get(&"ui_confirm", 0) == c0 and Audio.play_count.get(&"ui_page_open", 0) == o0 + 1, "詢問選讀繪本：只播翻頁聲")
 	await free_title(t)
 
 

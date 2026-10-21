@@ -9,12 +9,12 @@ var _text: VBoxContainer
 var _folio: Label
 
 
-func setup(n: int) -> void:
+func setup(n: int, texture: Texture2D = null) -> void:  # texture：閱讀器預載好的插圖（MV-SLICE-001d2b2）
 	num = n
 	size = Vector2(Style.W, Style.H)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var tex := TextureRect.new()
-	tex.texture = load(Style.art_path(n))  # 8 張都進版控（SLICE-d2b-10，test_book_art_present）
+	tex.texture = texture if texture != null else load(Style.art_path(n))  # 8 張都進版控（SLICE-d2b-10，test_book_art_present）
 	tex.size = size
 	tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	tex.stretch_mode = TextureRect.STRETCH_SCALE

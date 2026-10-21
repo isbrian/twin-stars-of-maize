@@ -118,7 +118,8 @@ func move_cursor(dir: int) -> void:
 func choose_item(item: String) -> void:
 	if not can_choose(item):
 		return
-	Audio.play(&"ui_confirm")  # MV-SLICE-001d1b
+	if item != "繪本":  # 開繪本只播翻頁聲，不和確認聲疊在一起（MV-SLICE-001d2b2）
+		Audio.play(&"ui_confirm")  # MV-SLICE-001d1b
 	match item:
 		"新遊戲":
 			if _has_save and not confirming:
@@ -211,10 +212,14 @@ func _process(delta: float) -> void:
 			Audio.play(&"ui_move")
 			queue_redraw()
 		elif MenuInput.just(&"attack") or MenuInput.just(&"ui_accept"):
-			Audio.play(&"ui_confirm")
+			if ask_cursor != 0:  # 讀繪本只播翻頁聲（MV-SLICE-001d2b2）
+				Audio.play(&"ui_confirm")
 			answer_ask(ask_cursor == 0)
 		elif MenuInput.just(&"roll") or MenuInput.just(&"pause"):
-			answer_ask(false)
+			# 取消：回主選單、不記錄問過，和覆蓋確認的「翻滾＝取消」一致（MV-SLICE-001d2b2）
+			asking = false
+			Audio.play(&"ui_back")
+			queue_redraw()
 		return
 	if MenuInput.just(&"look_up"):
 		move_cursor(-1)

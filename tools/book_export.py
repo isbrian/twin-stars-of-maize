@@ -54,6 +54,7 @@ def rows():
 
 
 def _gd_str(s):
+    s = s.replace("\r\n", "\n").replace("\r", "\n")  # CRLF 存檔也一樣（MV-SLICE-001d2b2）
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"'
 
 
